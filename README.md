@@ -1,6 +1,6 @@
 # Envisioning Beyond the Pixels: Benchmarking Reasoning-Informed Visual Editing
 
- [Xiangyu Zhao](https://scholar.google.com/citations?user=eqFr7IgAAAAJ&hl=zh-TW&oi=ao)\*, Peiyuan Zhang\*, Kexian Tang\*, [Zicheng Zhang](https://zzc-1998.github.io/), [Wenhao Chai](https://wenhaochai.com/), [Guangtao Zhai](https://faculty.sjtu.edu.cn/zhaiguangtao/zh_CN/index.htm), [Junchi Yan](https://thinklab.sjtu.edu.cn/), Hua Yang, [Hao Li](https://scholar.google.com/citations?user=qHqQsY4AAAAJ&hl=zh-TW&oi=sra), [Xue Yang](https://yangxue.site/), [Haodong Duan](https://kennymckormick.github.io/)
+ [Xiangyu Zhao](https://scholar.google.com/citations?user=eqFr7IgAAAAJ&hl=zh-TW&oi=ao)\*, Peiyuan Zhang\*, Kexian Tang\*, [Hao Li](https://scholar.google.com/citations?user=qHqQsY4AAAAJ&hl=zh-TW&oi=sra), [Zicheng Zhang](https://zzc-1998.github.io/), [Guangtao Zhai](https://faculty.sjtu.edu.cn/zhaiguangtao/zh_CN/index.htm), [Junchi Yan](https://thinklab.sjtu.edu.cn/), Hua Yang,  [Xue Yang](https://yangxue.site/), [Haodong Duan](https://kennymckormick.github.io/)
 
   <p align="left">
     <a href=''>
