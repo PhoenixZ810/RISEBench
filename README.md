@@ -2,7 +2,7 @@
 
  [Xiangyu Zhao](https://scholar.google.com/citations?user=eqFr7IgAAAAJ&hl=zh-TW&oi=ao)\*, Peiyuan Zhang\*, Kexian Tang\*, [Zicheng Zhang](https://zzc-1998.github.io/), [Wenhao Chai](https://wenhaochai.com/), [Guangtao Zhai](https://faculty.sjtu.edu.cn/zhaiguangtao/zh_CN/index.htm), [Junchi Yan](https://thinklab.sjtu.edu.cn/), Hua Yang, [Hao Li](https://scholar.google.com/citations?user=qHqQsY4AAAAJ&hl=zh-TW&oi=sra), [Xue Yang](https://yangxue.site/), [Haodong Duan](https://kennymckormick.github.io/)
 
-  <p align="center">
+  <p align="left">
     <a href=''>
       <img src='https://img.shields.io/badge/Paper-PDF-green?style=flat&logo=arXiv&logoColor=green' alt='arXiv PDF'>
     </a>
