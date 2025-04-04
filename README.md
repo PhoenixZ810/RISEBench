@@ -1,9 +1,9 @@
 # Envisioning Beyond the Pixels: Benchmarking Reasoning-Informed Visual Editing
 
- [Xiangyu Zhao](https://scholar.google.com/citations?user=eqFr7IgAAAAJ&hl=zh-TW&oi=ao)\*, Peiyuan Zhang\*, Kexian Tang\*, [Hao Li](https://scholar.google.com/citations?user=qHqQsY4AAAAJ&hl=zh-TW&oi=sra), [Zicheng Zhang](https://zzc-1998.github.io/), [Guangtao Zhai](https://faculty.sjtu.edu.cn/zhaiguangtao/zh_CN/index.htm), [Junchi Yan](https://thinklab.sjtu.edu.cn/), Hua Yang,  [Xue Yang](https://yangxue.site/), [Haodong Duan](https://kennymckormick.github.io/)
+ [Xiangyu Zhao](https://scholar.google.com/citations?user=eqFr7IgAAAAJ&hl=zh-TW&oi=ao)\*, [Peiyuan Zhang](https://scholar.google.com.hk/citations?user=rQbW67AAAAAJ&hl=zh-CN)\*, Kexian Tang\*, [Hao Li](https://scholar.google.com/citations?user=qHqQsY4AAAAJ&hl=zh-TW&oi=sra), [Zicheng Zhang](https://zzc-1998.github.io/), [Guangtao Zhai](https://faculty.sjtu.edu.cn/zhaiguangtao/zh_CN/index.htm), [Junchi Yan](https://thinklab.sjtu.edu.cn/), Hua Yang,  [Xue Yang](https://yangxue.site/), [Haodong Duan](https://kennymckormick.github.io/)
 
   <p align="left">
-    <a href=''>
+    <a href='https://arxiv.org/abs/2504.02826'>
       <img src='https://img.shields.io/badge/Paper-PDF-green?style=flat&logo=arXiv&logoColor=green' alt='arXiv PDF'>
     </a>
   </p>
@@ -13,6 +13,7 @@
 </div>
 
 ## 🎉 News
+- **\[2025/04\]** The paper is releasd.
 - **\[2025/04\]** The benchmark and evaluation code will be released soon.
 
 ## 📖 Introduction
@@ -48,3 +49,14 @@ We exhibit all outputs in the appendix. For more details, please refer to our pa
 <div align="center">
   <img src="images/model_outputs.png" width="60%">
 </div>
+
+## Citation
+If you find RISEBench useful, please cite using this BibTeX:
+```bibtex
+@article{zhao2025envisioningpixelsbenchmarkingreasoninginformed,
+      title={Envisioning Beyond the Pixels: Benchmarking Reasoning-Informed Visual Editing},
+      author={Xiangyu Zhao and Peiyuan Zhang and Kexian Tang and Hao Li and Zicheng Zhang and Guangtao Zhai and Junchi Yan and Hua Yang and Xue Yang and Haodong Duan},
+      journal={arXiv preprint arXiv:2504.02826},
+      year={2025}
+}
+```
