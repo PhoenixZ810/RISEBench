@@ -16,7 +16,7 @@
 
 <p align="center">
   <a href='https://arxiv.org/abs/2504.02826'>
-    <img src='https://img.shields.io/badge/Paper-PDF-red?style=flat&logo=arXiv&logoColor=' alt='arXiv PDF'>
+    <img src='https://img.shields.io/badge/Paper-2504.02826-brown?style=flat&logo=arXiv' alt='arXiv PDF'>
   </a>
   <a href='data'>
     <img src='https://img.shields.io/badge/Data-Img&Json-blue?style=flat&logo=liquibase' alt='data img/data'>
@@ -38,7 +38,7 @@ If you find our work helpful, please consider giving us a ☆ or citation :blush
 ## 📖 Introduction
 
 
-In this work, we introduce **RISEBench**, the first benchmark for evaluating **R**easoning-**I**nformed vi**S**ual **E**diting (RISE). RISEBench focuses on four key reasoning types: *Temporal, Causal, Spatial, and Logical Reasoning*.
+In this work, we introduce **RISEBench**, the first benchmark for evaluating **R**easoning-**I**nformed vi**S**ual **E**diting (RISE). RISEBench focuses on four key reasoning types: *Temporal, Causal, Spatial*, and *Logical Reasoning*.
 
 To comprehensively assess model performance across diverse task types, we define three key evaluation dimensions: *Instruction Reasoning*, *Appearance Consistency*, and *Visual Plausibility*.
 
