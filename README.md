@@ -16,7 +16,10 @@
 
 <p align="center">
   <a href='https://arxiv.org/abs/2504.02826'>
-    <img src='https://img.shields.io/badge/Paper-PDF-green?style=flat&logo=arXiv&logoColor=green' alt='arXiv PDF'>
+    <img src='https://img.shields.io/badge/Paper-PDF-red?style=flat&logo=arXiv&logoColor=' alt='arXiv PDF'>
+  </a>
+  <a href='data'>
+    <img src='https://img.shields.io/badge/Data-Img&Json-blue?style=flat&logo=liquibase' alt='data img/data'>
   </a>
 
 If you find our work helpful, please consider giving us a ☆ or citation :blush: !
