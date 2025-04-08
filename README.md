@@ -1,6 +1,6 @@
 # Envisioning Beyond the Pixels: Benchmarking Reasoning-Informed Visual Editing
 
- [Xiangyu Zhao](https://scholar.google.com/citations?user=eqFr7IgAAAAJ&hl=zh-TW&oi=ao)\*, [Peiyuan Zhang](https://scholar.google.com.hk/citations?user=rQbW67AAAAAJ&hl=zh-CN)\*, Kexian Tang\*, [Hao Li](https://scholar.google.com/citations?user=qHqQsY4AAAAJ&hl=zh-TW&oi=sra), [Zicheng Zhang](https://zzc-1998.github.io/), [Guangtao Zhai](https://faculty.sjtu.edu.cn/zhaiguangtao/zh_CN/index.htm), [Junchi Yan](https://thinklab.sjtu.edu.cn/), Hua Yang,  [Xue Yang](https://yangxue.site/), [Haodong Duan](https://kennymckormick.github.io/)
+ [Xiangyu Zhao](https://scholar.google.com/citations?user=eqFr7IgAAAAJ&hl=zh-TW&oi=ao)\*, [Peiyuan Zhang](https://scholar.google.com.hk/citations?user=rQbW67AAAAAJ&hl=zh-CN)\*, [Kexian Tang](https://scholar.google.com/citations?user=cXjomd8AAAAJ&hl=zh-CN&oi=ao)\*, [Hao Li](https://scholar.google.com/citations?user=qHqQsY4AAAAJ&hl=zh-TW&oi=sra), [Zicheng Zhang](https://zzc-1998.github.io/), [Guangtao Zhai](https://faculty.sjtu.edu.cn/zhaiguangtao/zh_CN/index.htm), [Junchi Yan](https://thinklab.sjtu.edu.cn/), Hua Yang,  [Xue Yang](https://yangxue.site/), [Haodong Duan](https://kennymckormick.github.io/)
 
   <p align="left">
     <a href='https://arxiv.org/abs/2504.02826'>
@@ -94,10 +94,10 @@ We exhibit all outputs of the five models in the appendix. For more details, ple
 ## Citation
 If you find RISEBench useful, please cite using this BibTeX:
 ```bibtex
-@article{zhao2025envisioningpixelsbenchmarkingreasoninginformed,
-      title={Envisioning Beyond the Pixels: Benchmarking Reasoning-Informed Visual Editing},
-      author={Xiangyu Zhao and Peiyuan Zhang and Kexian Tang and Hao Li and Zicheng Zhang and Guangtao Zhai and Junchi Yan and Hua Yang and Xue Yang and Haodong Duan},
-      journal={arXiv preprint arXiv:2504.02826},
-      year={2025}
+@article{zhao2025envisioning,
+  title={Envisioning Beyond the Pixels: Benchmarking Reasoning-Informed Visual Editing},
+  author={Zhao, Xiangyu and Zhang, Peiyuan and Tang, Kexian and Li, Hao and Zhang, Zicheng and Zhai, Guangtao and Yan, Junchi and Yang, Hua and Yang, Xue and Duan, Haodong},
+  journal={arXiv preprint arXiv:2504.02826},
+  year={2025}
 }
 ```
