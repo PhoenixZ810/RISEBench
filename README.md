@@ -22,7 +22,7 @@
     <img src='https://img.shields.io/badge/Data-Img&Json-blue?style=flat&logo=liquibase' alt='data img/data'>
   </a>
 
-If you find our work helpful, please consider giving us a ☆ or citation :blush: !
+If you find our work helpful, please consider giving us a ⭐ or citation :blush:
 
 </p>
 </div>
