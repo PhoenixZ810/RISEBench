@@ -70,7 +70,7 @@ Our benchmark dataset is stored in [`data_total.json`](data/data_total.json). Th
 
 **Output File Structure:**
 Generated outputs should be saved in the following directory structure:
-**outputs/{MODEL_NAME}/images/{CATEGORY}/{INDEX_NAME}.{FORMAT}**
+**`outputs/{MODEL_NAME}/images/{CATEGORY}/{INDEX_NAME}.{FORMAT}`**
 
 - `{MODEL_NAME}`: The name of the model you are using (e.g., `gpt-4o`).
 - `{CATEGORY}`: The category of the sample (e.g., `temporal_reasoning`).
