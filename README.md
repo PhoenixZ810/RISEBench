@@ -13,7 +13,7 @@
 </div>
 
 ## 🎉 News
-- **\[2025/04\]** The benchmark and evaluation code have been released now! Have fun :smiley: .
+- **\[2025/04\]** The benchmark and evaluation code have been released! Have fun :smiley: .
 - **\[2025/04\]** The paper is releasd.
 - **\[2025/04\]** The benchmark and evaluation code will be released soon.
 
