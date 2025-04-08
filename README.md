@@ -7,8 +7,10 @@
 [Kexian Tang](https://scholar.google.com/citations?user=cXjomd8AAAAJ&hl=zh-CN&oi=ao)\*,
 [Hao Li](https://scholar.google.com/citations?user=qHqQsY4AAAAJ&hl=zh-TW&oi=sra),
 [Zicheng Zhang](https://zzc-1998.github.io/),
+
 [Guangtao Zhai](https://faculty.sjtu.edu.cn/zhaiguangtao/zh_CN/index.htm),
-[Junchi Yan](https://thinklab.sjtu.edu.cn/), Hua Yang,
+[Junchi Yan](https://thinklab.sjtu.edu.cn/),
+[Hua Yang](https://ee.sjtu.edu.cn/FacultyDetail.aspx?id=29&infoid=66&flag=66),
 [Xue Yang](https://yangxue.site/),
 [Haodong Duan](https://kennymckormick.github.io/)
 
@@ -16,8 +18,10 @@
   <a href='https://arxiv.org/abs/2504.02826'>
     <img src='https://img.shields.io/badge/Paper-PDF-green?style=flat&logo=arXiv&logoColor=green' alt='arXiv PDF'>
   </a>
-</p>
 
+If you find our work helpful, please consider giving us a ☆ or citation :blush: !
+
+</p>
 </div>
 <div align="center">
   <img src="images/bench.png" width="100%">
