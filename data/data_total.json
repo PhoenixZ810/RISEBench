@@ -1,0 +1,481 @@
+[
+  {
+    "index": "temporal_reasoning_1",
+    "category": "temporal_reasoning",
+    "instruction": "Draw what it will look like after being kept in a daily environment for a year.",
+    "image": "temporal_reasoning_images/1.png",
+    "reference": "Rotten, blackened banana."
+  },
+
+  {
+    "index": "temporal_reasoning_2",
+    "category": "temporal_reasoning",
+    "instruction": "Draw what it will look like ten years later.",
+    "image": "temporal_reasoning_images/2.png",
+    "reference": "Mature tree with a sturdy trunk, numerous branches."
+  },
+
+  {
+    "index": "temporal_reasoning_3",
+    "category": "temporal_reasoning",
+    "instruction": "Draw what it will look like after three years.",
+    "image": "temporal_reasoning_images/3.png",
+    "reference": "Adult dog with a large body size, mature facial features, and brown and white fur coloration."
+  },
+
+  {
+    "index": "temporal_reasoning_4",
+    "category": "temporal_reasoning",
+    "instruction": "Draw what he will look like after exercising for a year.",
+    "image": "temporal_reasoning_images/4.png",
+    "reference": "A fit man with low body fat and well-defined muscles."
+  },
+
+  {
+    "index": "temporal_reasoning_5",
+    "category": "temporal_reasoning",
+    "instruction": "Draw what she will look like after a year without cutting her hair.",
+    "image": "temporal_reasoning_images/5.png",
+    "reference": "A woman with long blonde hair."
+  },
+
+  {
+    "index": "temporal_reasoning_6",
+    "category": "temporal_reasoning",
+    "instruction": "Draw what it will look like after being placed outdoors for ten year.",
+    "image": "temporal_reasoning_images/6.png",
+    "reference": "Iron heavily rusted and corroded."
+  },
+
+  {
+    "index": "temporal_reasoning_7",
+    "category": "temporal_reasoning",
+    "instruction": "Draw what this species look like more than two million years ago.",
+    "image": "temporal_reasoning_images/7.png",
+    "reference": "Early human ancestor or hominid."
+  },
+
+  {
+    "index": "temporal_reasoning_8",
+    "category": "temporal_reasoning",
+    "instruction": "Draw what it will look like one hour later.",
+    "image": "temporal_reasoning_images/8.png",
+    "reference": "Phone screen showing a fully charged green battery icon."
+  },
+
+  {
+    "index": "temporal_reasoning_9",
+    "category": "temporal_reasoning",
+    "instruction": "Draw what it looks like after being exposed to the sun for a day.",
+    "image": "temporal_reasoning_images/9.png",
+    "reference": "A street with mostly clear pavement and sidewalks, minimal remaining snow. Cars are free of snow coverage, and trees are bare with dry branches."
+  },
+
+  {
+    "index": "temporal_reasoning_10",
+    "category": "temporal_reasoning",
+    "instruction": "Draw what it will look like one hour later.",
+    "image": "temporal_reasoning_images/10.png",
+    "reference": "A plastic bucket completely filled with water, overflowing with water spilling onto the floor."
+  },
+
+  {
+    "index": "temporal_reasoning_11",
+    "category": "temporal_reasoning",
+    "instruction": "Draw what it will look like one hour later.",
+    "image": "temporal_reasoning_images/11.png",
+    "reference": "A glass of tea with leaves settled at the bottom, thoroughly steeped, and displaying a dark brown color."
+  },
+
+  {
+    "index": "temporal_reasoning_12",
+    "category": "temporal_reasoning",
+    "instruction": "Draw what they will look like ten years later.",
+    "image": "temporal_reasoning_images/12.png",
+    "reference": "A teenage boy, approximately 15 years old, with a tall stature and mature appearance, standing next to an older man in his early 70s, who has an aged appearance."
+  },
+
+  {
+    "index": "temporal_reasoning_13",
+    "category": "temporal_reasoning",
+    "instruction": "Draw what they will look like one year later.",
+    "image": "temporal_reasoning_images/13.png",
+    "reference": "A nearly full-sized cat and a small tree approximately one year old, with a thin trunk, several branches, and a modest number of green leaves."
+  },
+
+  {
+    "index": "temporal_reasoning_14",
+    "category": "temporal_reasoning",
+    "instruction": "Draw what it will look like three months later.",
+    "image": "temporal_reasoning_images/14.png",
+    "reference": "A frog."
+  },
+
+  {
+    "index": "temporal_reasoning_15",
+    "category": "temporal_reasoning",
+    "instruction": "Draw what it will look like a six hours later.",
+    "image": "temporal_reasoning_images/15.png",
+    "reference": "A desert at sunset, with the sun near the horizon, casting warm orange, pink, and purple hues across the sky."
+  },
+
+  {
+    "index": "temporal_reasoning_16",
+    "category": "temporal_reasoning",
+    "instruction": "Draw what they will look like five seconds later.",
+    "image": "temporal_reasoning_images/16.png",
+    "reference": "The athletes are sprinting at full speed, slightly spread out across the track. A few runners are leading, slightly ahead of the others, while some lag behind by a few meters."
+  },
+
+  {
+    "index": "causal_reasoning_1",
+    "category": "causal_reasoning",
+    "instruction": "Draw what it will look like after being bitten by people.",
+    "image": "causal_reasoning_images/1.png",
+    "reference": "Apple with a visible bite mark, exposing its pale, juicy flesh beneath the red skin."
+  },
+
+  {
+    "index": "causal_reasoning_2",
+    "category": "causal_reasoning",
+    "instruction": "Draw what it will look like after being roasted by fire.",
+    "image": "causal_reasoning_images/2.png",
+    "reference": "Meat transformed into a cooked steak with a brown, seared outer crust and possibly grill marks or a caramelized surface."
+  },
+
+  {
+    "index": "causal_reasoning_3",
+    "category": "causal_reasoning",
+    "instruction": "Draw what it will look like after it hits an obstacle.",
+    "image": "causal_reasoning_images/3.png",
+    "reference": "Sports car with visible damage after hitting an obstacle. The front bumper may be crushed or cracked, headlights could be shattered, and the hood might be dented or bent."
+  },
+
+  {
+    "index": "causal_reasoning_4",
+    "category": "causal_reasoning",
+    "instruction": "Draw what it will look like after being exposed to the sun for one hour.",
+    "image": "causal_reasoning_images/4.png",
+    "reference": "Ice cream cone with the chocolate ice cream mostly melted, dripping down the sides of the cone."
+  },
+
+  {
+    "index": "causal_reasoning_5",
+    "category": "causal_reasoning",
+    "instruction": "Draw what it will look like after many people have walked on it.",
+    "image": "causal_reasoning_images/5.png",
+    "reference": "Snowy yard with multiple footprints crisscrossing the snow."
+  },
+
+  {
+    "index": "causal_reasoning_6",
+    "category": "causal_reasoning",
+    "instruction": "Draw what it will look like if it were crumpled into a ball.",
+    "image": "causal_reasoning_images/6.png",
+    "reference": "Paper crumpled into a ball, with multiple creases and wrinkles creating a rough and uneven texture."
+  },
+
+  {
+    "index": "causal_reasoning_7",
+    "category": "causal_reasoning",
+    "instruction": "Draw what it will look like when it is cut in half from the middle.",
+    "image": "causal_reasoning_images/7.png",
+    "reference": "Two identical cakes, as if one cake has been cut in half, with a pink sauce filling in the middle of the cut surface."
+  },
+
+  {
+    "index": "causal_reasoning_8",
+    "category": "causal_reasoning",
+    "instruction": "Draw what it will look like after it is broken.",
+    "image": "causal_reasoning_images/8.png",
+    "reference": "Egg broken, with cracked shell pieces scattered on the surface. The egg yolk and egg white would be spilled out, spreading across the surface in a natural, fluid shape."
+  },
+
+  {
+    "index": "causal_reasoning_9",
+    "category": "causal_reasoning",
+    "instruction": "Draw what it will look like after being washed a hundred times.",
+    "image": "causal_reasoning_images/9.png",
+    "reference": "Jeans appearing heavily faded, with a light blue color and worn-out fabric. The seams, edges, and high-friction areas like pockets and knees may have significant distressing, fraying, or small tears."
+  },
+
+  {
+    "index": "causal_reasoning_10",
+    "category": "causal_reasoning",
+    "instruction": "Draw how it would look after being put into the washing machine and rinsed with a small amount of water but without adding any detergent.",
+    "image": "causal_reasoning_images/10.png",
+    "reference": "A T-shirt with faint but clearly visible brown stains."
+  },
+
+  {
+    "index": "causal_reasoning_11",
+    "category": "causal_reasoning",
+    "instruction": "Draw what it looks like three seconds after being punctured.",
+    "image": "causal_reasoning_images/11.png",
+    "reference": "Soccer ball partially deflated, with a visible puncture or tear."
+  },
+
+  {
+    "index": "causal_reasoning_12",
+    "category": "causal_reasoning",
+    "instruction": "Draw what it will look like after half of the liquid is poured out.",
+    "image": "causal_reasoning_images/12.png",
+    "reference": "A glass half filled with cola."
+  },
+
+  {
+    "index": "causal_reasoning_13",
+    "category": "causal_reasoning",
+    "instruction": "Draw what they will look like when fully inflated.",
+    "image": "causal_reasoning_images/13.png",
+    "reference": "Seven balloons, each fully inflated and expanded into spherical shapes. From left to right, the colors are red, orange, yellow, green, cyan, blue, and purple."
+  },
+
+  {
+    "index": "causal_reasoning_14",
+    "category": "causal_reasoning",
+    "instruction": "Draw what it will look like after absorbing water.",
+    "image": "causal_reasoning_images/14.png",
+    "reference": "A sponge fully saturated with liquid, appearing swollen, with a yellow body and a green scouring surface on top."
+  },
+
+  {
+    "index": "causal_reasoning_15",
+    "category": "causal_reasoning",
+    "instruction": "Draw what it will look like after falling from a height to the ground.",
+    "image": "causal_reasoning_images/15.png",
+    "reference": "A shattered glass cup on the ground, with shards and fragments scattered around. The cup is broken and no longer intact."
+  },
+
+  {
+    "index": "causal_reasoning_16",
+    "category": "causal_reasoning",
+    "instruction": "Draw what it will look like after the knot is untied.",
+    "image": "causal_reasoning_images/16.png",
+    "reference": "A rope lying straight and relaxed."
+  },
+  {
+    "index": "spatial_reasoning_1",
+    "category": "spatial_reasoning",
+    "instruction": "Draw the top view.",
+    "image": "spatial_reasoning_images/1.png",
+    "reference": "Top-down view of a round-mouthed cup (circular rim) filled with white milk; right beside it is a stack of cookies, seen from above, with only the top cookie visible."
+  },
+  {
+    "index": "spatial_reasoning_2",
+    "category": "spatial_reasoning",
+    "instruction": "Draw the left view.",
+    "image": "spatial_reasoning_images/2.png",
+    "reference": "An image which only contains the front view of a white cube (a white square)."
+  },
+  {
+    "index": "spatial_reasoning_3",
+    "category": "spatial_reasoning",
+    "instruction": "Draw the front view.",
+    "image": "spatial_reasoning_images/3.png",
+    "reference": "The front view of a black monitor with a square base and a black circular hole on the stand."
+  },
+  {
+    "index": "spatial_reasoning_4",
+    "category": "spatial_reasoning",
+    "instruction": "Draw the front view of this building as seen from a distance.",
+    "image": "spatial_reasoning_images/4.png",
+    "reference": "The front view of a building, with its surface composed of blue square glass panels joined together, and the two sides are straight."
+  },
+  {
+    "index": "spatial_reasoning_5",
+    "category": "spatial_reasoning",
+    "instruction": "Generate an image that stacks these blocks in layers from bottom to top, arranged from largest at the base to smallest at the top. ",
+    "image": "spatial_reasoning_images/5.png",
+    "reference": "A stack of LEGO blocks arranged from bottom to top in this order: the largest blue block at the base, followed by the second-largest green block, then the third-largest white block, and the smallest red block at the top."
+  },
+  {
+    "index": "spatial_reasoning_6",
+    "category": "spatial_reasoning",
+    "instruction": "Generate an image stacking these four cubes in order from bottom to top: red, green, blue, and white.",
+    "image": "spatial_reasoning_images/6.png",
+    "reference": "A vertical stack of four LEGO blocks arranged from bottom to top in this order: red at the base, followed by green, then blue, and white at the top."
+  },
+  {
+    "index": "spatial_reasoning_7",
+    "category": "spatial_reasoning",
+    "instruction": "Generate an image of a fully assembled object using the provided components.",
+    "image": "spatial_reasoning_images/7.png",
+    "reference": "A fully assembled gaming chair with a sturdy structure, consisting of connected seat and backrest, a central chair base, five evenly spaced caster wheels attached to its ends, and a gas lift securely positioned at the center to support the chair seat."
+  },
+  {
+    "index": "spatial_reasoning_8",
+    "category": "spatial_reasoning",
+    "instruction": "Generate an image combining these shapes into a house, with the small rectangle as a chimney.",
+    "image": "spatial_reasoning_images/8.png",
+    "reference": "A basic house structure made of basic shapes: a brown rectangle as the main body, a pink triangle on top as the roof, and a grey small rectangle positioned on the upper part of the brown rectangle as a chimney."
+  },
+  {
+    "index": "spatial_reasoning_9",
+    "category": "spatial_reasoning",
+    "instruction": "Combine these parts to assemble a figure in a running pose. The elements can be reused as needed to complete the figure.",
+    "image": "spatial_reasoning_images/9.png",
+    "reference": "A simple human-like figure in a running pose. The head is positioned at the top, arms are extended dynamically, and legs are bent to depict motion."
+  },
+  {
+    "index": "spatial_reasoning_10",
+    "category": "spatial_reasoning",
+    "instruction": "Arrange these components to assemble a complete human face. The elements can be reused as needed to complete the figure.",
+    "image": "spatial_reasoning_images/10.png",
+    "reference": "A human face which includes two symmetrically positioned eyes, a single nose placed centrally below the eyes, a mouth located beneath the nose, and two ears symmetrically positioned on either side of the face. "
+  },
+  {
+    "index": "spatial_reasoning_11",
+    "category": "spatial_reasoning",
+    "instruction": "Generate an image of a fully assembled object using the provided components.",
+    "image": "spatial_reasoning_images/11.png",
+    "reference": "A fully assembled chair leg structure consisting of a central chair base, five evenly spaced caster wheels attached to its ends, and a gas lift securely positioned at the center to support the chair seat."
+  },
+  {
+    "index": "spatial_reasoning_12",
+    "category": "spatial_reasoning",
+    "instruction": "Generate an image of a fully assembled small table using the provided components.",
+    "image": "spatial_reasoning_images/12.png",
+    "reference": "A fully assembled small table with a flat tabletop and four sturdy legs securely attached at each corner. "
+  },
+  {
+    "index": "spatial_reasoning_13",
+    "category": "spatial_reasoning",
+    "instruction": "Generate an image using the pieces of a tangram to form the letter 'C'.",
+    "image": "spatial_reasoning_images/13.png",
+    "reference": "A letter 'C' formed using seven pieces: a large pink triangle, a large green triangle, a medium-sized red triangle, a small orange triangle, a small purple triangle, a yellow square, and a blue parallelogram."
+  },
+  {
+    "index": "spatial_reasoning_14",
+    "category": "spatial_reasoning",
+    "instruction": "Generate an image of a fully assembled small table using the provided components with the circular as base and  the rectangular as table top.",
+    "image": "spatial_reasoning_images/14.png",
+    "reference": "A fully assembled small table consisting of a sturdy circular base, a single cylindrical support leg extending upward from the center, and a rectangular tabletop securely attached on top."
+  },
+  {
+    "index": "spatial_reasoning_15",
+    "category": "spatial_reasoning",
+    "instruction": "Generate an image of a fully assembled small stool using the provided components: a stool seat and one leg (with three identical legs not shown).",
+    "image": "spatial_reasoning_images/15.png",
+    "reference": "A fully assembled small stool with a flat seat and four identical legs directly inserted into the four slots of the round platform. "
+  },
+  {
+    "index": "spatial_reasoning_16",
+    "category": "spatial_reasoning",
+    "instruction": "Generate an image assembling the provided disassembled clock components into a complete clock displaying the time as 9:45.",
+    "image": "spatial_reasoning_images/16.png",
+    "reference": "A circular clock with three hands, centered-hour hand between 9 and 10, minute hand on 9, and second hand on 12."
+  },
+  {
+    "index": "logical_reasoning_1",
+    "category": "logical_reasoning",
+    "instruction": "This is an image of a maze, where black represents obstacles and white represents walkable paths. Draw the path from the red dot to the green dot in blue.",
+    "image": "logical_reasoning_images/1.jpg",
+    "reference_img": "logical_reasoning_images/1_ref.png"
+  },
+  {
+    "index": "logical_reasoning_2",
+    "category": "logical_reasoning",
+    "instruction": "In the current graph, the numbers inside the circles represent node names, and the numbers inside the squares represent path lengths. Please draw the shortest path from node 1 to node 4 in red.",
+    "image": "logical_reasoning_images/2.png",
+    "reference_txt": "The shortest path should consist of the segments from node 1 to node 2 and from node 2 to node 4."
+  },
+  {
+    "index": "logical_reasoning_3",
+    "category": "logical_reasoning",
+    "instruction": "This is a 2D image where black represents impermeable obstacles. The areas outside the two sides of the image extend infinitely without any obstacles. If it starts raining from the top of the image, which parts of the image will accumulate water? Please represent the accumulated water with blue and draw the resulting image.",
+    "image": "logical_reasoning_images/3.jpg",
+    "reference_img": "logical_reasoning_images/3_ref.png"
+  },
+  {
+    "index": "logical_reasoning_4",
+    "category": "logical_reasoning",
+    "instruction": "This is a digital Klotski game, and your goal is to arrange the numbers in ascending order, with the empty space at the end(position row3, column3). Draw your solution.",
+    "image": "logical_reasoning_images/4.png",
+    "reference_img": "logical_reasoning_images/4_ref.jpg"
+  },
+  {
+    "index": "logical_reasoning_5",
+    "category": "logical_reasoning",
+    "instruction": "Draw what it will look like after the question mark is replaced with the correct answer.",
+    "image": "logical_reasoning_images/5.png",
+    "reference_txt": "The question mark should be replaced with \"2\". The \"2\" must be on the position of the original question mark."
+  },
+  {
+    "index": "logical_reasoning_6",
+    "category": "logical_reasoning",
+    "instruction": "Complete the shape represented by the question mark.",
+    "image": "logical_reasoning_images/6.png",
+    "reference_img": "logical_reasoning_images/6_ref.png"
+  },
+  {
+    "index": "logical_reasoning_7",
+    "category": "logical_reasoning",
+    "instruction": "Please replace the question mark with a plus sign or a minus sign to satisfy the equation, and draw the image after the replacement.",
+    "image": "logical_reasoning_images/7.png",
+    "reference_txt": "The first question mark should be replaced with a plus sign, the second question mark should be replaced with a minus sign."
+  },
+  {
+    "index": "logical_reasoning_8",
+    "category": "logical_reasoning",
+    "instruction": "Draw the shape represented by the question mark.",
+    "image": "logical_reasoning_images/8.png",
+    "reference_img": "logical_reasoning_images/8_ref.png"
+  },
+  {
+    "index": "logical_reasoning_9",
+    "category": "logical_reasoning",
+    "instruction": "Draw the shape represented by the question mark.",
+    "image": "logical_reasoning_images/9.png",
+    "reference_img": "logical_reasoning_images/9_ref.png"
+  },
+  {
+    "index": "logical_reasoning_10",
+    "category": "logical_reasoning",
+    "instruction": "If you are playing as \"O\", what would your next move be? Draw it.",
+    "image": "logical_reasoning_images/10.png",
+    "reference_img": "logical_reasoning_images/10_ref.png"
+  },
+  {
+    "index": "logical_reasoning_11",
+    "category": "logical_reasoning",
+    "instruction": "Draw a clear red line path from a red-and-white spotted mushroom house to a round mud pit.",
+    "image": "logical_reasoning_images/11.png",
+    "reference_img": "logical_reasoning_images/11_ref.png"
+  },
+  {
+    "index": "logical_reasoning_12",
+    "category": "logical_reasoning",
+    "instruction": "Draw what it will look like after the question mark is replaced with the correct answer.",
+    "image": "logical_reasoning_images/12.png",
+    "reference_txt": "The question mark should be replaced with \"16\". The \"16\" must be on the position of the original question mark."
+  },
+  {
+    "index": "logical_reasoning_13",
+    "category": "logical_reasoning",
+    "instruction": "Draw what it will look like after replacing the question mark with the correct number of green cylinders that are equivalent to the orange cube, following the given pattern.",
+    "image": "logical_reasoning_images/13.png",
+    "reference_img": "logical_reasoning_images/13_ref.png"
+  },
+  {
+    "index": "logical_reasoning_14",
+    "category": "logical_reasoning",
+    "instruction": "Draw only the correct answer that fits into the blank space.",
+    "image": "logical_reasoning_images/14.png",
+    "reference_img": "logical_reasoning_images/14_ref.png"
+  },
+  {
+    "index": "logical_reasoning_15",
+    "category": "logical_reasoning",
+    "instruction": "The caterpillar wants to find the shortest path to the leaf. Please mark the two shortest paths in the diagram.",
+    "image": "logical_reasoning_images/15.png",
+    "reference_img": "logical_reasoning_images/15_ref.png"
+  },
+  {
+    "index": "logical_reasoning_16",
+    "category": "logical_reasoning",
+    "instruction": "Below is a panel with 16 dice faces. Cut out six adjacent squares that form a valid unfolded dice net. Please color the correct squares blue.",
+    "image": "logical_reasoning_images/16.png",
+    "reference_img": "logical_reasoning_images/16_ref.png"
+  }
+]

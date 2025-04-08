@@ -13,6 +13,7 @@
 </div>
 
 ## 🎉 News
+- **\[2025/04\]** The benchmark and evaluation code will have been released now! Have fun :smiley: .
 - **\[2025/04\]** The paper is releasd.
 - **\[2025/04\]** The benchmark and evaluation code will be released soon.
 
@@ -43,8 +44,48 @@ To evaluate the performance of representative visual editing approaches, we sele
   <img src="images/main2.png" width="80%">
 </div>
 
+
+## 🛠️ Quick Start
+
+### 1. Output Generation
+Our benchmark dataset is stored in [`data_total.json`](data/data_total.json). The input images for the four categories are located in the [`data`](data) directory. Each sample in the dataset contains an `instruction` and an associated `image`. You can use these inputs to generate the corresponding output image.
+
+**Output File Structure:**
+Generated outputs should be saved in the following directory structure:
+**outputs/{MODEL_NAME}/images/{CATEGORY}/{INDEX_NAME}.{FORMAT}**
+
+- `{MODEL_NAME}`: The name of the model you are using (e.g., `gpt-4o`).
+- `{CATEGORY}`: The category of the sample (e.g., `temporal_reasoning`).
+- `{INDEX_NAME}`: The index of the sample in the dataset.
+- `{FORMAT}`: The file format of the output image (supported formats: `.png`, `.jpg`, or `.jpeg`).
+
+For example:
+`outputs/gpt-4o-native/images/temporal_reasoning/temporal_reasoning_1.png`
+
+
+### 2. Evaluation By GPT-4o
+Once all outputs are generated and saved in the specified format, you can evaluate them using the `gpt_eval.py` script.
+
+#### Step 1: Configure API Settings
+Open the `gpt_eval.py` file and update the following parameters with your OpenAI credentials:
+- `api_key`: Your OpenAI API key.
+- `api_base`: Your OpenAI API base URL (if applicable).
+
+#### Step 2: Run the Evaluation Script
+Execute the script using the following command:
+```bash
+python gpt_eval.py --input data/data_total.json --output outputs/MODEL_NAME
+```
+
+#### Step 3: Review the Results
+After running the script, three result files will be generated in the `outputs/{MODEL_NAME}` directory:
+
+1. **`{MODEL_NAME}_judge.csv`**: A CSV file containing the total evaluation scores.
+2. **`{MODEL_NAME}_judge.xlsx`**: An Excel file storing detailed responses from the GPT-4o judge model.
+3. **`{MODEL_NAME}.pkl`**: A serialized pickle file saving the raw responses from the judge model, which can be used to resume or extend evaluations later.
+
 ## 🔥 Outputs of Current Models
-We exhibit all outputs in the appendix. For more details, please refer to our paper.
+We exhibit all outputs of the five models in the appendix. For more details, please refer to our paper.
 
 <div align="center">
   <img src="images/model_outputs.png" width="60%">
