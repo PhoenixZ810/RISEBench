@@ -1,13 +1,24 @@
+<div align="center">
+
 # Envisioning Beyond the Pixels: Benchmarking Reasoning-Informed Visual Editing
 
- [Xiangyu Zhao](https://scholar.google.com/citations?user=eqFr7IgAAAAJ&hl=zh-TW&oi=ao)\*, [Peiyuan Zhang](https://scholar.google.com.hk/citations?user=rQbW67AAAAAJ&hl=zh-CN)\*, [Kexian Tang](https://scholar.google.com/citations?user=cXjomd8AAAAJ&hl=zh-CN&oi=ao)\*, [Hao Li](https://scholar.google.com/citations?user=qHqQsY4AAAAJ&hl=zh-TW&oi=sra), [Zicheng Zhang](https://zzc-1998.github.io/), [Guangtao Zhai](https://faculty.sjtu.edu.cn/zhaiguangtao/zh_CN/index.htm), [Junchi Yan](https://thinklab.sjtu.edu.cn/), Hua Yang,  [Xue Yang](https://yangxue.site/), [Haodong Duan](https://kennymckormick.github.io/)
+[Xiangyu Zhao](https://scholar.google.com/citations?user=eqFr7IgAAAAJ&hl=zh-TW&oi=ao)\*,
+[Peiyuan Zhang](https://scholar.google.com.hk/citations?user=rQbW67AAAAAJ&hl=zh-CN)\*,
+[Kexian Tang](https://scholar.google.com/citations?user=cXjomd8AAAAJ&hl=zh-CN&oi=ao)\*,
+[Hao Li](https://scholar.google.com/citations?user=qHqQsY4AAAAJ&hl=zh-TW&oi=sra),
+[Zicheng Zhang](https://zzc-1998.github.io/),
+[Guangtao Zhai](https://faculty.sjtu.edu.cn/zhaiguangtao/zh_CN/index.htm),
+[Junchi Yan](https://thinklab.sjtu.edu.cn/), Hua Yang,
+[Xue Yang](https://yangxue.site/),
+[Haodong Duan](https://kennymckormick.github.io/)
 
-  <p align="left">
-    <a href='https://arxiv.org/abs/2504.02826'>
-      <img src='https://img.shields.io/badge/Paper-PDF-green?style=flat&logo=arXiv&logoColor=green' alt='arXiv PDF'>
-    </a>
-  </p>
-<br />
+<p align="center">
+  <a href='https://arxiv.org/abs/2504.02826'>
+    <img src='https://img.shields.io/badge/Paper-PDF-green?style=flat&logo=arXiv&logoColor=green' alt='arXiv PDF'>
+  </a>
+</p>
+
+</div>
 <div align="center">
   <img src="images/bench.png" width="100%">
 </div>
