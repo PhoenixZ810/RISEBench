@@ -33,7 +33,7 @@ If you find our work helpful, please consider giving us a ⭐ or citation :blush
 ## 🎉 News
 - **\[2025/04/08\]** **RISEBench is Scaling Up**! The final complete benchmark will be released soon. Stay tuned for updates!
 - **\[2025/04/08\]** The benchmark and evaluation code have been released! Have fun :smiley: .
-- **\[2025/04/05\]** The paper is releasd.
+- **\[2025/04/05\]** Our paper is released.
 - **\[2025/04/05\]** The benchmark and evaluation code will be released soon.
 
 ## 📖 Introduction
