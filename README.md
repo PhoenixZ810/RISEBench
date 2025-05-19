@@ -31,7 +31,7 @@ If you find our work helpful, please consider giving us a ⭐ or citation :blush
 </p>
 </div>
 <div align="center">
-  <img src="images/bench.png" width="100%">
+  <img src="images/bench1.png" width="100%">
 </div>
 
 ## 🎉 News
