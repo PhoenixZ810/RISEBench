@@ -61,7 +61,7 @@ Besides, we design a robust **LMM-as-a-Judge** evaluation pipeline and leverage 
 </div>
 
 ## 🔥 Benchmark Performance
-To evaluate the performance of representative visual editing approaches, we selected a diverse set of models spanning multiple model architectures and generation paradigms. Specifically, Flux1.0-Canny serves as a representative diffusion-based editing model, while EMU2 exemplifies the auto-regressive generation paradigm. We also include three proprietary models: **GPT-4o(Previous)**, **Gemini 2.0-Flash**, and **GPT-4o-Native (2025-03-26)**. Since all of the proprietary models do not offer public APIs for programmatic evaluation, we obtained their outputs directly via their respective official online interfaces.
+To evaluate the performance of representative visual editing approaches, we selected a diverse set of models spanning multiple model architectures and generation paradigms. Specifically, Flux1.0-Canny serves as a representative diffusion-based editing model, while EMU2 exemplifies the auto-regressive generation paradigm. We also include 8 proprietary models, including **GPT-4o-Image**, **Gemini 2.0-Flash-Experimental**, and **Gemini 2.0-Flash-Preview**. The outputs of proprietary models are given by the official API.
 
 <div align="center">
   <img src="images/results.png" width="100%">
@@ -76,7 +76,7 @@ To evaluate the performance of representative visual editing approaches, we sele
 ## 🛠️ Quick Start
 
 ### 1. Output Generation
-Our benchmark dataset is stored in [`data_total.json`](data/data_total.json). The input images for the four categories are located in the [`data`](data) directory. Each sample in the dataset contains an `instruction` and an associated `image`. You can use these inputs to generate the corresponding output image.
+The input images for the four categories are located in the [`data`](data) directory. Each sample in the dataset contains an `instruction` and an associated `image`. You can use these inputs to generate the corresponding output image.
 
 **Output File Structure:**
 Generated outputs should be saved in the following directory structure:
@@ -92,7 +92,7 @@ For example:
 `outputs/gpt-4o-native/images/temporal_reasoning/temporal_reasoning_1.png`
 
 
-### 2. Evaluation By GPT-4o
+### 2. Evaluation By GPT-4.1
 Once all outputs are generated and saved in the specified format, you can evaluate them using the `gpt_eval.py` script.
 
 #### Step 1: Configure API Settings
@@ -117,7 +117,7 @@ After running the script, three result files will be generated in the `outputs/{
 We exhibit some outputs of the five models in the appendix. For more details, please refer to our paper.
 
 <div align="center">
-  <img src="images/output.png" width="80%">
+  <img src="images/output.png" width="100%">
 </div>
 
 ## Citation
