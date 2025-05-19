@@ -5,8 +5,12 @@
 [Xiangyu Zhao](https://scholar.google.com/citations?user=eqFr7IgAAAAJ&hl=zh-TW&oi=ao)\*,
 [Peiyuan Zhang](https://scholar.google.com.hk/citations?user=rQbW67AAAAAJ&hl=zh-CN)\*,
 [Kexian Tang](https://scholar.google.com/citations?user=cXjomd8AAAAJ&hl=zh-CN&oi=ao)\*,
+Xiaorong Zhu\*,
+
 [Hao Li](https://scholar.google.com/citations?user=qHqQsY4AAAAJ&hl=zh-TW&oi=sra),
+[Wenhao Chai](https://wenhaochai.com/),
 [Zicheng Zhang](https://zzc-1998.github.io/),
+[Renqiu Xia](https://scholar.google.com/citations?user=E520fqQAAAAJ&hl=zh-CN),
 
 [Guangtao Zhai](https://faculty.sjtu.edu.cn/zhaiguangtao/zh_CN/index.htm),
 [Junchi Yan](https://thinklab.sjtu.edu.cn/),
@@ -18,8 +22,8 @@
   <a href='https://arxiv.org/abs/2504.02826'>
     <img src='https://img.shields.io/badge/Paper-2504.02826-brown?style=flat&logo=arXiv' alt='arXiv PDF'>
   </a>
-  <a href='data'>
-    <img src='https://img.shields.io/badge/Data-Img&Json-blue?style=flat&logo=liquibase' alt='data img/data'>
+  <a href='https://huggingface.co/datasets/PhoenixZ/RISEBench'>
+    <img src='https://img.shields.io/badge/HF-RISEBench-blue?style=flat&logo=huggingface' alt='data img/data'>
   </a>
 
 If you find our work helpful, please consider giving us a ⭐ or citation :blush:
@@ -31,13 +35,18 @@ If you find our work helpful, please consider giving us a ⭐ or citation :blush
 </div>
 
 ## 🎉 News
-- **\[2025/04/08\]** **RISEBench is Scaling Up**! The final complete benchmark will be released soon. Stay tuned for updates!
+- **\[2025/05/19\]** We will update our arxiv paper soon.
+- **\[2025/05/19\]** **RISEBench Final Version(Scaled Up to 360 Samples) has been released!** Please refer to [huggingface](https://huggingface.co/datasets/PhoenixZ/RISEBench) for full data of RISEBench.
+- **\[2025/04/08\]** RISEBench is Scaling Up! The final complete benchmark will be released soon. Stay tuned for updates!
 - **\[2025/04/08\]** The benchmark and evaluation code have been released! Have fun :smiley: .
 - **\[2025/04/05\]** Our paper is released.
 - **\[2025/04/05\]** The benchmark and evaluation code will be released soon.
 
 ## 📖 Introduction
 
+<div align="center">
+  <img src="images/statis.png" width="50%">
+</div>
 
 In this work, we introduce **RISEBench**, the first benchmark for evaluating **R**easoning-**I**nformed vi**S**ual **E**diting (RISE). RISEBench focuses on four key reasoning types: *Temporal, Causal, Spatial*, and *Logical Reasoning*.
 
@@ -48,19 +57,19 @@ Besides, we design a robust **LMM-as-a-Judge** evaluation pipeline and leverage 
 **As an initial effort, RISEBench aims to provide foundational insights into reasoning-aware visual editing and to catalyze future research. Though still in its early stages, we are committed to continuously expanding and refining the benchmark to support more comprehensive, reliable, and scalable evaluations of next-generation multimodal systems.**
 
 <div align="center">
-  <img src="images/eval_dimension.png" width="100%">
+  <img src="images/judge.png" width="100%">
 </div>
 
 ## 🔥 Benchmark Performance
 To evaluate the performance of representative visual editing approaches, we selected a diverse set of models spanning multiple model architectures and generation paradigms. Specifically, Flux1.0-Canny serves as a representative diffusion-based editing model, while EMU2 exemplifies the auto-regressive generation paradigm. We also include three proprietary models: **GPT-4o(Previous)**, **Gemini 2.0-Flash**, and **GPT-4o-Native (2025-03-26)**. Since all of the proprietary models do not offer public APIs for programmatic evaluation, we obtained their outputs directly via their respective official online interfaces.
 
 <div align="center">
-  <img src="images/main1.png" width="100%">
+  <img src="images/results.png" width="100%">
 </div>
 
 
 <div align="center">
-  <img src="images/main2.png" width="80%">
+  <img src="images/metric_score.png" width="80%">
 </div>
 
 
@@ -71,6 +80,7 @@ Our benchmark dataset is stored in [`data_total.json`](data/data_total.json). Th
 
 **Output File Structure:**
 Generated outputs should be saved in the following directory structure:
+
 **`outputs/{MODEL_NAME}/images/{CATEGORY}/{INDEX_NAME}.{FORMAT}`**
 
 - `{MODEL_NAME}`: The name of the model you are using (e.g., `gpt-4o`).
@@ -104,10 +114,10 @@ After running the script, three result files will be generated in the `outputs/{
 3. **`{MODEL_NAME}.pkl`**: A serialized pickle file saving the raw responses from the judge model, which can be used to resume or extend evaluations later.
 
 ## 🔥 Outputs of Current Models
-We exhibit all outputs of the five models in the appendix. For more details, please refer to our paper.
+We exhibit some outputs of the five models in the appendix. For more details, please refer to our paper.
 
 <div align="center">
-  <img src="images/model_outputs.png" width="60%">
+  <img src="images/output.png" width="80%">
 </div>
 
 ## Citation

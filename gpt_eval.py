@@ -13,8 +13,31 @@ api_key = 'YOUR_API_KEY'
 api_base = 'YOUR_API_BASE'
 
 
-def gpt_generate(inputs, model='gpt-4o-2024-11-20', temperature=0, max_tokens=4096, image_size=768, **kwargs):
-    input_msgs = prepare_inputs(inputs)
+subtask_dic = {
+    "Temp": [
+        "Life Progression",
+        "Material Progression",
+        "Environmental Cycles",
+        "Societal Transformation",
+    ],
+    "Causal": [
+        "Structural Deformation",
+        "State Transition",
+        "Chemical and Biological Transformation",
+        "Physics Manifestation",
+    ],
+    "Spa": [
+        "Component Assembly",
+        "Object Arrangement",
+        "Viewpoint Generation",
+        "Structural Inference",
+        "Layout Reasoning",
+    ],
+    "Logic": ["Pattern Prediction", "Mathematical Derivation", "Puzzle Solving"],
+}
+
+def gpt_generate(inputs, model='gpt-4.1-2025-04-14', temperature=0, max_tokens=4096, image_size=768, **kwargs):
+    input_msgs = prepare_inputs(inputs, image_size=image_size)
     temperature = kwargs.pop('temperature', temperature)
     max_tokens = kwargs.pop('max_tokens', max_tokens)
     headers = {'Content-Type': 'application/json', 'Authorization': f'Bearer {api_key}'}
@@ -26,9 +49,22 @@ def gpt_generate(inputs, model='gpt-4o-2024-11-20', temperature=0, max_tokens=40
         n=1,
         temperature=temperature,
         **kwargs)
-    response = requests.post(
-        api_base,
-        headers=headers, data=json.dumps(payload), timeout=60)
+    print(f"Payload size: {len(json.dumps(payload).encode('utf-8')) / 1024:.2f} KB")
+    retries=5
+    for attempt in range(1, retries + 1):
+        try:
+            response = requests.post(
+                api_base,
+                headers=headers, data=json.dumps(payload), timeout=60)
+            break
+        except Exception as e:
+            print(f'{inputs}')
+            print(f"❌ [Attempt {attempt}/{retries}] Unexpected error: {e}")
+            last_exception = e
+            if attempt==retries:
+                raise e
+            time.sleep(3)
+
     ret_code = response.status_code
     ret_code = 0 if (200 <= int(ret_code) < 300) else ret_code
     answer = 'Failed to obtain answer via API. '
@@ -84,10 +120,16 @@ def track_progress_rich(
             new_finished = set()
             for idx in unfinished:
                 if futures[idx].done():
-                    results[idx] = futures[idx].result()
-                    new_finished.add(idx)
-                    if keys is not None:
-                        res[keys[idx]] = results[idx]
+                    exception = futures[idx].exception()
+                    if exception is not None:
+                        # print(f"❌ Task {idx} raised an exception: {exception}")
+                        raise exception
+                    else:
+                        results[idx] = futures[idx].result()
+                        # print(f"{idx} finished")
+                        new_finished.add(idx)
+                        if keys is not None:
+                            res[keys[idx]] = results[idx]
             if len(new_finished):
                 if save is not None:
                     dump(res, save)
@@ -114,65 +156,109 @@ def eval_vanilla(item, input_dir, output_dir, **kwargs):
     category = item['category']
     output_dir = osp.join(output_dir, f'images/{category}')
     img2 = find_image(output_dir, index)
-
+    judge_exist = item.get('judge', None)
+    judge_rea_require_img = False
+    
     if category in ['temporal_reasoning', 'causal_reasoning']:
         img1 = osp.join(input_dir, item['image'])
         reference = item['reference']
-        prompt1 = prompt_consist.format(instruct=instruct, reference=reference)
-        prompt2 = prompt_reasoning.format(instruct=instruct, reference=reference)
-        prompt3 = prompt_generation
+        if "reference_img" in item and not pd.isna(item['reasoning_img']):
+            judge_rea_require_img = True
+            prompt_rea = prompt_reasoning_w_input.format(instruct=instruct, reference=reference)
+        else:
+            prompt_rea = prompt_reasoning.format(instruct=instruct, reference=reference)
+
+        prompt_cons = prompt_consist.format(instruct=instruct)
+        prompt_qua = prompt_generation
 
     elif category == 'spatial_reasoning':
         img1 = osp.join(input_dir, item['image'])
-        reference = item['reference']
-        prompt1 = prompt_spatial_cons.format(instruct=instruct, reference=reference)
-        prompt2 = prompt_spatial_ref.format(instruct=instruct, reference=reference)
-        prompt3 = prompt_spatial_qual
+        if "reference_img" in item and not pd.isna(item['reference_img']):
+            judge_rea_require_img = True
+            img1 = osp.join(input_dir, item['reference_img'])
+            prompt_rea = prompt_spatial_ref_img.format(instruct=instruct)
+        elif not pd.isna(item['reasoning_img']):
+            judge_rea_require_img = True
+            reference = item['reference']
+            prompt_rea = prompt_spatial_ref_w_input.format(instruct=instruct, reference=reference)
+        else:
+            reference = item['reference']
+            prompt_rea = prompt_spatial_ref.format(instruct=instruct, reference=reference)
+
+        prompt_cons = prompt_spatial_cons.format(instruct=instruct)
+        prompt_qua = prompt_spatial_qual
 
     elif category == 'logical_reasoning':
         if "reference_txt" in item and not pd.isna(item['reference_txt']):
             img1 = osp.join(input_dir, item['image'])
             reference = item['reference_txt']
-            prompt1 = prompt_logical_txt.format(instruct=instruct, reference=reference)
+            prompt_cons = prompt_logical_cons_ans.format(instruct=instruct, reference=reference)
+            prompt_rea = prompt_logical_txt.format(instruct=instruct, reference=reference)
         elif "reference_img" in item and not pd.isna(item['reference_img']):
+            judge_rea_require_img=True
             img1 = osp.join(input_dir, item['reference_img'])
-            prompt1 = prompt_logical_img.format(instruct=instruct)
+            prompt_cons = prompt_logical_cons.format(instruct=instruct)
+            if 'reasoning_wo_ins' in item:
+                prompt_rea = prompt_logical_img_wo_q
+            else:
+                prompt_rea = prompt_logical_img.format(instruct=instruct)
 
-    message = []
-    text = {'type': 'text', 'value': prompt1}
-    image1 = {
-        'type': 'image',
-        'value': img1,
-    }
-    image2 = {
-        'type': 'image',
-        'value': img2,
-    }
+    if 'consistency_free' in item and not pd.isna(item['consistency_free']):
+        consist_judge = None
+        print('Consistency Judgement not required. Ignore.')
+    else:
+        if judge_exist and 'judge1' in judge_exist:
+            consist_judge = judge_exist['judge1']
+        else:
+            message = []
+            text = {'type': 'text', 'value': prompt_cons}
+            image1 = {
+                'type': 'image',
+                'value': img1,
+            }
+            image2 = {
+                'type': 'image',
+                'value': img2,
+            }
+            message.append(text)
+            message.append(image1)
+            message.append(image2)
+            print(message)
 
-    message.append(text)
-    message.append(image1)
-    message.append(image2)
-    print(message)
+            ret_code, consist_judge, response = gpt_generate(message, **kwargs)
 
-    ret_code, consist_judge, response = gpt_generate(message, **kwargs)
-    print(consist_judge)
+    if judge_exist and 'judge2' in judge_exist:
+        answer2 = judge_exist['judge2']
+    else:
+        if judge_rea_require_img:
+            message2 = [
+                {'type': 'text', 'value': prompt_rea}, 
+                {'type': 'image','value': img1},
+                {'type': 'image','value': img2}
+                ]
+        else:
+            message2 = [{'type': 'text', 'value': prompt_rea}, {
+                'type': 'image',
+                'value': img2,
+            }]
+        print(message2)
 
-    if category in ['temporal_reasoning', 'causal_reasoning', 'spatial_reasoning']:
-        message2 = [{'type': 'text', 'value': prompt2}, {
-            'type': 'image',
-            'value': img2,
-        }]
         ret_code2, answer2, response2 = gpt_generate(message2)
 
-        message3 = [{'type': 'text', 'value': prompt3}, {
-            'type': 'image',
-            'value': img2,
-        }]
-        ret_code3, answer3, response3 = gpt_generate(message3)
+    if category in ['temporal_reasoning', 'causal_reasoning', 'spatial_reasoning']:
+        if judge_exist and 'judge3' in judge_exist:
+            answer3 = judge_exist['judge3']
+        else:
+            message3 = [{'type': 'text', 'value': prompt_qua}, {
+                'type': 'image',
+                'value': img2,
+            }]
+            ret_code3, answer3, response3 = gpt_generate(message3)
 
         return dict(judge1=consist_judge, judge2=answer2, judge3=answer3)
     else:
-        return dict(judge1=consist_judge)
+        return dict(judge1=consist_judge, judge2=answer2)
+    return dict(judge1=consist_judge)
 
 
 def extract(answer):
@@ -199,13 +285,18 @@ def extract(answer):
     else:
         return None
 
-
 def calculate_score(row):
     if row['category'] in ['temporal_reasoning', 'causal_reasoning', 'spatial_reasoning']:
-        score = 0.4 * row['ImageConsistency'] + 0.4 * row['Reasoning'] + 0.2 * row['GenerationQuality']
-
+        if 'consistency_free' in row and row['consistency_free']:
+            score = 0.2 * row['GenerationQuality'] + 0.8 * row['Reasoning']
+        else:
+            score = 0.3 * row['ImageConsistency'] + 0.5 * row['Reasoning'] + 0.2 * row['GenerationQuality']
+        
     elif row['category'] == 'logical_reasoning':
-        score = 0.4 * row['ImageConsistency'] + 0.6 * row['Reasoning']
+        score = 0.3 * row['ImageConsistency'] + 0.7 * row['Reasoning']
+    if row['Reasoning'] == 1:
+        score = score * 0.5
+        score = 1 if score<1 else score
     return score
 
 def calculate_completion(row):
@@ -272,33 +363,66 @@ def main():
 
     judges = [result[i] for i in data['index']]
 
-    scores, judge_combine = [], []
+    scores, judge_combine, judge_cons, judge_reas, judge_qua = [], [], [], [], []
 
     for judge in judges:
-        if 'judge2' not in judge:
-            judge_combine.append(judge['judge1'])
-            score = [extract(judge['judge1'])[1], extract(judge['judge1'])[0]]
+        if judge['judge1'] is None:
+            judge_combine.append(
+                'REASONING\n\n'
+                + judge['judge2']
+                + '\n\nQUALITY\n\n'
+                + judge['judge3']
+            )
+            judge_cons.append(None)
+            judge_reas.append(judge['judge2'])
+            judge_qua.append(judge['judge3'])
+
+            score2 = extract(judge['judge2'])
+            score3 = extract(judge['judge3'])
+            if not score2 or not score3:
+                score=None
+            else:
+                score = [None]+score2+score3
         elif 'judge3' not in judge:
-            judge_combine.append('CONSISTENCY\n\n'+judge['judge1']+'\n\nREASOINING & QUALITY\n\n'+judge['judge2'])
+            judge_combine.append(
+                'CONSISTENCY\n\n'
+                + judge['judge1']
+                + '\n\nREASONING\n\n'
+                + judge['judge2']
+            )
+            judge_cons.append(judge['judge1'])
+            judge_reas.append(judge['judge2'])
+            judge_qua.append(None)
+
             score1 = extract(judge['judge1'])
             score2 = extract(judge['judge2'])
             if not score1 or not score2:
                 score=None
             else:
                 score = score1+score2
+        elif 'judge2' not in judge:
+            judge_combine.append(judge['judge1'])
+            score = [extract(judge['judge1'])[1], extract(judge['judge1'])[0]]
         else:
-            judge_combine.append(
-                'CONSISTENCY\n\n'
-                + judge['judge1']
-                + '\n\nREASOINING\n\n'
-                + judge['judge2']
-                + '\n\nQUALITY\n\n'
-                + judge['judge3']
-            )
+            try:
+                judge_combine.append(
+                    'CONSISTENCY\n\n'
+                    + judge['judge1']
+                    + '\n\nREASONING\n\n'
+                    + judge['judge2']
+                    + '\n\nQUALITY\n\n'
+                    + judge['judge3']
+                )
+                judge_cons.append(judge['judge1'])
+                judge_reas.append(judge['judge2'])
+                judge_qua.append(judge['judge3'])
+            except Exception as e:
+                print(e)
+                breakpoint()
             score1 = extract(judge['judge1'])
             score2 = extract(judge['judge2'])
             score3 = extract(judge['judge3'])
-            if not score1 or not score2:
+            if not score1 or not score2 or not score3:
                 score=None
             else:
                 score = score1+score2+score3
@@ -331,7 +455,10 @@ def main():
     data['ImageConsistency'] = img_consist
     data['GenerationQuality'] = gen_quality
     data['match_log'] = match_log
-    data['judge'] = judge_combine
+    # data['judge'] = judge_combine
+    data['judge_cons'] = judge_cons
+    data['judge_reas'] = judge_reas
+    data['judge_qua'] = judge_qua
 
     data['score'] = data.apply(calculate_score, axis=1)
     data['complete'] = data.apply(calculate_completion, axis=1)
@@ -345,26 +472,64 @@ def main():
 
     score_final = data['score'].mean()
     completion_rate = data['complete'].mean()
-    causal_final, causal_comp_rate = df_causal['score'].mean(), df_causal['complete'].mean()
+    
+    # calculate score and accuracy per main task
     temporal_final, temporal_comp_rate = df_temporal['score'].mean(), df_temporal['complete'].mean()
+    causal_final, causal_comp_rate = df_causal['score'].mean(), df_causal['complete'].mean()
     spatial_final, spatial_comp_rate = df_spatial['score'].mean(), df_spatial['complete'].mean()
     logical_final, logical_comp_rate = df_logical['score'].mean(), df_logical['complete'].mean()
-    ins_following_average = data['Reasoning'].mean()
+
+    reasoning_average = data['Reasoning'].mean()
     img_consist_average = data['ImageConsistency'].mean()
     generation_quality = data['GenerationQuality'].mean()
 
+    temp_rea_avg, temp_cons_avg, temp_qua_avg = df_temporal['Reasoning'].mean(), df_temporal['ImageConsistency'].mean(), df_temporal['GenerationQuality'].mean()
+    cau_rea_avg, cau_cons_avg, cau_qua_avg = df_causal['Reasoning'].mean(), df_causal['ImageConsistency'].mean(), df_causal['GenerationQuality'].mean()
+    spa_rea_avg, spa_cons_avg, spa_qua_avg = df_spatial['Reasoning'].mean(), df_spatial['ImageConsistency'].mean(), df_spatial['GenerationQuality'].mean()
+    logic_rea_avg, logic_cons_avg, logic_qua_avg = df_logical['Reasoning'].mean(), df_logical['ImageConsistency'].mean(), df_logical['GenerationQuality'].mean()
+
     def trans_to_percent(s):
         return 25*(s-1)
+    
+    # calculate score and accuracy per subtask
+    average_scores_by_subtask = data.groupby('subtask')['score'].mean()
+    average_acc_by_subtask = data.groupby('subtask')['complete'].mean()
+
+    average_scores_dict = average_scores_by_subtask.to_dict()
+    average_acc_dict = average_acc_by_subtask.to_dict()
+    
+    subtask_results = {}
+    for k, v in average_scores_dict.items():
+        subtask_results[k] = [v, trans_to_percent(v), average_acc_dict[k]]
+    
+    sorted_subtask_results = {}
+    for main_task_prefix, subtasks in subtask_dic.items():
+        for subtask in subtasks:
+            if subtask in subtask_results:
+                new_key = f"{main_task_prefix}-{subtask}"
+                sorted_subtask_results[new_key] = subtask_results[subtask]
 
     final_score = dict(
-        overall=[score_final, trans_to_percent(score_final), completion_rate],
-        causal_reasoning=[causal_final, trans_to_percent(causal_final), causal_comp_rate],
-        temporal_reasoning=[temporal_final, trans_to_percent(temporal_final), temporal_comp_rate],
-        spatial_reasoning=[spatial_final, trans_to_percent(spatial_final), spatial_comp_rate],
-        logical_reasoning=[logical_final, trans_to_percent(logical_final), logical_comp_rate],
-        Reasoning_total=[ins_following_average, trans_to_percent(ins_following_average), None],
-        ImageConsistency_total=[img_consist_average, trans_to_percent(img_consist_average), None],
-        GenearationQuality_total=[generation_quality, trans_to_percent(generation_quality), None],
+        Overall=[score_final, trans_to_percent(score_final), completion_rate],
+        Temporal=[temporal_final, trans_to_percent(temporal_final), temporal_comp_rate],
+        Causal=[causal_final, trans_to_percent(causal_final), causal_comp_rate],
+        Spatial=[spatial_final, trans_to_percent(spatial_final), spatial_comp_rate],
+        Logical=[logical_final, trans_to_percent(logical_final), logical_comp_rate],
+        Overall_Reasoning=[reasoning_average, trans_to_percent(reasoning_average), None],
+        Overall_ImageConsistency=[img_consist_average, trans_to_percent(img_consist_average), None],
+        Overall_GenearationQuality_total=[generation_quality, trans_to_percent(generation_quality), None],
+        Temporal_Reasoning = [temp_rea_avg, trans_to_percent(temp_rea_avg), None],
+        Temporal_Consistency = [temp_cons_avg, trans_to_percent(temp_cons_avg), None],
+        Temporal_Quality = [temp_qua_avg, trans_to_percent(temp_qua_avg), None],
+        Causal_Reasoning = [cau_rea_avg, trans_to_percent(cau_rea_avg), None],
+        Causal_Consistency = [cau_cons_avg, trans_to_percent(cau_cons_avg), None],
+        Causal_Quality = [cau_qua_avg, trans_to_percent(cau_qua_avg), None],
+        Spatial_Reasoning = [spa_rea_avg, trans_to_percent(spa_rea_avg), None],
+        Spatial_Consistency = [spa_cons_avg, trans_to_percent(spa_cons_avg), None],
+        Spatial_Quality = [spa_qua_avg, trans_to_percent(spa_qua_avg), None],
+        Logical_Reasoning = [logic_rea_avg, trans_to_percent(logic_rea_avg), None],
+        Logical_Consistency = [logic_cons_avg, trans_to_percent(logic_cons_avg), None],
+        **sorted_subtask_results
     )
 
     df = pd.DataFrame(final_score, index=["Score-Origin", "Score-Percentage", "Accuracy"]).T
