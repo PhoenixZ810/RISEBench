@@ -9,9 +9,10 @@ import re
 from utils import *
 
 
-api_key = 'YOUR_API_KEY'
-api_base = 'YOUR_API_BASE'
-
+# api_key = 'YOUR_API_KEY'
+# api_base = 'YOUR_API_BASE'
+api_key = 'sk-xFs6jVvnRZzjmiAx8b2184BfBc2840DaA28944FcAf3d5a82'
+api_base = 'http://172.30.16.79:6260/v1/chat/completions'
 
 subtask_dic = {
     "Temp": [
@@ -288,12 +289,12 @@ def extract(answer):
 def calculate_score(row):
     if row['category'] in ['temporal_reasoning', 'causal_reasoning', 'spatial_reasoning']:
         if 'consistency_free' in row and row['consistency_free']:
-            score = 0.2 * row['GenerationQuality'] + 0.8 * row['Reasoning']
+            score = 0.2 * row['VisualPlausibility'] + 0.8 * row['Reasoning']
         else:
-            score = 0.3 * row['ImageConsistency'] + 0.5 * row['Reasoning'] + 0.2 * row['GenerationQuality']
+            score = 0.3 * row['ApprConsistency'] + 0.5 * row['Reasoning'] + 0.2 * row['VisualPlausibility']
         
     elif row['category'] == 'logical_reasoning':
-        score = 0.3 * row['ImageConsistency'] + 0.7 * row['Reasoning']
+        score = 0.3 * row['ApprConsistency'] + 0.7 * row['Reasoning']
     if row['Reasoning'] == 1:
         score = score * 0.5
         score = 1 if score<1 else score
@@ -303,12 +304,12 @@ def calculate_completion(row):
     if row['category'] in ['temporal_reasoning', 'causal_reasoning', 'spatial_reasoning']:
         return (
             1
-            if row['ImageConsistency'] == 5 and row['Reasoning'] == 5 and row['GenerationQuality'] == 5
+            if row['ApprConsistency'] == 5 and row['Reasoning'] == 5 and row['VisualPlausibility'] == 5
             else 0
         )
     elif row['category']=='logical_reasoning':
         return (
-            1 if row['ImageConsistency'] == 5 and row['Reasoning'] == 5 else 0
+            1 if row['ApprConsistency'] == 5 and row['Reasoning'] == 5 else 0
         )
 
 
@@ -452,8 +453,8 @@ def main():
             match_log.append('failed')
     # breakpoint()
     data['Reasoning'] = reasoning
-    data['ImageConsistency'] = img_consist
-    data['GenerationQuality'] = gen_quality
+    data['ApprConsistency'] = img_consist
+    data['VisualPlausibility'] = gen_quality
     data['match_log'] = match_log
     # data['judge'] = judge_combine
     data['judge_cons'] = judge_cons
@@ -480,13 +481,13 @@ def main():
     logical_final, logical_comp_rate = df_logical['score'].mean(), df_logical['complete'].mean()
 
     reasoning_average = data['Reasoning'].mean()
-    img_consist_average = data['ImageConsistency'].mean()
-    generation_quality = data['GenerationQuality'].mean()
+    img_consist_average = data['ApprConsistency'].mean()
+    generation_quality = data['VisualPlausibility'].mean()
 
-    temp_rea_avg, temp_cons_avg, temp_qua_avg = df_temporal['Reasoning'].mean(), df_temporal['ImageConsistency'].mean(), df_temporal['GenerationQuality'].mean()
-    cau_rea_avg, cau_cons_avg, cau_qua_avg = df_causal['Reasoning'].mean(), df_causal['ImageConsistency'].mean(), df_causal['GenerationQuality'].mean()
-    spa_rea_avg, spa_cons_avg, spa_qua_avg = df_spatial['Reasoning'].mean(), df_spatial['ImageConsistency'].mean(), df_spatial['GenerationQuality'].mean()
-    logic_rea_avg, logic_cons_avg, logic_qua_avg = df_logical['Reasoning'].mean(), df_logical['ImageConsistency'].mean(), df_logical['GenerationQuality'].mean()
+    temp_rea_avg, temp_cons_avg, temp_qua_avg = df_temporal['Reasoning'].mean(), df_temporal['ApprConsistency'].mean(), df_temporal['VisualPlausibility'].mean()
+    cau_rea_avg, cau_cons_avg, cau_qua_avg = df_causal['Reasoning'].mean(), df_causal['ApprConsistency'].mean(), df_causal['VisualPlausibility'].mean()
+    spa_rea_avg, spa_cons_avg, spa_qua_avg = df_spatial['Reasoning'].mean(), df_spatial['ApprConsistency'].mean(), df_spatial['VisualPlausibility'].mean()
+    logic_rea_avg, logic_cons_avg, logic_qua_avg = df_logical['Reasoning'].mean(), df_logical['ApprConsistency'].mean(), df_logical['VisualPlausibility'].mean()
 
     def trans_to_percent(s):
         return 25*(s-1)
@@ -516,8 +517,8 @@ def main():
         Spatial=[spatial_final, trans_to_percent(spatial_final), spatial_comp_rate],
         Logical=[logical_final, trans_to_percent(logical_final), logical_comp_rate],
         Overall_Reasoning=[reasoning_average, trans_to_percent(reasoning_average), None],
-        Overall_ImageConsistency=[img_consist_average, trans_to_percent(img_consist_average), None],
-        Overall_GenearationQuality_total=[generation_quality, trans_to_percent(generation_quality), None],
+        Overall_ApprConsistency=[img_consist_average, trans_to_percent(img_consist_average), None],
+        Overall_VisualPlausibility_total=[generation_quality, trans_to_percent(generation_quality), None],
         Temporal_Reasoning = [temp_rea_avg, trans_to_percent(temp_rea_avg), None],
         Temporal_Consistency = [temp_cons_avg, trans_to_percent(temp_cons_avg), None],
         Temporal_Quality = [temp_qua_avg, trans_to_percent(temp_qua_avg), None],

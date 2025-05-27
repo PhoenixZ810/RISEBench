@@ -35,7 +35,7 @@ If you find our work helpful, please consider giving us a ⭐ or citation :blush
 </div>
 
 ## 🎉 News
-- **\[2025/05/19\]** We will update our arxiv paper soon.
+- **\[2025/05/27\]** Our paper has been updated! Please refer to [Arxiv](https://arxiv.org/pdf/2504.02826) for comprehensive details.
 - **\[2025/05/19\]** **RISEBench Final Version(Scaled Up to 360 Samples) has been released!** Please refer to [huggingface](https://huggingface.co/datasets/PhoenixZ/RISEBench) for full data of RISEBench.
 - **\[2025/04/08\]** RISEBench is Scaling Up! The final complete benchmark will be released soon. Stay tuned for updates!
 - **\[2025/04/08\]** The benchmark and evaluation code have been released! Have fun :smiley: .
@@ -64,12 +64,12 @@ Besides, we design a robust **LMM-as-a-Judge** evaluation pipeline and leverage 
 To evaluate the performance of representative visual editing approaches, we selected a diverse set of models spanning multiple model architectures and generation paradigms. Specifically, Flux1.0-Canny serves as a representative diffusion-based editing model, while EMU2 exemplifies the auto-regressive generation paradigm. We also include 8 proprietary models, including **GPT-4o-Image**, **Gemini 2.0-Flash-Experimental**, and **Gemini 2.0-Flash-Preview**. The outputs of proprietary models are given by the official API.
 
 <div align="center">
-  <img src="images/results.png" width="100%">
+  <img src="images/results.png" width="90%">
 </div>
 
 
 <div align="center">
-  <img src="images/metric_score.png" width="80%">
+  <img src="images/metric_score2.png" width="90%">
 </div>
 
 
