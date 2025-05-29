@@ -35,9 +35,9 @@ If you find our work helpful, please consider giving us a ⭐ or citation :blush
 </div>
 
 ## 🎉 News
-- **\[2025/05/27\]** We have released two versions of our benchmark suite: the full version, named **RISEBench-360**, and a smaller version, named **RISEBench-64**. You can find RISEBench-64 in our [repository](data). Feel free to choose the version that best suits your needs! :smiley:
+- **\[2025/05/27\]** We have released two versions of our benchmark suite: the full version, named **RISEBench-360**, and a smaller version, named **RISEBench-64**. The RISEBench-64 version is also available in our [repository](data) as an initial offering. Feel free to choose the version that best suits your needs! :smiley:
 - **\[2025/05/27\]** Our paper has been updated! Please refer to [Arxiv](https://arxiv.org/pdf/2504.02826) for comprehensive details.
-- **\[2025/05/19\]** **RISEBench Final Version(Scaled Up to 360 Samples) has been released!** Please refer to [huggingface](https://huggingface.co/datasets/PhoenixZ/RISEBench) for full data of RISEBench.
+- **\[2025/05/19\]** **RISEBench Final Version(Scaled Up to 360 Samples) has been released!** Please refer to [HF-RISEBench](https://huggingface.co/datasets/PhoenixZ/RISEBench) for full data of RISEBench.
 - **\[2025/04/08\]** RISEBench is Scaling Up! The final complete benchmark will be released soon. Stay tuned for updates!
 - **\[2025/04/08\]** The benchmark and evaluation code have been released! Have fun :smiley: .
 - **\[2025/04/05\]** Our paper is released.
