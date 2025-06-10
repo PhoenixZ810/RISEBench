@@ -9,10 +9,8 @@ import re
 from utils import *
 
 
-# api_key = 'YOUR_API_KEY'
-# api_base = 'YOUR_API_BASE'
-api_key = 'sk-xFs6jVvnRZzjmiAx8b2184BfBc2840DaA28944FcAf3d5a82'
-api_base = 'http://172.30.16.79:6260/v1/chat/completions'
+api_key = 'YOUR_API_KEY'
+api_base = 'YOUR_API_BASE'
 
 subtask_dic = {
     "Temp": [
