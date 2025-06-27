@@ -64,14 +64,65 @@ Besides, we design a robust **LMM-as-a-Judge** evaluation pipeline and leverage 
 ## 🔥 Benchmark Performance
 To evaluate the performance of representative visual editing approaches, we selected a diverse set of models spanning multiple model architectures and generation paradigms. Specifically, Flux1.0-Canny serves as a representative diffusion-based editing model, while EMU2 exemplifies the auto-regressive generation paradigm. We also include 8 proprietary models, including **GPT-4o-Image**, **Gemini 2.0-Flash-Experimental**, and **Gemini 2.0-Flash-Preview**. The outputs of proprietary models are given by the official API.
 
-<div align="center">
-  <img src="images/results.png" width="90%">
-</div>
-
 
 <div align="center">
-  <img src="images/metric_score2.png" width="90%">
+
+<h3>📊 Overall performance on RISEBench</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Temporal (%)</th>
+      <th>Causal (%)</th>
+      <th>Spatial (%)</th>
+      <th>Logical (%)</th>
+      <th>Overall (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>⭐ <b>GPT-4o-Image</b></td><td><b>34.1</b></td><td><b>32.2</b></td><td><b>37.0</b></td><td><b>10.6</b></td><td><b>28.9</b></td></tr>
+    <tr><td>Gemini-2.0-Flash-exp</td><td>8.2</td><td>15.5</td><td>23.0</td><td>4.7</td><td>13.3</td></tr>
+    <tr><td>Gemini-2.0-Flash-pre</td><td>10.6</td><td>13.3</td><td>11.0</td><td>2.3</td><td>9.4</td></tr>
+    <tr><td>BAGEL (w/ CoT)</td><td>5.9</td><td>17.8</td><td>21.0</td><td>1.2</td><td>11.9</td></tr>
+    <tr><td>BAGEL</td><td>2.4</td><td>5.6</td><td>14.0</td><td>1.2</td><td>6.1</td></tr>
+    <tr><td>Step1X-Edit</td><td>0.0</td><td>2.2</td><td>2.0</td><td>3.5</td><td>1.9</td></tr>
+    <tr><td>OmniGen</td><td>1.2</td><td>1.0</td><td>0.0</td><td>1.2</td><td>0.8</td></tr>
+    <tr><td>EMU2</td><td>1.2</td><td>1.1</td><td>0.0</td><td>0.0</td><td>0.5</td></tr>
+    <tr><td>HiDream-Edit</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+    <tr><td>FLUX.1-Canny</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+  </tbody>
+</table>
+
+<br>
+
+<h3>🎨 Comparison across models on three evaluation sub-dimensions</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>🧠 Instruction Reasoning</th>
+      <th>🪞 Appearance Consistency</th>
+      <th>👁️ Visual Plausibility</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>⭐ <b>GPT-4o-Image</b></td><td><b>62.8</b></td><td><b>80.2</b></td><td><b>94.9</b></td></tr>
+    <tr><td>Gemini-2.0-Pre</td><td>49.9</td><td>68.4</td><td>84.9</td></tr>
+    <tr><td>Gemini-2.0-Exp</td><td>48.9</td><td>68.2</td><td>82.7</td></tr>
+    <tr><td>BAGEL (w/ CoT)</td><td>45.9</td><td>73.8</td><td>80.1</td></tr>
+    <tr><td>BAGEL</td><td>36.5</td><td>53.5</td><td>73.0</td></tr>
+    <tr><td>HiDream-Edit</td><td>30.3</td><td>12.6</td><td>74.9</td></tr>
+    <tr><td>Step1X-Edit</td><td>25.1</td><td>41.5</td><td>73.5</td></tr>
+    <tr><td>EMU2</td><td>22.6</td><td>38.2</td><td>78.3</td></tr>
+    <tr><td>OmniGen</td><td>22.0</td><td>32.6</td><td>55.3</td></tr>
+    <tr><td>FLUX.1-Canny</td><td>20.2</td><td>13.1</td><td>77.5</td></tr>
+  </tbody>
+</table>
+
 </div>
+
 
 
 ## 🛠️ Quick Start
