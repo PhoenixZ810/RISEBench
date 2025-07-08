@@ -155,7 +155,7 @@ Open the `gpt_eval.py` file and update the following parameters with your OpenAI
 #### Step 2: Run the Evaluation Script
 Execute the script using the following command:
 ```bash
-python gpt_eval.py --input data/data_total.json --output outputs/MODEL_NAME
+python gpt_eval.py --data data/data_total.json --output outputs/MODEL_NAME
 ```
 
 #### Step 3: Review the Results
