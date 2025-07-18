@@ -28,6 +28,9 @@ Xiaorong Zhu\*,
   <a href='https://huggingface.co/spaces/opencompass/RISEBench_Gallery'>
     <img src='https://img.shields.io/badge/Gallery-ModelResults-blue?style=flat&logo=huggingface' alt='data img/data'>
   </a>
+  <a href='#leaderboard'>
+    <img src='https://img.shields.io/badge/Rank-Leaderboard-blue?style=flat&logo=flipboard' alt='data img/data'>
+  </a>
 
 If you find our work helpful, please consider giving us a ⭐ or citation :blush:
 
@@ -71,7 +74,7 @@ To evaluate the performance of representative visual editing approaches, we sele
 
 
 <div align="center">
-
+<a id="leaderboard"></a>
 <h3>📊 Overall performance on RISEBench</h3>
 
 <table>
