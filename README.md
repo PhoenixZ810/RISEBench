@@ -41,6 +41,7 @@ If you find our work helpful, please consider giving us a ⭐ or citation :blush
 </div>
 
 ## 🎉 News
+- **\[2025/08/07\]** We have updated the results of **FLUX.1-Kontext-dev**, thanks to /cc @ErfeiCui. 
 - **\[2025/07/8\]** We’ve launched a *HuggingFace Space* that hosts every image generated during our model evaluations. Dive into the gallery and explore the visual diversity of RISEBench, just click and enjoy! [Visit the gallery →](https://huggingface.co/spaces/opencompass/RISEBench_Gallery)
 - **\[2025/06/15\]** **RISEBench has been officially evaluated by BAGEL**, achieving third-highest overall performance(Thinking Mode) with results comparable to Gemini-2.0. Check [OfficialRepo](https://github.com/bytedance-seed/BAGEL) for details about evaluation. 
 - **\[2025/05/27\]** We have released two versions of our benchmark suite: the full version, named **RISEBench-360**, and a smaller version, named **RISEBench-64**. The RISEBench-64 version is also available in our [repository](data) as an initial offering. Feel free to choose the version that best suits your needs! :smiley:
@@ -94,6 +95,7 @@ To evaluate the performance of representative visual editing approaches, we sele
     <tr><td>Gemini-2.0-Flash-pre</td><td>10.6</td><td>13.3</td><td>11.0</td><td>2.3</td><td>9.4</td></tr>
     <tr><td>BAGEL (w/ CoT)</td><td>5.9</td><td>17.8</td><td>21.0</td><td>1.2</td><td>11.9</td></tr>
     <tr><td>BAGEL</td><td>2.4</td><td>5.6</td><td>14.0</td><td>1.2</td><td>6.1</td></tr>
+    <tr><td>FLUX.1-Kontext-Dev</td><td>2.3</td><td>5.5</td><td>13.0</td><td>1.2</td><td>5.8</td></tr>
     <tr><td>Ovis-U1</td><td>1.2</td><td>3.3</td><td>4.0</td><td>2.4</td><td>2.8</td></tr>
     <tr><td>Step1X-Edit</td><td>0.0</td><td>2.2</td><td>2.0</td><td>3.5</td><td>1.9</td></tr>
     <tr><td>OmniGen</td><td>1.2</td><td>1.0</td><td>0.0</td><td>1.2</td><td>0.8</td></tr>
@@ -122,6 +124,7 @@ To evaluate the performance of representative visual editing approaches, we sele
     <tr><td>Gemini-2.0-Exp</td><td>48.9</td><td>68.2</td><td>82.7</td></tr>
     <tr><td>BAGEL (w/ CoT)</td><td>45.9</td><td>73.8</td><td>80.1</td></tr>
     <tr><td>BAGEL</td><td>36.5</td><td>53.5</td><td>73.0</td></tr>
+    <tr><td>FLUX.1-Kontext-Dev</td><td>26.0</td><td>71.6</td><td>85.2</td></tr>
     <tr><td>Ovis-U1</td><td>33.9</td><td>52.7</td><td>72.9</td></tr>
     <tr><td>HiDream-Edit</td><td>30.3</td><td>12.6</td><td>74.9</td></tr>
     <tr><td>Step1X-Edit</td><td>25.1</td><td>41.5</td><td>73.5</td></tr>
