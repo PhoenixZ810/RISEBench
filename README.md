@@ -125,9 +125,9 @@ To evaluate the performance of representative visual editing approaches, we sele
   <tbody>
     <tr><td>⭐ <b>Gemini-2.5-Flash-Image</b></td><td><b>61.2</b></td><td><b>86.0</b></td><td><b>91.3</b></td></tr>
     <tr><td>GPT-Image-1</td><td>62.8</td><td>80.2</td><td>94.9</td></tr>
-    <tr><td>Gemini-2.0-Pre</td><td>49.9</td><td>68.4</td><td>84.9</td></tr>
+    <tr><td>Gemini-2.0-Flash-pre</td><td>49.9</td><td>68.4</td><td>84.9</td></tr>
     <tr><td>BAGEL (w/ CoT)</td><td>45.9</td><td>73.8</td><td>80.1</td></tr>
-    <tr><td>Gemini-2.0-Exp</td><td>48.9</td><td>68.2</td><td>82.7</td></tr>
+    <tr><td>Gemini-2.0-Flash-exp</td><td>48.9</td><td>68.2</td><td>82.7</td></tr>
     <tr><td>Qwen-Image-Edit</td><td>37.2</td><td>66.4</td><td>86.9</td></tr>
     <tr><td>BAGEL</td><td>36.5</td><td>53.5</td><td>73.0</td></tr>
     <tr><td>FLUX.1-Kontext-Dev</td><td>26.0</td><td>71.6</td><td>85.2</td></tr>
