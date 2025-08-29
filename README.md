@@ -41,6 +41,7 @@ If you find our work helpful, please consider giving us a ⭐ or citation :blush
 </div>
 
 ## 🎉 News
+- **\[2025/08/29\]** We have updated the results of **Gemini-2.5-Flash-Image**. The model now takes the top spot, surpassing GPT-4o-Image.
 - **\[2025/08/20\]** We have updated the results of **Qwen-Image-Edit**.
 - **\[2025/08/07\]** We have updated the results of **FLUX.1-Kontext-dev**, thanks to @[ErfeiCui](https://github.com/ErfeiCui). 
 - **\[2025/07/08\]** We’ve launched a *HuggingFace Space* that hosts every image generated during our model evaluations. Dive into the gallery and explore the visual diversity of RISEBench, just click and enjoy! [Visit the gallery →](https://huggingface.co/spaces/opencompass/RISEBench_Gallery)
@@ -91,7 +92,8 @@ To evaluate the performance of representative visual editing approaches, we sele
     </tr>
   </thead>
   <tbody>
-    <tr><td>⭐ <b>GPT-4o-Image</b></td><td><b>34.1</b></td><td><b>32.2</b></td><td><b>37.0</b></td><td><b>10.6</b></td><td><b>28.9</b></td></tr>
+    <tr><td>⭐ <b>Gemini-2.5-Flash-Image</b></td><td><b>25.9</b></td><td><b>47.8</b></td><td><b>37.0</b></td><td><b>18.8</b></td><td><b>32.8</b></td></tr>
+    <tr><td>GPT-4o-Image</td><td><b>34.1</b></td><td><b>32.2</b></td><td><b>37.0</b></td><td><b>10.6</b></td><td><b>28.9</b></td></tr>
     <tr><td>Gemini-2.0-Flash-exp</td><td>8.2</td><td>15.5</td><td>23.0</td><td>4.7</td><td>13.3</td></tr>
     <tr><td>BAGEL (w/ CoT)</td><td>5.9</td><td>17.8</td><td>21.0</td><td>1.2</td><td>11.9</td></tr>
     <tr><td>Gemini-2.0-Flash-pre</td><td>10.6</td><td>13.3</td><td>11.0</td><td>2.3</td><td>9.4</td></tr>
@@ -121,7 +123,8 @@ To evaluate the performance of representative visual editing approaches, we sele
     </tr>
   </thead>
   <tbody>
-    <tr><td>⭐ <b>GPT-4o-Image</b></td><td><b>62.8</b></td><td><b>80.2</b></td><td><b>94.9</b></td></tr>
+    <tr><td>⭐ <b>Gemini-2.5-Flash-Image</b></td><td><b>61.2</b></td><td><b>86.0</b></td><td><b>91.3</b></td></tr>
+    <tr><td>GPT-4o-Image</td><td><b>62.8</b></td><td><b>80.2</b></td><td><b>94.9</b></td></tr>
     <tr><td>Gemini-2.0-Pre</td><td>49.9</td><td>68.4</td><td>84.9</td></tr>
     <tr><td>BAGEL (w/ CoT)</td><td>45.9</td><td>73.8</td><td>80.1</td></tr>
     <tr><td>Gemini-2.0-Exp</td><td>48.9</td><td>68.2</td><td>82.7</td></tr>
