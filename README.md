@@ -41,6 +41,7 @@ If you find our work helpful, please consider giving us a ⭐ or citation :blush
 </div>
 
 ## 🎉 News
+- **\[2025/09/10\]** We have updated the results of **Seedream-4.0**.
 - **\[2025/08/29\]** We have updated the results of **Gemini-2.5-Flash-Image**. The model now takes the top spot, surpassing GPT-Image-1.
 - **\[2025/08/20\]** We have updated the results of **Qwen-Image-Edit**.
 - **\[2025/08/07\]** We have updated the results of **FLUX.1-Kontext-dev**, thanks to @[ErfeiCui](https://github.com/ErfeiCui). 
@@ -96,6 +97,7 @@ To evaluate the performance of representative visual editing approaches, we sele
     <tr><td>🥈 GPT-Image-1</td><td><b>34.1</b></td><td>32.2</td><td><b>37.0</b></td><td>10.6</td><td>28.9</td></tr>
     <tr><td>🥉 Gemini-2.0-Flash-exp</td><td>8.2</td><td>15.5</td><td>23.0</td><td>4.7</td><td>13.3</td></tr>
     <tr><td>BAGEL (w/ CoT)</td><td>5.9</td><td>17.8</td><td>21.0</td><td>1.2</td><td>11.9</td></tr>
+    <tr><td>Seedream-4.0</td><td>12.9</td><td>12.2</td><td>11.0</td><td>7.1</td><td>10.8</td></tr>
     <tr><td>Gemini-2.0-Flash-pre</td><td>10.6</td><td>13.3</td><td>11.0</td><td>2.3</td><td>9.4</td></tr>
     <tr><td>Qwen-Image-Edit</td><td>4.7</td><td>10.0</td><td>17.0</td><td>2.4</td><td>8.9</td></tr>
     <tr><td>BAGEL</td><td>2.4</td><td>5.6</td><td>14.0</td><td>1.2</td><td>6.1</td></tr>
@@ -127,6 +129,7 @@ To evaluate the performance of representative visual editing approaches, we sele
     <tr><td>🥈 GPT-Image-1</td><td><b>62.8</b></td><td>80.2</td><td><b>94.9</b></td></tr>
     <tr><td>🥉 Gemini-2.0-Flash-exp</td><td>48.9</td><td>68.2</td><td>82.7</td></tr>
     <tr><td>BAGEL (w/ CoT)</td><td>45.9</td><td>73.8</td><td>80.1</td></tr>
+    <tr><td>Seedream-4.0</td><td>58.9</td><td>67.4</td><td>91.2</td></tr>
     <tr><td>Gemini-2.0-Flash-pre</td><td>49.9</td><td>68.4</td><td>84.9</td></tr>
     <tr><td>Qwen-Image-Edit</td><td>37.2</td><td>66.4</td><td>86.9</td></tr>
     <tr><td>BAGEL</td><td>36.5</td><td>53.5</td><td>73.0</td></tr>
