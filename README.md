@@ -41,6 +41,7 @@ If you find our work helpful, please consider giving us a ⭐ or citation :blush
 </div>
 
 ## 🎉 News
+- **\[2025/09/19\]** Our paper has been accepted to NeurIPS 2025 (Datasets and Benchmarks Track, **Oral**)! 
 - **\[2025/09/10\]** We have updated the results of **Seedream-4.0**.
 - **\[2025/08/29\]** We have updated the results of **Gemini-2.5-Flash-Image**. The model now takes the top spot, surpassing GPT-Image-1.
 - **\[2025/08/20\]** We have updated the results of **Qwen-Image-Edit**.
