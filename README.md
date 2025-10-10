@@ -97,7 +97,7 @@ To evaluate the performance of representative visual editing approaches, we sele
   <tbody>
     <tr><td>🏆 <b>Gemini-2.5-Flash-Image</b></td><td>25.9</td><td><b>47.8</b></td><td><b>37.0</b></td><td><b>18.8</b></td><td><b>32.8</b></td></tr>
     <tr><td>🥈 GPT-Image-1</td><td><b>34.1</b></td><td>32.2</td><td><b>37.0</b></td><td>10.6</td><td>28.9</td></tr>
-    <tr><td>🥉 GPT-Image-1-mini</td><td><b>24.7</b></td><td>28.9</td><td><b>33.0</b></td><td>9.4</td><td>24.4</td></tr>
+    <tr><td>🥉 GPT-Image-1-mini</td><td>24.7</td><td>28.9</td><td><b>33.0</b></td><td>9.4</td><td>24.4</td></tr>
     <tr><td> Gemini-2.0-Flash-exp</td><td>8.2</td><td>15.5</td><td>23.0</td><td>4.7</td><td>13.3</td></tr>
     <tr><td>BAGEL (w/ CoT)</td><td>5.9</td><td>17.8</td><td>21.0</td><td>1.2</td><td>11.9</td></tr>
     <tr><td>Seedream-4.0</td><td>12.9</td><td>12.2</td><td>11.0</td><td>7.1</td><td>10.8</td></tr>
