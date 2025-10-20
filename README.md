@@ -25,6 +25,9 @@ Xiaorong Zhu\*,
   <a href='https://huggingface.co/datasets/PhoenixZ/RISEBench'>
     <img src='https://img.shields.io/badge/Huggingface-Data-blue?style=flat&logo=huggingface' alt='data img/data'>
   </a>
+  <a href='https://huggingface.co/datasets/zpy777/RISEBench_Outputs'>
+    <img src='https://img.shields.io/badge/Huggingface-Outputs-blue?style=flat&logo=huggingface' alt='outputs badge'>
+  </a>
   <a href='https://huggingface.co/spaces/opencompass/RISEBench_Gallery'>
     <img src='https://img.shields.io/badge/Gallery-ModelResults-blue?style=flat&logo=huggingface' alt='data img/data'>
   </a>
@@ -41,6 +44,7 @@ If you find our work helpful, please consider giving us a ⭐ or citation :blush
 </div>
 
 ## 🎉 News
+- **\[2025/10/20\]** We have open-sourced the output images of models. [Visit the outputs →](https://huggingface.co/datasets/zpy777/RISEBench_Outputs)
 - **\[2025/10/10\]** We have updated the results of **GPT-Image-1-mini**.
 - **\[2025/09/19\]** Our paper is accepted by NeurIPS Datasets and Benchmarks Track 2025 (**Oral, 7/1995**)! 
 - **\[2025/09/10\]** We have updated the results of **Seedream-4.0**.
