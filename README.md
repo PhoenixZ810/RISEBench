@@ -136,7 +136,7 @@ To evaluate the performance of representative visual editing approaches, we sele
     </tr>
   </thead>
   <tbody>
-    <tr><td>🏆 <b>GPT-Image-1.5</b></td><td>69.7</td><td><b>92.5</b>b></td><td><b>94.9</b></td></tr>
+    <tr><td>🏆 <b>GPT-Image-1.5</b></td><td>69.7</td><td><b>92.5</b></td><td><b>94.9</b></td></tr>
     <tr><td>🥈 Gemini-3-pro-image-preview (banana-pro)</td><td><b>77.0</b></td><td>85.5</td><td>94.4</td></tr>
     <tr><td>🥉 Gemini-2.5-Flash-Image (banana)</td><td>61.2</td><td>86.0</td><td>91.3</td></tr>
     <tr><td>GPT-Image-1</td><td>62.8</td><td>80.2</td><td><b>94.9</b></td></tr>
