@@ -135,9 +135,10 @@ To evaluate the performance of representative visual editing approaches, we sele
     </tr>
   </thead>
   <tbody>
-    <tr><td>🏆 <b>Gemini-3-pro-image-preview (banana-pro)</b></td><td><b>77.0</b></td><td>85.5</td><td>94.4</td></tr>
-    <tr><td>🥈 Gemini-2.5-Flash-Image (banana)</td><td>61.2</td><td><b>86.0</b></td><td>91.3</td></tr>
-    <tr><td>🥉 GPT-Image-1</td><td>62.8</td><td>80.2</td><td><b>94.9</b></td></tr>
+    <tr><td>🏆 <b>GPT-Image-1.5</b></td><td>69.7</td><td>92.5</td><td><b>94.9</b></td></tr>
+    <tr><td>🥈 <b>Gemini-3-pro-image-preview (banana-pro)</b></td><td><b>77.0</b></td><td>85.5</td><td>94.4</td></tr>
+    <tr><td>🥉 Gemini-2.5-Flash-Image (banana)</td><td>61.2</td><td>86.0</td><td>91.3</td></tr>
+    <tr><td>GPT-Image-1</td><td>62.8</td><td>80.2</td><td><b>94.9</b></td></tr>
     <tr><td>GPT-Image-1-mini</td><td>54.1</td><td>71.5</td><td>93.7</td></tr>
     <tr><td>Gemini-2.0-Flash-exp</td><td>48.9</td><td>68.2</td><td>82.7</td></tr>
     <tr><td>BAGEL (w/ CoT)</td><td>45.9</td><td>73.8</td><td>80.1</td></tr>
