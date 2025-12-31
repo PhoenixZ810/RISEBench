@@ -44,6 +44,7 @@ If you find our work helpful, please consider giving us a ⭐ or citation :blush
 </div>
 
 ## 🎉 News
+- **\[2025/12/31\]** We have updated the results of **Qwen-Image-Edit-2511**.
 - **\[2025/12/17\]** We have updated the results of **GPT-Image-1.5**. It is the first model to reach **50.0%** accuracy, setting a new SoTA, and we’re excited to see continuous progress as models push each other forward in this fast-moving competition. 🚀
 - **\[2025/11/22\]** We have updated the results of **Gemini-3-pro-image-preview**. It has achieved an impressive 47.2% SoTA accuracy! Absolutely incredible progress!
 - **\[2025/10/20\]** We have open-sourced the output images of models. [Visit the outputs →](https://huggingface.co/datasets/zpy777/RISEBench_Outputs)
@@ -106,11 +107,12 @@ To evaluate the performance of representative visual editing approaches, we sele
     <tr><td>🥉 Gemini-2.5-Flash-Image (banana)</td><td>25.9</td><td>47.8</td><td>37.0</td><td>18.8</td><td>32.8</td></tr>
     <tr><td>GPT-Image-1</td><td>34.1</td><td>32.2</td><td>37.0</td><td>10.6</td><td>28.9</td></tr>
     <tr><td>GPT-Image-1-mini</td><td>24.7</td><td>28.9</td><td>33.0</td><td>9.4</td><td>24.4</td></tr>
+    <tr><td>Qwen-Image-Edit-2511</td><td>21.2</td><td>18.9</td><td>31.0</td><td>4.7</td><td>19.4</td></tr>
     <tr><td>Gemini-2.0-Flash-exp</td><td>8.2</td><td>15.5</td><td>23.0</td><td>4.7</td><td>13.3</td></tr>
     <tr><td>BAGEL (w/ CoT)</td><td>5.9</td><td>17.8</td><td>21.0</td><td>1.2</td><td>11.9</td></tr>
     <tr><td>Seedream-4.0</td><td>12.9</td><td>12.2</td><td>11.0</td><td>7.1</td><td>10.8</td></tr>
     <tr><td>Gemini-2.0-Flash-pre</td><td>10.6</td><td>13.3</td><td>11.0</td><td>2.3</td><td>9.4</td></tr>
-    <tr><td>Qwen-Image-Edit</td><td>4.7</td><td>10.0</td><td>17.0</td><td>2.4</td><td>8.9</td></tr>
+    <tr><td>Qwen-Image-Edit-2509</td><td>4.7</td><td>10.0</td><td>17.0</td><td>2.4</td><td>8.9</td></tr>
     <tr><td>BAGEL</td><td>2.4</td><td>5.6</td><td>14.0</td><td>1.2</td><td>6.1</td></tr>
     <tr><td>FLUX.1-Kontext-Dev</td><td>2.3</td><td>5.5</td><td>13.0</td><td>1.2</td><td>5.8</td></tr>
     <tr><td>Ovis-U1</td><td>1.2</td><td>3.3</td><td>4.0</td><td>2.4</td><td>2.8</td></tr>
@@ -141,11 +143,12 @@ To evaluate the performance of representative visual editing approaches, we sele
     <tr><td>🥉 Gemini-2.5-Flash-Image (banana)</td><td>61.2</td><td>86.0</td><td>91.3</td></tr>
     <tr><td>GPT-Image-1</td><td>62.8</td><td>80.2</td><td><b>94.9</b></td></tr>
     <tr><td>GPT-Image-1-mini</td><td>54.1</td><td>71.5</td><td>93.7</td></tr>
+    <tr><td>Qwen-Image-Edit-2511</td><td>49.9</td><td>71.0</td><td>91.5</td></tr>
     <tr><td>Gemini-2.0-Flash-exp</td><td>48.9</td><td>68.2</td><td>82.7</td></tr>
     <tr><td>BAGEL (w/ CoT)</td><td>45.9</td><td>73.8</td><td>80.1</td></tr>
     <tr><td>Seedream-4.0</td><td>58.9</td><td>67.4</td><td>91.2</td></tr>
     <tr><td>Gemini-2.0-Flash-pre</td><td>49.9</td><td>68.4</td><td>84.9</td></tr>
-    <tr><td>Qwen-Image-Edit</td><td>37.2</td><td>66.4</td><td>86.9</td></tr>
+    <tr><td>Qwen-Image-Edit-2509</td><td>37.2</td><td>66.4</td><td>86.9</td></tr>
     <tr><td>BAGEL</td><td>36.5</td><td>53.5</td><td>73.0</td></tr>
     <tr><td>FLUX.1-Kontext-Dev</td><td>26.0</td><td>71.6</td><td>85.2</td></tr>
     <tr><td>Ovis-U1</td><td>33.9</td><td>52.7</td><td>72.9</td></tr>
