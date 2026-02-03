@@ -161,7 +161,7 @@ def eval_vanilla(item, input_dir, output_dir, **kwargs):
     if category in ['temporal_reasoning', 'causal_reasoning']:
         img1 = osp.join(input_dir, item['image'])
         reference = item['reference']
-        if "reference_img" in item and not pd.isna(item['reasoning_img']):
+        if not pd.isna(item['reasoning_img']):
             judge_rea_require_img = True
             prompt_rea = prompt_reasoning_w_input.format(instruct=instruct, reference=reference)
         else:
