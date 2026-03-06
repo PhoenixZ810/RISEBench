@@ -44,6 +44,7 @@ If you find our work helpful, please consider giving us a ⭐ or citation :blush
 </div>
 
 ## 🎉 News
+- **\[2026/3/6\]** We have updated the performance results for **Uni-1**, **Gemini-3.1-Flash-Image**, and **Qwen-Image-2** on the leaderboard. Thanks and congratulations to <a href="https://lumalabs.ai/uni-1">Uni-1</a>.
 - **\[2026/2/6\]** The video version of our work, **RISE-Video**, has been released —— Check it out here [👉]( https://github.com/VisionXLab/Rise-Video)
 - **\[2025/12/31\]** We have updated the results of **Qwen-Image-Edit-2511**.
 - **\[2025/12/17\]** We have updated the results of **GPT-Image-1.5**. It is the first model to reach **50.0%** accuracy, setting a new SoTA, and we’re excited to see continuous progress as models push each other forward in this fast-moving competition. 🚀
@@ -103,9 +104,12 @@ To evaluate the performance of representative visual editing approaches, we sele
     </tr>
   </thead>
   <tbody>
-    <tr><td>🏆 <b>GPT-Image-1.5</b></td><td><b>54.1</b></td><td>60.0</td><td><b>62.0</b></td><td>21.2</td><td><b>50.0</b></td></tr>
-    <tr><td>🥈 Gemini-3-pro-image-preview (banana-pro)</td><td>41.2</td><td><b>61.1</b></td><td>48.0</td><td><b>37.6</b></td><td>47.2</td></tr>
-    <tr><td>🥉 Gemini-2.5-Flash-Image (banana)</td><td>25.9</td><td>47.8</td><td>37.0</td><td>18.8</td><td>32.8</td></tr>
+    <tr><td>🏆 <b>Uni-1</b></td><td>49.0</td><td>63.0</td><td>58.0</td><td>32.0</td><td><b>51.0</b></td></tr>
+    <tr><td>🥈 Gemini-3.1-Flash-Image (Nano Banana 2)</td><td>48.0</td><td><b>64.0</b></td><td>47.0</td><td><b>38.0</b></td><td>50.0</td></tr>
+    <tr><td>🥈 GPT-Image-1.5</td><td><b>54.1</b></td><td>60.0</td><td><b>62.0</b></td><td>21.2</td><td>50.0</td></tr>
+    <tr><td>🥉 Gemini-3-pro-image-preview (Nano Banana-pro)</td><td>41.2</td><td>61.1</td><td>48.0</td><td>37.6</td><td>47.2</td></tr>
+    <tr><td>Gemini-2.5-Flash-Image (Nano Banana)</td><td>25.9</td><td>47.8</td><td>37.0</td><td>18.8</td><td>32.8</td></tr>
+    <tr><td>Qwen-Image-2</td><td>33.0</td><td>39.0</td><td>35.0</td><td>17.0</td><td>31.0</td></tr>
     <tr><td>GPT-Image-1</td><td>34.1</td><td>32.2</td><td>37.0</td><td>10.6</td><td>28.9</td></tr>
     <tr><td>GPT-Image-1-mini</td><td>24.7</td><td>28.9</td><td>33.0</td><td>9.4</td><td>24.4</td></tr>
     <tr><td>Qwen-Image-Edit-2511</td><td>21.2</td><td>18.9</td><td>31.0</td><td>4.7</td><td>19.4</td></tr>
