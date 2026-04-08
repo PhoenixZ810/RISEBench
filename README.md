@@ -44,8 +44,8 @@ If you find our work helpful, please consider giving us a ⭐ or citation :blush
 </div>
 
 ## 🎉 News
-- **\[2026/4/8\]** We’re excited to see [Luma](https://lumalabs.ai/uni-1/tech-specs) evaluate their model **Uni-1** on our benchmark and achieve strong results, congratulations!
-- **\[2026/2/6\]** The video version of our work, **RISE-Video**, has been released —— Check it out [here]( https://github.com/VisionXLab/Rise-Video)!
+- **\[2026/04/08\]** We’re excited to see [Luma](https://lumalabs.ai/uni-1/tech-specs) evaluate their model **Uni-1** on our benchmark and achieve strong results, congratulations!
+- **\[2026/02/06\]** The video version of our work, **RISE-Video**, has been released —— Check it out [here]( https://github.com/VisionXLab/Rise-Video)!
 - **\[2025/12/31\]** We have updated the results of **Qwen-Image-Edit-2511**.
 - **\[2025/12/17\]** We have updated the results of **GPT-Image-1.5**. It is the first model to reach **50.0%** accuracy, setting a new SoTA, and we’re excited to see continuous progress as models push each other forward in this fast-moving competition. 🚀
 - **\[2025/11/22\]** We have updated the results of **Gemini-3-pro-image-preview**. It has achieved an impressive 47.2% SoTA accuracy! Absolutely incredible progress!
