@@ -44,6 +44,7 @@ If you find our work helpful, please consider giving us a ⭐ or citation :blush
 </div>
 
 ## 🎉 News
+- **\[2026/4/8\]** We’re excited to see [Luma](https://lumalabs.ai/uni-1/tech-specs) evaluate their model Uni-1 on our benchmark and achieve strong results — congratulations!
 - **\[2026/2/6\]** The video version of our work, **RISE-Video**, has been released —— Check it out here [👉]( https://github.com/VisionXLab/Rise-Video)
 - **\[2025/12/31\]** We have updated the results of **Qwen-Image-Edit-2511**.
 - **\[2025/12/17\]** We have updated the results of **GPT-Image-1.5**. It is the first model to reach **50.0%** accuracy, setting a new SoTA, and we’re excited to see continuous progress as models push each other forward in this fast-moving competition. 🚀
@@ -216,9 +217,9 @@ We exhibit some outputs of the five models in the appendix. For more details, pl
 If you find RISEBench useful, please cite using this BibTeX:
 ```bibtex
 @article{zhao2025envisioning,
-  title={Envisioning Beyond the Pixels: Benchmarking Reasoning-Informed Visual Editing},
+  title={Envisioning beyond the pixels: Benchmarking reasoning-informed visual editing},
   author={Zhao, Xiangyu and Zhang, Peiyuan and Tang, Kexian and Li, Hao and Zhang, Zicheng and Zhai, Guangtao and Yan, Junchi and Yang, Hua and Yang, Xue and Duan, Haodong},
-  journal={arXiv preprint arXiv:2504.02826},
+  journal={Advances in neural information processing systems},
   year={2025}
 }
 ```
