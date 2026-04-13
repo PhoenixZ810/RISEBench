@@ -299,12 +299,24 @@ def calculate_score(row):
     return score
 
 def calculate_completion(row):
+    is_consistency_free = (
+        'consistency_free' in row
+        and not pd.isna(row['consistency_free'])
+    )
+
     if row['category'] in ['temporal_reasoning', 'causal_reasoning', 'spatial_reasoning']:
-        return (
-            1
-            if row['ApprConsistency'] == 5 and row['Reasoning'] == 5 and row['VisualPlausibility'] == 5
-            else 0
-        )
+        if is_consistency_free:
+            return (
+                1
+                if row['Reasoning'] == 5 and row['VisualPlausibility'] == 5
+                else 0
+            )
+        else:
+            return (
+                1
+                if row['ApprConsistency'] == 5 and row['Reasoning'] == 5 and row['VisualPlausibility'] == 5
+                else 0
+            )
     elif row['category']=='logical_reasoning':
         return (
             1 if row['ApprConsistency'] == 5 and row['Reasoning'] == 5 else 0
