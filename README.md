@@ -150,8 +150,8 @@ To evaluate the performance of representative visual editing approaches, we sele
     <tr><td>GPT-Image-1-mini</td><td>54.1</td><td>71.5</td><td>93.7</td></tr>
     <tr><td>Qwen-Image-Edit-2511</td><td>49.9</td><td>71.0</td><td>91.5</td></tr>
     <tr><td>Gemini-2.0-Flash-exp</td><td>48.9</td><td>68.2</td><td>82.7</td></tr>
-    <tr><td>BAGEL (w/ CoT)</td><td>45.9</td><td>73.8</td><td>80.1</td></tr>
     <tr><td>Seedream-4.0</td><td>58.9</td><td>67.4</td><td>91.2</td></tr>
+    <tr><td>BAGEL (w/ CoT)</td><td>45.9</td><td>73.8</td><td>80.1</td></tr>
     <tr><td>Gemini-2.0-Flash-pre</td><td>49.9</td><td>68.4</td><td>84.9</td></tr>
     <tr><td>Qwen-Image-Edit-2509</td><td>37.2</td><td>66.4</td><td>86.9</td></tr>
     <tr><td>BAGEL</td><td>36.5</td><td>53.5</td><td>73.0</td></tr>
