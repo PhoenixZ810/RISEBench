@@ -112,9 +112,9 @@ To evaluate the performance of representative visual editing approaches, we sele
     <tr><td>GPT-Image-1</td><td>36.5</td><td>34.4</td><td>37.0</td><td>10.6</td><td>30.0</td></tr>
     <tr><td>GPT-Image-1-mini</td><td>25.9</td><td>31.1</td><td>33.0</td><td>9.4</td><td>25.3</td></tr>
     <tr><td>Qwen-Image-Edit-2511</td><td>21.2</td><td>18.9</td><td>31.0</td><td>4.7</td><td>19.4</td></tr>
+    <tr><td>BAGEL (w/ CoT)</td><td>11.8</td><td>27.8</td><td>21.0</td><td>1.2</td><td>15.8</td></tr>
     <tr><td>Gemini-2.0-Flash-exp</td><td>9.4</td><td>16.7</td><td>23.0</td><td>4.7</td><td>13.9</td></tr>
     <tr><td>Seedream-4.0</td><td>17.6</td><td>13.3</td><td>11.0</td><td>7.1</td><td>12.2</td></tr>
-    <tr><td>BAGEL (w/ CoT)</td><td>5.9</td><td>17.8</td><td>21.0</td><td>1.2</td><td>11.9</td></tr>
     <tr><td>Gemini-2.0-Flash-pre</td><td>11.8</td><td>14.4</td><td>11.0</td><td>2.4</td><td>10.0</td></tr>
     <tr><td>Qwen-Image-Edit-2509</td><td>4.7</td><td>11.1</td><td>17.0</td><td>2.4</td><td>9.2</td></tr>
     <tr><td>BAGEL</td><td>2.4</td><td>5.6</td><td>14.0</td><td>1.2</td><td>6.1</td></tr>
@@ -149,9 +149,9 @@ To evaluate the performance of representative visual editing approaches, we sele
     <tr><td>GPT-Image-1</td><td>62.8</td><td>80.2</td><td><b>94.9</b></td></tr>
     <tr><td>GPT-Image-1-mini</td><td>54.1</td><td>71.5</td><td>93.7</td></tr>
     <tr><td>Qwen-Image-Edit-2511</td><td>49.9</td><td>71.0</td><td>91.5</td></tr>
+    <tr><td>BAGEL (w/ CoT)</td><td>47.6</td><td>75.6</td><td>81.7</td></tr>
     <tr><td>Gemini-2.0-Flash-exp</td><td>48.9</td><td>68.2</td><td>82.7</td></tr>
     <tr><td>Seedream-4.0</td><td>58.9</td><td>67.4</td><td>91.2</td></tr>
-    <tr><td>BAGEL (w/ CoT)</td><td>45.9</td><td>73.8</td><td>80.1</td></tr>
     <tr><td>Gemini-2.0-Flash-pre</td><td>49.9</td><td>68.4</td><td>84.9</td></tr>
     <tr><td>Qwen-Image-Edit-2509</td><td>37.2</td><td>66.4</td><td>86.9</td></tr>
     <tr><td>BAGEL</td><td>36.5</td><td>53.5</td><td>73.0</td></tr>
