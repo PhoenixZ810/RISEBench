@@ -117,7 +117,7 @@ To evaluate the performance of representative visual editing approaches, we sele
     <tr><td>Seedream-4.0</td><td>17.6</td><td>13.3</td><td>11.0</td><td>7.1</td><td>12.2</td></tr>
     <tr><td>Gemini-2.0-Flash-pre</td><td>11.8</td><td>14.4</td><td>11.0</td><td>2.4</td><td>10.0</td></tr>
     <tr><td>Qwen-Image-Edit-2509</td><td>4.7</td><td>11.1</td><td>17.0</td><td>2.4</td><td>9.2</td></tr>
-    <tr><td>BAGEL</td><td>2.4</td><td>5.6</td><td>14.0</td><td>1.2</td><td>6.1</td></tr>
+    <tr><td>BAGEL</td><td>3.5</td><td>4.4</td><td>14.0</td><td>0.0</td><td>5.8</td></tr>
     <tr><td>FLUX.1-Kontext-Dev</td><td>2.3</td><td>5.5</td><td>13.0</td><td>1.2</td><td>5.8</td></tr>
     <tr><td>Ovis-U1</td><td>1.1</td><td>3.3</td><td>4.0</td><td>2.4</td><td>2.8</td></tr>
     <tr><td>Step1X-Edit</td><td>0.0</td><td>2.2</td><td>2.0</td><td>3.5</td><td>1.9</td></tr>
@@ -154,7 +154,7 @@ To evaluate the performance of representative visual editing approaches, we sele
     <tr><td>Seedream-4.0</td><td>58.9</td><td>67.4</td><td>91.2</td></tr>
     <tr><td>Gemini-2.0-Flash-pre</td><td>49.9</td><td>68.4</td><td>84.9</td></tr>
     <tr><td>Qwen-Image-Edit-2509</td><td>37.2</td><td>66.4</td><td>86.9</td></tr>
-    <tr><td>BAGEL</td><td>36.5</td><td>53.5</td><td>73.0</td></tr>
+    <tr><td>BAGEL</td><td>36.4</td><td>58.7</td><td>72.0</td></tr>
     <tr><td>FLUX.1-Kontext-Dev</td><td>26.0</td><td>71.6</td><td>85.2</td></tr>
     <tr><td>Ovis-U1</td><td>33.9</td><td>52.7</td><td>72.9</td></tr>
     <tr><td>HiDream-Edit</td><td>30.3</td><td>12.6</td><td>74.9</td></tr>
