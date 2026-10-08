@@ -1,0 +1,1034 @@
+[
+  {
+    "index": "temporal_reasoning_1",
+    "category": "temporal_reasoning",
+    "subcategory": "common_sense_knowledge",
+    "task_type": "life_progression",
+    "instruction": "Draw what it will look like after being kept in a daily environment for a year.",
+    "image": [
+      "temporal_reasoning_images/1.png"
+    ],
+    "reference_txt": "Rotten, blackened banana.",
+    "reference_txt_chinese": "腐烂、发黑的香蕉。",
+    "instruction_chinese": "绘制在日常生活环境中存放一年后的样子。"
+  },
+  {
+    "index": "temporal_reasoning_2",
+    "category": "temporal_reasoning",
+    "subcategory": "common_sense_knowledge",
+    "task_type": "material_transformation",
+    "instruction": "Draw what it will look like after being placed outdoors for ten year.",
+    "image": [
+      "temporal_reasoning_images/2.png"
+    ],
+    "reference_txt": "Iron heavily rusted and corroded.",
+    "reference_txt_chinese": "严重锈蚀的铁。",
+    "instruction_chinese": "绘制放置在室外十年后的样子。"
+  },
+  {
+    "index": "temporal_reasoning_3",
+    "category": "temporal_reasoning",
+    "subcategory": "common_sense_knowledge",
+    "task_type": "natural_environmental_changes",
+    "instruction": "Draw what it looks like after being exposed to the sun for a day.",
+    "image": [
+      "temporal_reasoning_images/3.png"
+    ],
+    "reference_txt": "A street with mostly clear pavement and sidewalks, minimal remaining snow. Cars are free of snow coverage, and trees are bare with dry branches.",
+    "reference_txt_chinese": "街道上路面和人行道基本已清理干净，残留积雪极少。汽车上无积雪覆盖，树木光秃，枝条干枯。",
+    "instruction_chinese": "绘制在阳光下曝晒一天后的样子。"
+  },
+  {
+    "index": "temporal_reasoning_4",
+    "category": "temporal_reasoning",
+    "subcategory": "common_sense_knowledge",
+    "task_type": "physical_aging",
+    "instruction": "Draw what it will look like one hour later.",
+    "image": [
+      "temporal_reasoning_images/4.png"
+    ],
+    "reference_txt": "A glass of tea with leaves settled at the bottom, thoroughly steeped, and displaying a dark brown color.",
+    "reference_txt_chinese": "一杯茶，茶叶沉底，充分浸泡，呈深棕色。",
+    "instruction_chinese": "绘制一小时后的样子。"
+  },
+  {
+    "index": "temporal_reasoning_5",
+    "category": "temporal_reasoning",
+    "subcategory": "context_knowledge",
+    "task_type": "temporal_state_transition",
+    "instruction": "Draw what it will look like ten seconds later.",
+    "image": [
+      "temporal_reasoning_images/5.png"
+    ],
+    "reference_txt": "Calm water surface, with no ripples or waves.",
+    "reference_txt_chinese": "平静的水面，没有涟漪或波浪。",
+    "instruction_chinese": "绘制十秒后的样子。"
+  },
+  {
+    "index": "temporal_reasoning_6",
+    "category": "temporal_reasoning",
+    "subcategory": "disciplinary_knowledge",
+    "task_type": "geography",
+    "instruction": "Draw what it will look like after a century of global warming.",
+    "image": [
+      "temporal_reasoning_images/6.png"
+    ],
+    "reference_txt": "Vastly melted glacier, ice fragmented, significantly diminished, exposed land or water.",
+    "reasoning_img": "True",
+    "reference_txt_chinese": "大量融化的冰川，冰块碎裂，显著减少，露出土地或水面。",
+    "instruction_chinese": "绘制全球变暖一个世纪后的样子。"
+  },
+  {
+    "index": "temporal_reasoning_7",
+    "category": "temporal_reasoning",
+    "subcategory": "disciplinary_knowledge",
+    "task_type": "physics",
+    "instruction": "Draw what it will look like after 30 seconds in summer.",
+    "image": [
+      "temporal_reasoning_images/7.png"
+    ],
+    "reference_txt": "Dry leaf begins to smoke, and small flames flicker at the center of the focused sunlight.",
+    "reference_txt_chinese": "干树叶开始冒烟，聚焦的阳光中心闪烁着小火苗。",
+    "instruction_chinese": "绘制在夏天30秒后的样子。"
+  },
+  {
+    "index": "temporal_reasoning_8",
+    "category": "temporal_reasoning",
+    "subcategory": "disciplinary_knowledge",
+    "task_type": "chemistry",
+    "instruction": "Draw the result after adding the reagents from the figure one  to the flask in the figure two for 10 minutes.",
+    "image": [
+      "temporal_reasoning_images/8_1.png",
+      "temporal_reasoning_images/8_2.png"
+    ],
+    "multi_img": "True",
+    "consistency_img": "temporal_reasoning_images/8_cons.png",
+    "reference_img": "temporal_reasoning_images/8_ref.png",
+    "instruction_chinese": "将图一的试剂添加到图二的烧瓶中10分钟后，绘制结果。"
+  },
+  {
+    "index": "temporal_reasoning_9",
+    "category": "temporal_reasoning",
+    "subcategory": "context_knowledge",
+    "task_type": "action_sequence",
+    "instruction": "This is the action of a baseball player swinging the bat, hitting the ball, and following through. Assuming that these frames were collected at uniform time intervals, based on the images from Frame 1, Frame 3, predict what the image of Frame 2 in the sequence should look like. Generate the frame.",
+    "image": [
+      "temporal_reasoning_images/9_1.png",
+      "temporal_reasoning_images/9_2.png"
+    ],
+    "multi_img": "True",
+    "consistency_img": "temporal_reasoning_images/9_cons.png",
+    "reference_img": "temporal_reasoning_images/9_ref.png",
+    "instruction_chinese": "这是一名棒球运动员挥棒、击球和随挥的动作。假设这些帧是在均匀时间间隔下采集的，基于帧1和帧3的图像，预测序列中帧2的图像应该是什么样子。生成该帧。"
+  },
+  {
+    "index": "temporal_reasoning_10",
+    "category": "temporal_reasoning",
+    "subcategory": "context_knowledge",
+    "task_type": "position_change",
+    "instruction": "The person in the picture is rotating the wooden frame clockwise. Assuming that these frames were collected at uniform time intervals, based on the images from Frame 1, Frame 2, predict what the image of Frame 3 in the sequence should look like. Generate the frame.",
+    "image": [
+      "temporal_reasoning_images/10_1.png",
+      "temporal_reasoning_images/10_2.png"
+    ],
+    "multi_img": "True",
+    "consistency_img": "temporal_reasoning_images/10_cons.png",
+    "reference_img": "temporal_reasoning_images/10_ref.png",
+    "instruction_chinese": "图中的人正在顺时针旋转木框。假设这些帧是在均匀时间间隔下采集的，基于帧1和帧2的图像，预测序列中帧3的图像应该是什么样子。生成该帧。"
+  },
+  {
+    "index": "causal_reasoning_1",
+    "category": "causal_reasoning",
+    "subcategory": "common_sense_knowledge",
+    "task_type": "structural_damage",
+    "instruction": "Draw what it will look like after being bitten by people.",
+    "instruction_chinese": "画出它被人咬过后的样子。",
+    "image": [
+      "causal_reasoning_images/1.png"
+    ],
+    "reference_txt": "Apple with a visible bite mark, exposing its pale, juicy flesh beneath the red skin.",
+    "reference_txt_chinese": "带有明显咬痕的苹果，在红色的果皮下露出白色多汁的果肉。"
+  },
+  {
+    "index": "causal_reasoning_2",
+    "category": "causal_reasoning",
+    "subcategory": "common_sense_knowledge",
+    "task_type": "physical_state_transition",
+    "instruction": "Draw what it will look like after being roasted by fire.",
+    "instruction_chinese": "画出它被火烤过后的样子。",
+    "image": [
+      "causal_reasoning_images/2.png"
+    ],
+    "reference_txt": "Meat transformed into a cooked steak with a brown, seared outer crust and possibly grill marks or a caramelized surface.",
+    "reference_txt_chinese": "变成熟牛排的肉，表面有棕色的烤焦外皮，可能还有烤痕或焦糖化的表面。"
+  },
+  {
+    "index": "causal_reasoning_3",
+    "category": "causal_reasoning",
+    "subcategory": "context_knowledge",
+    "task_type": "magnitude_change",
+    "instruction": "Draw what it will look like after half of the liquid is poured out.",
+    "instruction_chinese": "画出倒出一半液体后它的样子。",
+    "image": [
+      "causal_reasoning_images/3.png"
+    ],
+    "reference_txt": "A glass half filled with cola.",
+    "reference_txt_chinese": "半杯可乐。"
+  },
+  {
+    "index": "causal_reasoning_4",
+    "category": "causal_reasoning",
+    "subcategory": "disciplinary_knowledge",
+    "task_type": "physics",
+    "instruction": "Draw what the scene will look like after placing a powerful magnet at the center of the paper clips.",
+    "instruction_chinese": "画出在回形针中心放置强力磁铁后场景的样子。",
+    "image": [
+      "causal_reasoning_images/4.png"
+    ],
+    "reference_txt": "All paper clips, including the green one, are pulled into a dense cluster around the magnet.",
+    "reference_txt_chinese": "所有回形针（包括绿色的）都被吸成一团，紧密地聚集在磁铁周围。"
+  },
+  {
+    "index": "causal_reasoning_5",
+    "category": "causal_reasoning",
+    "subcategory": "disciplinary_knowledge",
+    "task_type": "biology",
+    "instruction": "Draw the consequence of capillary action.",
+    "instruction_chinese": "画出毛细现象的结果。",
+    "image": [
+      "causal_reasoning_images/5.png"
+    ],
+    "reference_txt": "Rose petals showing vivid color veins matching the water color, with gradient effect from stem to petal tips.",
+    "reference_txt_chinese": "玫瑰花瓣显示出与水颜色相匹配的鲜艳的颜色脉络，具有从茎到花瓣尖端的渐变效果。"
+  },
+  {
+    "index": "causal_reasoning_6",
+    "category": "causal_reasoning",
+    "subcategory": "common_sense_knowledge",
+    "task_type": "flexible_deformation",
+    "instruction": "Draw what the balance scale in Figure 1 will look like after the orange from Figure 2 is placed on the right pan.",
+    "instruction_chinese": "画出将图二中的橘子放到图一天平右侧托盘上后的样子。",
+    "image": [
+      "causal_reasoning_images/6_1.png",
+      "causal_reasoning_images/6_2.png"
+    ],
+    "consistency_img": "causal_reasoning_images/6_cons.png",
+    "reference_img": "causal_reasoning_images/6_ref.png",
+    "multi_img": "True"
+  },
+  {
+    "index": "causal_reasoning_7",
+    "category": "causal_reasoning",
+    "subcategory": "disciplinary_knowledge",
+    "task_type": "chemistry",
+    "instruction": "Draw what the purple cabbage juice in Figure 1 will look like after the lemon juice from Figure 2 is poured into it.",
+    "instruction_chinese": "画出将图二中的柠檬汁倒入图一紫甘蓝汁后会是什么样子。",
+    "image": [
+      "causal_reasoning_images/7_1.png",
+      "causal_reasoning_images/7_2.png"
+    ],
+    "consistency_img": "causal_reasoning_images/7_cons.png",
+    "reference_img": "causal_reasoning_images/7_ref.png",
+    "multi_img": "True"
+  },
+  {
+    "index": "causal_reasoning_8",
+    "category": "causal_reasoning",
+    "subcategory": "disciplinary_knowledge",
+    "task_type": "astronomy",
+    "instruction": "Draw what it will look like if the moonlight is scattered by ice crystals in the upper atmosphere.",
+    "instruction_chinese": "画出月光被高空冰晶散射时的样子。",
+    "image": [
+      "causal_reasoning_images/8.png"
+    ],
+    "reference_txt": "A moon in the night sky above a snowy landscape, surrounded by a large faint circular halo.",
+    "reference_txt_chinese": "夜空中的月亮悬在雪地上方，周围有一圈较大而淡的圆形光环。"
+  },
+  {
+    "index": "causal_reasoning_9",
+    "category": "causal_reasoning",
+    "subcategory": "context_knowledge",
+    "task_type": "reading_offset",
+    "instruction": "Assuming that the apple in Figure 2 weighs 500 g, and the unit of the electronic scale reading is kg. Draw what the electronic scale in Figure 1 will look like after the apple is placed on it.",
+    "instruction_chinese": "假设图二中的苹果重量为 500 g，电子秤的读数单位是kg，画出将其放在图一电子秤上后的样子。",
+    "image": [
+      "causal_reasoning_images/9_1.png",
+      "causal_reasoning_images/9_2.png"
+    ],
+    "consistency_img": "causal_reasoning_images/9_cons.png",
+    "reference_img": "causal_reasoning_images/9_ref.png",
+    "multi_img": "True"
+  },
+  {
+    "index": "causal_reasoning_10",
+    "category": "causal_reasoning",
+    "subcategory": "context_knowledge",
+    "task_type": "order_relation",
+    "instruction": "Draw what the image will look like after removing the second largest red balloon.",
+    "instruction_chinese": "画出移除图中第二大的红色气球后的样子。",
+    "image": [
+      "causal_reasoning_images/10.png"
+    ],
+    "reference_img": "causal_reasoning_images/10_ref.png"
+  },
+  {
+    "index": "spatial_reasoning_1",
+    "category": "spatial_reasoning",
+    "subcategory": "relation",
+    "task_type": "direction",
+    "instruction": "Draw an image showing placing the pen to the right of the mouse.",
+    "image": [
+      "spatial_reasoning_images/1.png"
+    ],
+    "reference_img": "spatial_reasoning_images/1_ref.png",
+    "instruction_chinese": "画一幅图，展示如何将笔放在鼠标右侧。"
+  },
+  {
+    "index": "spatial_reasoning_2",
+    "category": "spatial_reasoning",
+    "subcategory": "relation",
+    "task_type": "adjacency",
+    "instruction": "Draw an image showing pairing the objects into pairs, and then swaping the positions of every two adjacent objects.",
+    "image": [
+      "spatial_reasoning_images/2.png"
+    ],
+    "reference_img": "spatial_reasoning_images/2_ref.png",
+    "instruction_chinese": "画一幅图，展示如何将物体两两配对，然后交换每两个相邻物体的位置。"
+  },
+  {
+    "index": "spatial_reasoning_3",
+    "category": "spatial_reasoning",
+    "subcategory": "relation",
+    "task_type": "size",
+    "instruction": "Draw an image showing the given objects arranged in a line from left to right according to the number of sides from fewest to most.",
+    "image": [
+      "spatial_reasoning_images/3.png"
+    ],
+    "reference_txt": "A sequence of shapes arranged from left to right by increasing number of sides: triangle, quadrilateral, pentagon, hexagon, and heptagon.",
+    "reference_txt_chinese": "从左到右按边数递增的顺序排列的形状序列：三角形、四边形、五边形、六边形、七边形。",
+    "instruction_chinese": "画一幅图，将给定的物体按边数从少到多从左到右排列成一行。"
+  },
+  {
+    "index": "spatial_reasoning_4",
+    "category": "spatial_reasoning",
+    "subcategory": "relation",
+    "task_type": "orientation",
+    "instruction": "Draw a picture of these two cats back to back.",
+    "image": [
+      "spatial_reasoning_images/4.png"
+    ],
+    "reference_txt": "Two cats back to back",
+    "reference_txt_chinese": "两只猫背靠背",
+    "instruction_chinese": "画出这两只猫背靠背的画面。"
+  },
+  {
+    "index": "spatial_reasoning_5",
+    "category": "spatial_reasoning",
+    "subcategory": "relation",
+    "task_type": "localization",
+    "instruction": "The first image is your current first-person perspective, the second is a map of the area. The last map shows the approximate location of the current camera marked with a red star.",
+    "image": [
+      "spatial_reasoning_images/5_1.png",
+      "spatial_reasoning_images/5_2.png"
+    ],
+    "reference_img": "spatial_reasoning_images/5_ref.png",
+    "instruction_chinese": "第一张图是你现在所处位置的第一视角，第二张是这个区域的地图。在最后一张地图上，用红星标记当前摄像机的大致位置。",
+    "multi_img": "True",
+    "consistency_img": "spatial_reasoning_images/5_2.png"
+  },
+  {
+    "index": "spatial_reasoning_6",
+    "category": "spatial_reasoning",
+    "subcategory": "structure",
+    "task_type": "part-whole_perception",
+    "instruction": "Draw an image that completes the provided object into a full porcelain cup.",
+    "image": [
+      "spatial_reasoning_images/6.png"
+    ],
+    "reference_txt": "A complete porcelain.",
+    "reference_txt_chinese": "一件完整的瓷器。",
+    "instruction_chinese": "画出一幅图，将提供的物体完整地变成一个瓷杯。"
+  },
+  {
+    "index": "spatial_reasoning_7",
+    "category": "spatial_reasoning",
+    "subcategory": "structure",
+    "task_type": "geometric_regularities_reasoning",
+    "instruction": "Choose one of the two shapes below the image and use it to complete the incomplete pattern above. Then draw the complete pattern.",
+    "image": [
+      "spatial_reasoning_images/7.png"
+    ],
+    "reference_txt": "A complete blue circle",
+    "reference_txt_chinese": "一个完整的蓝色圆圈",
+    "instruction_chinese": "从图片下方的两个形状中选择一个，用它来完成上方不完整的图案。然后画出完整的图案。"
+  },
+  {
+    "index": "spatial_reasoning_8",
+    "category": "spatial_reasoning",
+    "subcategory": "structure",
+    "task_type": "viewpoint_generation",
+    "instruction": "Draw an image showing a skyscraper viewed from far away, capturing the whole building.",
+    "image": [
+      "spatial_reasoning_images/8.png"
+    ],
+    "reference_txt": "The entire skyscraper is in the image, appearing smaller compared to its surroundings.",
+    "reference_txt_chinese": "整座摩天大楼都出现在画面中，与周围环境相比显得较小。",
+    "instruction_chinese": "画一幅从远处看摩天大楼的图像，要把整栋建筑都画出来。",
+    "reasoning_img": "True"
+  },
+  {
+    "index": "spatial_reasoning_9",
+    "category": "spatial_reasoning",
+    "subcategory": "structure",
+    "task_type": "environmental_structure_reasoning",
+    "instruction": "The last image shows your current location. Based on the previous images, draw the scene that appears to your right.",
+    "image": [
+      "spatial_reasoning_images/9_1.png",
+      "spatial_reasoning_images/9_2.png"
+    ],
+    "reference_img": "spatial_reasoning_images/9_ref.png",
+    "instruction_chinese": "最后一张图显示的是你当前的位置。根据之前的图片，画出你右侧看到的场景。",
+    "multi_img": "True",
+    "consistency_img": "spatial_reasoning_images/9_1.png"
+  },
+  {
+    "index": "spatial_reasoning_10",
+    "category": "spatial_reasoning",
+    "subcategory": "structure",
+    "task_type": "Egocentric_Scene_Reconstruction",
+    "instruction": "Generate a panoramic 3D Space image of the region based on the three egocentric local views. Use the camera indicated in the third image as the observation point and set the camera with an approximately 80° pitch relative to the ground plane. Ensure that all objects maintain consistent colors and shapes throughout the reconstructed 3D scene.",
+    "image": [
+      "spatial_reasoning_images/10_1.png",
+      "spatial_reasoning_images/10_2.png",
+      "spatial_reasoning_images/10_3.png"
+    ],
+    "reference_img": "spatial_reasoning_images/10_ref.png",
+    "instruction_chinese": "基于这三张第一视角的局部视图，以第三幅图中所标记的相机作为观察点，并设定相机与地面形成约 80° 的俯仰角，画出该区域的全景三维空间。要求各个物体在三维场景中的颜色与形状保持一致。",
+    "multi_img": "True",
+    "consistency_img": "spatial_reasoning_images/10_3.png"
+  },
+  {
+    "index": "logical_reasoning_1",
+    "category": "logical_reasoning",
+    "subcategory": "explicit_rule_deduction",
+    "task_type": "path_searching",
+    "instruction": "This is an image of a maze, where black represents obstacles and white represents walkable paths. Draw the path from the red dot to the green dot in blue.",
+    "image": [
+      "logical_reasoning_images/1.jpg"
+    ],
+    "reference_img": "logical_reasoning_images/1_ref.png",
+    "instruction_chinese": "这是一张迷宫图，黑色代表障碍，白色代表可通行路径。请用蓝色画出从红点到绿点的路径。"
+  },
+  {
+    "index": "logical_reasoning_2",
+    "category": "logical_reasoning",
+    "subcategory": "explicit_rule_deduction",
+    "task_type": "mathematical_derivation",
+    "instruction": "In the current graph, the numbers inside the circles represent node names, and the numbers inside the squares represent edge weights. Please draw the shortest path (with the minimum total weight) from node 1 to node 4 in red.",
+    "image": [
+      "logical_reasoning_images/2.png"
+    ],
+    "reference_txt": "The path indicated by the red line is from node 1 to node 2, then from node 2 to node 3, then from node 3 to node 6, then from node 6 to node 7, and finally from node 7 to node 4.",
+    "reference_txt_chinese": "红线标示的路径为从节点1到节点2，然后从节点2到节点3，然后从节点3到节点6，然后从节点6到节点7，最后从节点7到节点4。",
+    "instruction_chinese": "在当前图中，圆圈内的数字代表节点名称，方框内的数字代表路径权重。请用红色画出从节点1到节点4的最短路径（总权重最小）。"
+  },
+  {
+    "index": "logical_reasoning_3",
+    "category": "logical_reasoning",
+    "subcategory": "implicit_pattern_induction",
+    "task_type": "pattern_prediction",
+    "instruction": "Complete the shape represented by the question mark.",
+    "image": [
+      "logical_reasoning_images/3.png"
+    ],
+    "reference_img": "logical_reasoning_images/3_ref.png",
+    "instruction_chinese": "请画出问号所代表的图形，完成图案。"
+  },
+  {
+    "index": "logical_reasoning_4",
+    "category": "logical_reasoning",
+    "subcategory": "explicit_rule_deduction",
+    "task_type": "Puzzle_Solving",
+    "instruction": "Draw a curved arrow next to the orange gear to indicate its direction of rotation.",
+    "image": [
+      "logical_reasoning_images/4.png"
+    ],
+    "reference_txt": "Next to the orange gear, there is a curved arrow pointing in the clockwise direction.",
+    "reference_txt_chinese": "橙色齿轮旁有一个指向顺时针方向的弧形箭头。",
+    "instruction_chinese": "请在橙色齿轮旁画一个弧形箭头，指示其旋转方向。",
+    "reasoning_img": "True"
+  },
+  {
+    "index": "logical_reasoning_5",
+    "category": "logical_reasoning",
+    "subcategory": "explicit_rule_deduction",
+    "task_type": "path_searching",
+    "instruction": "The image shows a maze. \nRules:\n1. The maze consists of a grid of cells\n2. Walls are represented by black line between cells, not as cells themselves\n3. You can move horizontally or vertically between adjacent cells if there is no wall between them\n4. The goal is to find a path from the start cell (S) to the end cell (E)\n\nPlease draw the solution path with a red line.",
+    "image": [
+      "logical_reasoning_images/5.png"
+    ],
+    "reference_img": "logical_reasoning_images/5_ref.png",
+    "instruction_chinese": "图中展示了一个迷宫。\n规则：\n1. 迷宫由格子组成\n2. 墙壁用格子之间的黑线表示，墙壁本身不是格子\n3. 如果相邻格子之间没有墙壁，你可以在它们之间水平或垂直移动\n4. 目标是找到一条从起点格（S）到终点格（E）的路径\n\n请用红线画出解题路径。"
+  },
+  {
+    "index": "logical_reasoning_6",
+    "category": "logical_reasoning",
+    "subcategory": "implicit_pattern_induction",
+    "task_type": "visual_oddity_detection",
+    "instruction": "Circle the different patterns or combinations with red circles.",
+    "image": [
+      "logical_reasoning_images/6.png"
+    ],
+    "reference_img": "logical_reasoning_images/6_ref.png",
+    "instruction_chinese": "请用红色圆圈圈出不同的图案或组合。"
+  },
+  {
+    "index": "logical_reasoning_7",
+    "category": "logical_reasoning",
+    "subcategory": "implicit_pattern_induction",
+    "task_type": "rule_transfer",
+    "instruction": "Based on the input-output examples provided, infer the transformation rule and draw the correct output for the test input marked with a question mark.",
+    "image": [
+      "logical_reasoning_images/7_1.png",
+      "logical_reasoning_images/7_2.png",
+      "logical_reasoning_images/7_3.png"
+    ],
+    "reference_img": "logical_reasoning_images/7_ref.png",
+    "instruction_chinese": "根据提供的输入-输出示例，推断变换规则，并为标有问号的测试输入画出正确的输出。",
+    "multi_img": "True",
+    "consistency_img": "logical_reasoning_images/7_cons.png"
+  },
+  {
+    "index": "logical_reasoning_8",
+    "category": "logical_reasoning",
+    "subcategory": "implicit_pattern_induction",
+    "task_type": "rule_transfer",
+    "instruction": "Based on the input-output examples provided, infer the transformation rule and draw the correct output for the test input marked with a question mark.",
+    "image": [
+      "logical_reasoning_images/8_1.png",
+      "logical_reasoning_images/8_2.png",
+      "logical_reasoning_images/8_3.png"
+    ],
+    "reference_img": "logical_reasoning_images/8_ref.png",
+    "instruction_chinese": "根据提供的输入-输出示例，推断变换规则，并为标有问号的测试输入画出正确的输出。",
+    "multi_img": "True",
+    "consistency_img": "logical_reasoning_images/8_cons.png"
+  },
+  {
+    "index": "logical_reasoning_9",
+    "category": "logical_reasoning",
+    "subcategory": "implicit_pattern_induction",
+    "task_type": "rule_transfer",
+    "instruction": "Based on the input-output examples provided, infer the transformation rule and draw the correct output for the test input marked with a question mark.",
+    "image": [
+      "logical_reasoning_images/9_1.png",
+      "logical_reasoning_images/9_2.png",
+      "logical_reasoning_images/9_3.png"
+    ],
+    "reference_img": "logical_reasoning_images/9_ref.png",
+    "instruction_chinese": "根据提供的输入-输出示例，推断变换规则，并为标有问号的测试输入画出正确的输出。",
+    "multi_img": "True",
+    "consistency_img": "logical_reasoning_images/9_cons.png"
+  },
+  {
+    "index": "logical_reasoning_10",
+    "category": "logical_reasoning",
+    "subcategory": "explicit_rule_deduction",
+    "task_type": "game_deduction",
+    "instruction": "In the light switch game, clicking a cell will flip the state of that cell and its four adjacent cells (up, down, left, and right). The cell marked with a red box in the diagram is the cell to be clicked. Please draw the state of the 5x5 grid after clicking, and mark the cells whose state has changed with green boxes.",
+    "image": [
+      "logical_reasoning_images/10.png"
+    ],
+    "reference_img": "logical_reasoning_images/10_ref.png",
+    "instruction_chinese": "在灯光开关游戏中，点击某格会翻转它本身及上下左右四个相邻格的状态。图中标有红框的格子即为要点击的格子。请画出点击后的5×5格盘状态，并用绿色框标记状态产生了变化的格子。"
+  },
+  {
+    "index": "counterfactual_reasoning_1",
+    "category": "counterfactual_reasoning",
+    "subcategory": "anomaly_correction_and_generation",
+    "task_type": "anatomical_errors",
+    "instruction": "Correct the unreasonable body part of the animal in the image.",
+    "instruction_chinese": "纠正图像中动物不合理的身体部位。",
+    "image": [
+      "counterfactual_reasoning_images/1.png"
+    ],
+    "reference_txt": "A crab with two claws.",
+    "reference_txt_chinese": "一只有两只螯的螃蟹。"
+  },
+  {
+    "index": "counterfactual_reasoning_2",
+    "category": "counterfactual_reasoning",
+    "subcategory": "anomaly_correction_and_generation",
+    "task_type": "structural_anomalies",
+    "instruction": "Draw this motorcycle with square tires.",
+    "instruction_chinese": "画出这辆摩托车的轮胎变成方形的样子。",
+    "image": [
+      "counterfactual_reasoning_images/2.png"
+    ],
+    "reference_txt": "A motorcycle parked on an indoor floor, with both the front wheel and the rear wheel being square.",
+    "reference_txt_chinese": "一辆摩托车停放在室内地面上，前轮和后轮都呈方形。"
+  },
+  {
+    "index": "counterfactual_reasoning_3",
+    "category": "counterfactual_reasoning",
+    "subcategory": "anomaly_correction_and_generation",
+    "task_type": "relational_anomalies",
+    "instruction": "Correct the unreasonable reflection in the image.",
+    "instruction_chinese": "纠正图像中不合理的镜像反射。",
+    "image": [
+      "counterfactual_reasoning_images/3.png"
+    ],
+    "reference_txt": "A flower is placed in front of a mirror, and the flower inside the mirror is the same color as the flower outside the mirror.",
+    "reference_txt_chinese": "一枝花放在一面镜子前，且镜子内的花与镜子外的花颜色相同。"
+  },
+  {
+    "index": "counterfactual_reasoning_4",
+    "category": "counterfactual_reasoning",
+    "subcategory": "counterfactual_imagination",
+    "task_type": "history_counterfactual",
+    "instruction": "Assume that the Cold War did not occur in the 1960s. Draw the scene of this place under that assumption.",
+    "instruction_chinese": "假设 20 世纪 60 年代没有发生冷战，画出这个地方在该前提下的场景。",
+    "image": [
+      "counterfactual_reasoning_images/4.png"
+    ],
+    "reference_txt": "An open urban street scene with no concrete barrier wall, graffiti-covered wall, or border facilities.",
+    "reference_txt_chinese": "一个开放的城市街区场景，画面中没有混凝土隔离墙、涂鸦墙面或边境设施。"
+  },
+  {
+    "index": "counterfactual_reasoning_5",
+    "category": "counterfactual_reasoning",
+    "subcategory": "counterfactual_imagination",
+    "task_type": "astronomy_counterfactual",
+    "instruction": "Assume that Earth has no atmosphere. Draw this scene under that assumption.",
+    "instruction_chinese": "假设地球没有大气层，画出这个场景在该前提下的样子。",
+    "image": [
+      "counterfactual_reasoning_images/5.png"
+    ],
+    "reference_txt": "An upward-looking outdoor scene, with tree leaves and a building structure along the edges of the image. The sky is black, and the Sun appears as a bright disk with a sharp edge, with no halo, blue sky, or bright atmospheric scattering in the background.",
+    "reference_txt_chinese": "一个仰视的户外场景，画面边缘分布着树叶和建筑结构，天空呈黑色，太阳显示为边缘清晰的明亮圆盘，周围没有光晕、蓝天或大气散射形成的明亮背景。"
+  },
+  {
+    "index": "counterfactual_reasoning_6",
+    "category": "counterfactual_reasoning",
+    "subcategory": "counterfactual_imagination",
+    "task_type": "computer_science_counterfactual",
+    "instruction": "Assume that both push and pop operations on this stack are performed at the bottom. Repeatedly perform pop operations until element B is removed, and draw the stack after the operation.",
+    "instruction_chinese": "假设这个栈的入栈和出栈操作都在栈底进行，连续执行出栈操作直到元素 B 被取出，画出操作后的栈。",
+    "image": [
+      "counterfactual_reasoning_images/6.png"
+    ],
+    "reference_txt": "A stack frame with an open top contains the letter C positioned at the bottom of the stack.",
+    "reference_txt_chinese": "一个顶部开口的栈框内有一个位于栈底的字母 C。"
+  },
+  {
+    "index": "counterfactual_reasoning_7",
+    "category": "counterfactual_reasoning",
+    "subcategory": "counterfactual_imagination",
+    "task_type": "geography_counterfactual",
+    "instruction": "Assume that the Eurasian Plate and the African Plate move away from each other and continue to rift apart in the Mediterranean region. Draw the Mediterranean region 10 million years later.",
+    "instruction_chinese": "假设亚欧板块和非洲板块在地中海区域相互远离并持续张裂，画出 1000 万年后的地中海区域。",
+    "image": [
+      "counterfactual_reasoning_images/7.png"
+    ],
+    "reference_txt": "A satellite map of the Mediterranean region, with a clearly increased distance between the northern and southern shores of the Mediterranean. The central basin becomes wider, the east-west sea area expands overall, and a broader marine passage forms between the northern and southern landmasses.",
+    "reference_txt_chinese": "一幅地中海区域的卫星地图，地中海北岸与南岸之间的距离明显增大，中央海盆变得更宽，东西向海域整体扩张，北部陆地和南部陆地之间形成更开阔的海洋通道。",
+    "reasoning_img": "True"
+  },
+  {
+    "index": "counterfactual_reasoning_8",
+    "category": "counterfactual_reasoning",
+    "subcategory": "counterfactual_imagination",
+    "task_type": "music_theory_counterfactual",
+    "instruction": "Assume that half notes in the score have the duration of quarter notes, and quarter notes have the duration of eighth notes, while the note symbols remain unchanged. Modify only the upper number in the 4/4 time signature so that the measure duration matches the time signature.",
+    "instruction_chinese": "假设谱面中的二分音符时值变为四分音符，四分音符时值变为八分音符，音符符号保持不变。只修改拍号 4/4 中上方的数字，使这一小节的总时值与拍号相匹配。",
+    "image": [
+      "counterfactual_reasoning_images/8.png"
+    ],
+    "reference_txt": "The time signature becomes 2/4, with the upper number changed to 2 and the lower number remaining 4. The note symbols in the score remain unchanged.",
+    "reference_txt_chinese": "拍号变为 2/4，上方数字为 2，下方数字保持为 4，谱面中的音符符号保持不变。",
+    "reasoning_img": "True"
+  },
+  {
+    "index": "counterfactual_reasoning_9",
+    "category": "counterfactual_reasoning",
+    "subcategory": "counterfactual_imagination",
+    "task_type": "physical_counterfactual",
+    "instruction": "Assume this car is stationary on a slope and friction disappears. Draw the change in the scene.",
+    "instruction_chinese": "假设这辆车静止在斜坡上，且摩擦力消失。画出场景的变化。",
+    "image": [
+      "counterfactual_reasoning_images/9.png"
+    ],
+    "reference_txt": "The car is positioned lower on the slope and may even be out of the frame.",
+    "reference_txt_chinese": "这辆车位于斜坡上更低的位置，甚至可能离开画面。",
+    "reasoning_img": "True"
+  },
+  {
+    "index": "counterfactual_reasoning_10",
+    "category": "counterfactual_reasoning",
+    "subcategory": "counterfactual_imagination",
+    "task_type": "chemical_counterfactual",
+    "instruction": "Assume that iron is less metallic than copper. Draw the scene after the iron nail has been left in the beaker of blue copper sulfate solution for some time.",
+    "instruction_chinese": "假设铁的金属性比铜弱，画出铁钉在蓝色硫酸铜溶液烧杯中放置一段时间后的场景。",
+    "image": [
+      "counterfactual_reasoning_images/10.png"
+    ],
+    "reference_txt": "A transparent beaker containing blue copper sulfate solution, with a dark gray iron nail leaning diagonally inside the beaker. The nail surface is smooth and shows no copper-colored coating, and the solution remains uniformly blue.",
+    "reference_txt_chinese": "一个透明烧杯中装有蓝色硫酸铜溶液，一枚黑灰色铁钉斜靠在烧杯中，铁钉表面光滑且没有铜色附着层，溶液保持均匀蓝色。"
+  },
+  {
+    "index": "hybrid_reasoning_1",
+    "category": [
+      "causal_reasoning",
+      "causal_reasoning",
+      "temporal_reasoning"
+    ],
+    "subcategory": [
+      "context_knowledge",
+      "context_knowledge",
+      "common_sense_knowledge"
+    ],
+    "task_type": [
+      "reading_offset",
+      "magnitude_change",
+      "material_transformation"
+    ],
+    "instruction": [
+      "Draw the scene after reducing the prices on all the price tags by half.",
+      "Draw the scene after all the oranges have been sold out.",
+      "Draw the scene after the fruits have been left on the stall for 1 month."
+    ],
+    "instruction_chinese": [
+      "画出将所有价格标签上的价格降低一半后的场景。",
+      "画出橙子全部卖完后的场景。",
+      "画出水果在摊位上放置 1 个月后的场景。"
+    ],
+    "image": [
+      "hybrid_reasoning_images/1.png"
+    ],
+    "reference_txt": "All four price tags on the fruit stall show the reduced prices. Wherever the signs originally showed “10 yuan,” they now show “5 yuan,” while the quantity wording remains unchanged. The area at the back where the oranges were placed is now empty. Only green apples and red apples remain on the stall, and these fruits have clearly lost their shine, with visible shriveling and wrinkling, and some fruits also showing spoilage spots.",
+    "reference_txt_chinese": "水果摊上的四块价格标签都显示降价后的价格，其中原本写有“十元”的位置变为“五元”，其余数量表述保持不变。后方原先摆放橙子的区域已经空出来。摊位上只剩绿色苹果和红色苹果，这些水果表皮明显失去光泽，出现干瘪和皱缩，部分果实还有腐坏斑点。",
+    "reasoning_img": "True",
+    "multi_turn": "True"
+  },
+  {
+    "index": "hybrid_reasoning_2",
+    "category": [
+      "temporal_reasoning",
+      "causal_reasoning",
+      "causal_reasoning",
+      "spatial_reasoning"
+    ],
+    "subcategory": [
+      "common_sense_knowledge",
+      "common_sense_knowledge",
+      "disciplinary_knowledge",
+      "relation"
+    ],
+    "task_type": [
+      "life_progression",
+      "structural_damage",
+      "chemistry",
+      "orientation"
+    ],
+    "instruction": [
+      "Draw the scene after the water in the vase has not been changed for one month.",
+      "Draw the scene after cutting the lemon on the right.",
+      "Draw the scene after sprinkling baking soda onto the cut surface of the lemon.",
+      "Draw the scene after rotating the tray and the objects on it together by 180 degrees."
+    ],
+    "instruction_chinese": [
+      "画出花瓶里的水一个月都没有更换后的场景。",
+      "画出将右侧柠檬切开后的场景。",
+      "画出在切开的柠檬切面上撒上小苏打后的场景。",
+      "画出将托盘和上面的物体整体旋转 180° 后的场景。"
+    ],
+    "image": [
+      "hybrid_reasoning_images/2.png"
+    ],
+    "reference_txt": "The sunflowers in the white vase appear clearly wilted, with drooping flower heads, some curled petals, and limp leaves. The white tray in the middle has been rotated by 180 degrees. A white teacup is placed on the left side of the tray, with its handle pointing toward the right side of the image. A whole lemon remains on the right side inside the tray, while another lemon, cut into two halves with a single cut, is placed to the right outside the tray; the cut surfaces face upward, with white foam visible on them. Corresponding changes also appear in the mirror surface below.",
+    "reference_txt_chinese": "白色花瓶中的向日葵明显发蔫，花头下垂，部分花瓣卷曲，叶片也显得萎蔫。中间的白色托盘已经旋转了 180°，白色茶杯位于托盘左侧，杯柄朝向画面右侧；托盘内右侧仍放着一个完整柠檬，托盘外右侧放着另一个被一刀切成两瓣的柠檬，两瓣柠檬的切面朝上，切面上可见白色泡沫。下方镜面中也发生相应变化。",
+    "reasoning_img": "True",
+    "multi_turn": "True"
+  },
+  {
+    "index": "hybrid_reasoning_3",
+    "category": [
+      "temporal_reasoning",
+      "spatial_reasoning",
+      "temporal_reasoning"
+    ],
+    "subcategory": [
+      "common_sense_knowledge",
+      "structure",
+      "context_knowledge"
+    ],
+    "task_type": [
+      "natural_environmental_changes",
+      "viewpoint_generation",
+      "temporal_state_transition"
+    ],
+    "instruction": [
+      "Draw the scene on an overcast day.",
+      "Draw a top-down view of this cup.",
+      "Draw the scene 5 seconds after a small hole has been made in the bottom of the plastic cup."
+    ],
+    "instruction_chinese": [
+      "画出阴天时的场景。",
+      "画出这个杯子的俯视图。",
+      "画出从塑料杯杯底戳出一个小洞 5 秒后的场景。"
+    ],
+    "image": [
+      "hybrid_reasoning_images/3.png"
+    ],
+    "reference_txt": "A top-down view of a tabletop on an overcast day, showing a transparent plastic cup placed on a wooden table. The lighting is soft and slightly cool, with no strong highlights or sharply defined shadows on the cup or tabletop. There is exactly one small hole in the bottom of the plastic cup. A small amount of clear water remains in the cup, and the water surface is visible from above through the opening. There is a visible wet stain or a small puddle on the wooden tabletop around the cup.",
+    "reference_txt_chinese": "一张从正上方俯视的阴天桌面图像，画面中是一个放在木质桌面上的透明塑料杯。光线柔和偏冷，杯子和桌面上没有明显的强高光或清晰阴影。塑料杯有且仅有一个小洞在杯底。杯中仍有少量清水，水面可从杯口上方看到。杯子周围的木桌表面有明显的水渍或一小片积水。",
+    "multi_turn": "True"
+  },
+  {
+    "index": "hybrid_reasoning_4",
+    "category": [
+      "temporal_reasoning",
+      "causal_reasoning",
+      "counterfactual_reasoning"
+    ],
+    "subcategory": [
+      "context_knowledge",
+      "context_knowledge",
+      "counterfactual_imagination"
+    ],
+    "task_type": [
+      "precise_temporal_localization",
+      "magnitude_change",
+      "physical_counterfactual"
+    ],
+    "instruction": [
+      "Draw the scene 1 hour later.",
+      "Draw the scene after half of the milk in the taller glass bottle has been drunk.",
+      "Assume the top strawberries on the two cakes cannot reflect red wavelengths. Draw the final scene."
+    ],
+    "instruction_chinese": [
+      "画出 1 小时后的场景。",
+      "画出喝掉较高玻璃瓶中一半牛奶后的场景。",
+      "假设两个蛋糕最上方的草莓不能反射红色波段，画出最终场景。"
+    ],
+    "image": [
+      "hybrid_reasoning_images/4.png"
+    ],
+    "reference_txt": "The white alarm clock on the right shows about 8:00, with the hour hand pointing near 8. In the taller glass bottle at the center, the milk level has dropped to about half of its original level. On the two cakes on the white tray, the top strawberries no longer appear red and instead look nearly black or dark gray.",
+    "reference_txt_chinese": "右侧白色闹钟显示约 8 点，时针指向 8 附近。中间较高的玻璃瓶中，牛奶液面下降到原来的一半左右。白色托盘上的两个蛋糕顶部，最上方的草莓不再呈现红色，变成接近黑色或深灰色。",
+    "reasoning_img": "True",
+    "multi_turn": "True"
+  },
+  {
+    "index": "hybrid_reasoning_5",
+    "category": [
+      "temporal_reasoning",
+      "causal_reasoning",
+      "temporal_reasoning"
+    ],
+    "subcategory": [
+      "common_sense_knowledge",
+      "common_sense_knowledge",
+      "common_sense_knowledge"
+    ],
+    "task_type": [
+      "natural_environmental_changes",
+      "flexible_deformation",
+      "physical_aging"
+    ],
+    "instruction": [
+      "Assume the location is at around 35° north latitude and the current time is 10:00 AM. Draw the scene 8 hours later.",
+      "Draw the scene when there is no airflow in the air.",
+      "Draw the scene after these two shirts have been worn for 5 years."
+    ],
+    "instruction_chinese": [
+      "假设地点位于北纬 35° 附近，现在是上午 10 点，画出 8 小时后的场景。",
+      "画出空气中没有气流时的场景。",
+      "画出这两件衬衫被穿了 5 年后的场景。"
+    ],
+    "image": [
+      "hybrid_reasoning_images/5.png"
+    ],
+    "reference_txt": "A green long-sleeved shirt hangs on the left side of the clothesline, and a white long-sleeved shirt hangs on the right. The sky has a warm orange-yellow tone. Because there is no airflow in the air, both shirts hang down naturally instead of being blown outward. Both shirts have noticeable wrinkles on their surfaces, and the collar, cuffs, and hem show some wear. The green shirt is somewhat faded and appears lighter in color.",
+    "reference_txt_chinese": "晾衣绳上左侧挂着一件绿色长袖衬衫，右侧挂着一件白色长袖衬衫。天空带有偏暖的橙黄色光线。由于空气中没有气流，两件衬衫都自然下垂，不再明显向两侧飘起。两件衬衫表面都有较明显的褶皱，领口、袖口和下摆有一定磨损。绿色衬衫有一定程度的褪色，颜色变浅。",
+    "multi_turn": "True"
+  },
+  {
+    "index": "hybrid_reasoning_6",
+    "category": [
+      "spatial_reasoning",
+      "causal_reasoning",
+      "temporal_reasoning"
+    ],
+    "subcategory": [
+      "relation",
+      "disciplinary_knowledge",
+      "common_sense_knowledge"
+    ],
+    "task_type": [
+      "configuration",
+      "physics",
+      "social_activities"
+    ],
+    "instruction": [
+      "Draw the scene after swapping all the objects on the left and right sides of the sofa.",
+      "Draw the scene after changing all the blue cushions on the sofa to a color formed by blending red and blue.",
+      "Draw this living room during the Spring Festival."
+    ],
+    "instruction_chinese": [
+      "画出将沙发左侧和右侧的所有物体交换位置后的场景。",
+      "画出将沙发上所有蓝色靠枕改为由红色和蓝色融合形成的颜色后的场景。",
+      "画出这个客厅在春节期间的场景。"
+    ],
+    "image": [
+      "hybrid_reasoning_images/6.png"
+    ],
+    "reference_txt": "A living room decorated for the Spring Festival. Festive decorations such as a red “Fu” character and red hanging ornaments are visible on the wall above the sofa. In the center is a light-colored long sofa with six cushions. From left to right, the cushions are gray, purple, golden yellow, gray, gray, and purple. On the left side of the sofa, there is a small side table with a dark table lamp on it, and a blue stool beside the table. On the right side of the sofa, there is a floor lamp.",
+    "reference_txt_chinese": "一间带有春节装饰的客厅。沙发上方墙面可见春节装饰，如红色“福”字和红色挂饰。中间是一张浅色长沙发，沙发上共有六个靠枕，从左到右依次为灰色、紫色、金黄色、灰色、灰色、紫色。沙发左侧放着一张小边桌，桌上有一盏深色台灯，边桌旁有一个蓝色小凳。沙发右侧放着一盏落地灯。",
+    "multi_turn": "True"
+  },
+  {
+    "index": "hybrid_reasoning_7",
+    "category": [
+      "causal_reasoning",
+      "spatial_reasoning",
+      "logical_reasoning"
+    ],
+    "subcategory": [
+      "context_knowledge",
+      "relation",
+      "explicit_rule_deduction"
+    ],
+    "task_type": [
+      "order_relation",
+      "direction",
+      "game_deduction"
+    ],
+    "instruction": [
+      "Draw the board state after removing the red cannon.",
+      "Draw the board state after moving the red general one intersection downward.",
+      "Draw the final board state after Red makes one move to deliver checkmate against Black."
+    ],
+    "instruction_chinese": [
+      "画出移除红方炮后的棋盘状态。",
+      "画出将红方帅向下移动一格后的棋盘状态。",
+      "画出红方走一步即可将死黑方后的棋盘最终状态。"
+    ],
+    "image": [
+      "hybrid_reasoning_images/7.png"
+    ],
+    "multi_turn": "True",
+    "reference_img": "hybrid_reasoning_images/7_ref.png"
+  },
+  {
+    "index": "hybrid_reasoning_8",
+    "category": [
+      "spatial_reasoning",
+      "logical_reasoning",
+      "logical_reasoning",
+      "logical_reasoning"
+    ],
+    "subcategory": [
+      "relation",
+      "explicit_rule_deduction",
+      "explicit_rule_deduction",
+      "explicit_rule_deduction"
+    ],
+    "task_type": [
+      "orientation",
+      "mathematical_derivation",
+      "puzzle_solving",
+      "path_searching"
+    ],
+    "instruction": [
+      "Draw the image after rotating the entire 5×5 colored numeric matrix 180 degrees clockwise by rearranging the cell positions. During the rotation, treat each cell’s number and background color as one unit and rearrange them together, while keeping the matrix as a 5×5 grid.",
+      "Draw the image after swapping the positions of two columns: first compute the sum of each of the 5 columns, then identify the column with the largest sum and the column with the smallest sum, and swap those two columns. During the swap, treat each cell’s number and background color as one unit and move them together with their column. If there is a tie for the largest or smallest sum, choose the leftmost such column.",
+      "Draw the image after rearranging the cells of the matrix according to the specified spiral traversal order. Starting from the top-right cell of the original matrix, read the cells one by one in the direction sequence: left, down, right, and up. Whenever the next step would go outside the matrix boundary or enter a cell that has already been read, turn to the next direction, until all 25 cells have been read without reading any cell more than once. Then rearrange these cells in the matrix according to the reading order, placing them row by row from left to right and from top to bottom. In each cell, the number and the background color move together as one unit.",
+      "Draw the image after rearranging the 5×5 colored numeric matrix into a complete knight’s tour while minimizing the number of relocated colored numeric cells. In this task, each cell’s number and background color must be repositioned together as one unit. The value 0 represents the knight’s starting position, and the values 1 through 24 represent the subsequent visiting order. For every pair of consecutive numbers k and k+1, their cells must satisfy the chess knight’s move: when moving from the cell containing k to the cell containing k+1, the move must be 2 squares in one direction and 1 square in the perpendicular direction; that is, either 2 squares horizontally and 1 square vertically, or 2 squares vertically and 1 square horizontally."
+    ],
+    "instruction_chinese": [
+      "画出将整个 5×5 彩色数字矩阵按单元格位置顺时针旋转 180° 后的图像。旋转时，将每个单元格中的数字和背景颜色作为一个整体一起重排，并保持矩阵仍为 5×5 结构。",
+      "画出交换矩阵列位置后的图像：先计算 5 列中每一列数字的总和，找出列和最大的列与列和最小的列，并交换这两列的位置。交换时，将每个单元格中的数字和背景颜色作为一个整体随所在列一起移动。若存在并列最大或并列最小，则选择其中最靠左的一列。",
+      "画出将矩阵中的单元格按指定螺旋遍历顺序重排后的图像。从原矩阵右上角单元格开始，按向左、向下、向右、向上的顺序依次读取单元格；当下一步会超出矩阵边界，或进入已经读取过的单元格时，就转向下一个方向，直到所有 25 个单元格都被读取且不重复读取任何单元格。然后按照读取顺序，将这些单元格在矩阵中重新排列，排列顺序为从左到右、从上到下逐行进行。每个单元格中的数字和背景颜色作为一个整体一起移动。",
+      "画出将该 5×5 彩色数字矩阵重新排列为完整骑士巡游后的图像，并使被重新放置的彩色数字单元格数量尽可能少。规则是：每个单元格中的数字和背景颜色必须作为一个整体一起重新放置；0 表示骑士的起始位置，1 到 24 表示之后的访问顺序。对于任意相邻的两个数字 k 和 k+1，它们所在单元格的位置必须满足国际象棋中骑士的走法，即从数字 k 所在单元格移动到数字 k+1 所在单元格时，必须在一个方向上移动 2 格，并在与之垂直的另一个方向上移动 1 格；也就是说，要么先横向移动 2 格再纵向移动 1 格，要么先纵向移动 2 格再横向移动 1 格。"
+    ],
+    "image": [
+      "hybrid_reasoning_images/8.png"
+    ],
+    "multi_turn": "True",
+    "reference_img": "hybrid_reasoning_images/8_ref.png"
+  },
+  {
+    "index": "hybrid_reasoning_9",
+    "category": [
+      "causal_reasoning",
+      "causal_reasoning",
+      "causal_reasoning"
+    ],
+    "subcategory": [
+      "disciplinary_knowledge",
+      "disciplinary_knowledge",
+      "disciplinary_knowledge"
+    ],
+    "task_type": [
+      "biology",
+      "biology",
+      "biology"
+    ],
+    "instruction": [
+      "Draw the scene after inserting one transparent test tube into each of the 1st, 3rd, and 5th slots from left to right in the rack. Each test tube contains an equal-volume mixture of starch solution and sufficient salivary amylase. The starch concentration, enzyme amount, pH, and treatment time are the same in all three test tubes, and only the treatment temperature differs: the test tube in the 1st slot from left to right has been treated in ice water for 15 minutes, the test tube in the 3rd slot from left to right has been treated in a 37°C water bath for 15 minutes, and the test tube in the 5th slot from left to right has been treated in boiling water for 15 minutes.",
+      "Draw the scene after adding the same amount of iodine solution to the three test tubes in the 1st, 3rd, and 5th slots from left to right and shaking them thoroughly. The initial mixtures in the three test tubes are, respectively, a starch solution and salivary amylase mixture treated in ice water for 15 minutes, a starch solution and salivary amylase mixture treated in a 37°C water bath for 15 minutes, and a starch solution and salivary amylase mixture treated in boiling water for 15 minutes.",
+      "Draw the scene after inserting a transparent test tube into the 6th slot from left to right in the rack, containing the reaction material after glucose solution is mixed with Benedict’s reagent and heated in a hot water bath for a period of time."
+    ],
+    "instruction_chinese": [
+      "画出在试管架自左到右第 1、第 3、第 5 个槽位中各插入一支透明试管后的场景。三支试管中都装有等体积的淀粉溶液与足量唾液淀粉酶混合液，三支试管中的淀粉浓度、酶用量、pH 和处理时间均相同，只有处理温度不同：自左到右第 1 个槽位中的试管已经在冰水中处理 15 分钟，自左到右第 3 个槽位中的试管已经在 37℃ 水浴中处理 15 分钟，自左到右第 5 个槽位中的试管已经在沸水中处理 15 分钟。",
+      "画出向试管架自左到右第 1、第 3、第 5 个槽位中的三支试管分别滴加等量碘液并充分振荡后的场景。三支试管中的初始混合液分别为：冰水中处理 15 分钟后的淀粉溶液与唾液淀粉酶混合液、37℃ 水浴中处理 15 分钟后的淀粉溶液与唾液淀粉酶混合液、沸水中处理 15 分钟后的淀粉溶液与唾液淀粉酶混合液。",
+      "画出在试管架自左到右第 6 个槽位中插入一支透明试管后的场景，试管中装有葡萄糖溶液与本尼迪特试剂混合并在热水浴中加热一段时间后的反应物。"
+    ],
+    "image": [
+      "hybrid_reasoning_images/9.png"
+    ],
+    "reference_txt": "A test-tube rack is placed on a light-colored laboratory bench. Transparent test tubes are inserted into the 1st, 3rd, 5th, and 6th slots from left to right, while the 2nd and 4th slots from left to right are empty. The liquid in the test tube in the 1st slot from left to right is dark blue-black. The liquid in the test tube in the 3rd slot from left to right is pale yellow-brown or brownish-yellow, with no obvious blue-black color. The liquid in the test tube in the 5th slot from left to right is dark blue-black. The test tube in the 6th slot from left to right contains a brick-red precipitate, and the liquid appears slightly cloudy.",
+    "reference_txt_chinese": "浅色实验台上放着一个试管架，试管架自左到右第 1、第 3、第 5、第 6 个槽位中各插有一支透明试管，自左到右第 2 和第 4 个槽位为空。自左到右第 1 个槽位中的试管内液体呈深蓝黑色。自左到右第 3 个槽位中的试管内液体呈浅黄褐色或棕黄色，没有明显蓝黑色。自左到右第 5 个槽位中的试管内液体呈深蓝黑色。自左到右第 6 个槽位中的试管内有砖红色沉淀，液体略显浑浊。",
+    "multi_turn": "True"
+  },
+  {
+    "index": "hybrid_reasoning_10",
+    "category": [
+      "causal_reasoning",
+      "causal_reasoning",
+      "temporal_reasoning",
+      "spatial_reasoning"
+    ],
+    "subcategory": [
+      "context_knowledge",
+      "context_knowledge",
+      "common_sense_knowledge",
+      "relation"
+    ],
+    "task_type": [
+      "magnitude_change",
+      "magnitude_change",
+      "physical_state_transition",
+      "configuration"
+    ],
+    "instruction": [
+      "Draw the scene after pouring out half of the milk in the glass.",
+      "Draw the scene after removing half of the cookies; if the total number of cookies is odd, round the number to remove up to the nearest whole number.",
+      "Draw the scene after heating the milk in the glass for 1 minute.",
+      "Draw the scene after placing one cookie into the glass of milk."
+    ],
+    "instruction_chinese": [
+      "画出将玻璃杯中的牛奶倒掉一半后的场景。",
+      "画出取走一半数量饼干后的场景；如果饼干总数为奇数，则取走的数量按一半向上取整。",
+      "画出将玻璃杯中的牛奶加热 1 分钟后的场景。",
+      "画出将一块饼干放入牛奶杯中的场景。"
+    ],
+    "image": [
+      "hybrid_reasoning_images/10.png"
+    ],
+    "reference_txt": "There is a glass in the image, and the milk level is about half the height of the glass, with slight steam visible near the rim. One cookie is in the glass, partially immersed in the milk. There are two cookies on the right side of the image.",
+    "reference_txt_chinese": "画面中有一个玻璃杯，杯中牛奶液面约为杯身高度的一半，杯口附近可见轻微热气。玻璃杯中有一块饼干，饼干部分浸入牛奶中。画面右侧有两块饼干。",
+    "multi_turn": "True"
+  }
+]

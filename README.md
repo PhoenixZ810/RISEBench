@@ -1,49 +1,73 @@
 <div align="center">
 
-# Envisioning Beyond the Pixels: Benchmarking Reasoning-Informed Visual Editing
+# Reasoning-Informed Visual Editing
 
-[Xiangyu Zhao](https://scholar.google.com/citations?user=eqFr7IgAAAAJ&hl=zh-TW&oi=ao)\*,
-[Peiyuan Zhang](https://scholar.google.com.hk/citations?user=rQbW67AAAAAJ&hl=zh-CN)\*,
-[Kexian Tang](https://scholar.google.com/citations?user=cXjomd8AAAAJ&hl=zh-CN&oi=ao)\*,
-Xiaorong Zhu\*,
+**RISEBench · RISEBench++ · RISE-Video**
 
-[Hao Li](https://scholar.google.com/citations?user=qHqQsY4AAAAJ&hl=zh-TW&oi=sra),
-[Wenhao Chai](https://wenhaochai.com/),
-[Zicheng Zhang](https://zzc-1998.github.io/),
-[Renqiu Xia](https://scholar.google.com/citations?user=E520fqQAAAAJ&hl=zh-CN),
+[RISEBench](RISEBench/README.md) · [RISEBench++](RISEBench++/README.md) · [RISE-Video](https://github.com/VisionXLab/Rise-Video)
 
-[Guangtao Zhai](https://faculty.sjtu.edu.cn/zhaiguangtao/zh_CN/index.htm),
-[Junchi Yan](https://thinklab.sjtu.edu.cn/),
-[Hua Yang](https://ee.sjtu.edu.cn/FacultyDetail.aspx?id=29&infoid=66&flag=66),
-[Xue Yang](https://yangxue.site/),
-[Haodong Duan](https://kennymckormick.github.io/)
-
-<p align="center">
-  <a href='https://arxiv.org/abs/2504.02826'>
-    <img src='https://img.shields.io/badge/Paper-2504.02826-brown?style=flat&logo=arXiv' alt='arXiv PDF'>
-  </a>
-  <a href='https://huggingface.co/datasets/PhoenixZ/RISEBench'>
-    <img src='https://img.shields.io/badge/Huggingface-Data-blue?style=flat&logo=huggingface' alt='data img/data'>
-  </a>
-  <a href='https://huggingface.co/datasets/zpy777/RISEBench_Outputs'>
-    <img src='https://img.shields.io/badge/Huggingface-Outputs-blue?style=flat&logo=huggingface' alt='outputs badge'>
-  </a>
-  <a href='https://huggingface.co/spaces/opencompass/RISEBench_Gallery'>
-    <img src='https://img.shields.io/badge/Gallery-ModelResults-blue?style=flat&logo=huggingface' alt='data img/data'>
-  </a>
-  <a href='#leaderboard'>
-    <img src='https://img.shields.io/badge/Rank-Leaderboard-blue?style=flat&logo=flipboard' alt='data img/data'>
-  </a>
-
-If you find our work helpful, please consider giving us a ⭐ or citation :blush:
-
-</p>
 </div>
+
+This repository brings together the **RISE series** of benchmarks for reasoning-informed visual editing and generation. It includes the original RISEBench implementation and introduces the extended RISEBench++, with links to our related video benchmark, RISE-Video.
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Updates](#updates)
+- [Evaluation Results](#evaluation-results)
+- [Quick Start](#quick-start)
+- [Citation](#citation)
+
+<a id="overview"></a>
+## 📖 Overview
+
+### (1) RISEBench
+
+**Envisioning Beyond the Pixels: Benchmarking Reasoning-Informed Visual Editing**  
+**NeurIPS 2025 Datasets and Benchmarks Track · Oral**
+
+[Paper](https://arxiv.org/abs/2504.02826) · [Dataset](https://huggingface.co/datasets/PhoenixZ/RISEBench) · [Model Outputs](https://huggingface.co/datasets/zpy777/RISEBench_Outputs)
+
 <div align="center">
-  <img src="images/bench1.png" width="100%">
+  <img src="RISEBench/images/bench1.png" width="100%" alt="RISEBench overview">
 </div>
 
-## 🎉 News
+RISEBench benchmarks reasoning-informed visual editing across **temporal, causal, spatial, and logical reasoning**. The full benchmark contains **360 test cases** and evaluates **Instruction Reasoning, Appearance Consistency, and Visual Plausibility** using an LMM-as-a-Judge pipeline. A **64-sample subset** is included for initial experiments.
+
+> **Note:** The code, sample data, and images are in [`RISEBench/`](RISEBench). The detailed introduction, results, and usage instructions are in [RISEBench README](RISEBench/README.md). The full **360-case dataset** is available on [Hugging Face](https://huggingface.co/datasets/VisionXLab/RISEBench).
+
+### (2) RISEBench++
+
+**Reasoning-Informed Visual Editing**
+
+<div align="center">
+  <img src="RISEBench++/images/main.png" width="100%" alt="RISEBench++ overview">
+</div>
+
+RISEBench++ expands the benchmark to **1,000 bilingual test cases** across **six reasoning dimensions, 12 subcategories, and 65 fine-grained task types**. In addition to temporal, causal, spatial, and logical reasoning, it introduces **counterfactual and hybrid reasoning**, with support for **single-image, multi-image, and multi-turn editing**. Its improved evaluation pipeline uses dimension-specific evidence and scoring rubrics to assess reasoning, appearance consistency, and visual plausibility. The accompanying study evaluates **58 approaches** spanning open-source models, closed-source models, and agentic methods.
+
+We also release **RISE-Agent**. RISE-Agent is a training-free framework combining reasoning-driven planning, tool-augmented execution, and verifier-guided refinement.
+
+> **Note:** RISEBench++ evaluation code, figures, and a **60-case sample subset** are in [`RISEBench++/`](RISEBench++). The introduction, results, and usage instructions for RISEBench++ and RISE-Agent are in [RISEBench++ README](RISEBench++/README.md). The full **1,000-case dataset** is available on [Hugging Face](https://huggingface.co/datasets/VisionXLab/RISEBench-plusplus).
+
+### (3) RISE-Video
+
+**RISE-Video: Can Video Generators Decode Implicit World Rules?**
+
+[Paper](https://arxiv.org/abs/2602.05986) · [Dataset](https://huggingface.co/datasets/VisionXLab/RISE-Video) · [Code](https://github.com/VisionXLab/Rise-Video)
+
+<div align="center">
+  <img src="assets/rise-video.png" width="100%" alt="RISE-Video taxonomy and example tasks">
+</div>
+
+RISE-Video evaluates reasoning in **Text-Image-to-Video synthesis**. It contains **467 human-annotated samples** across eight categories covering commonsense, subject, perceptual, societal, logical, experiential, spatial, and temporal knowledge or capabilities. Its evaluation measures **Reasoning Alignment, Temporal Consistency, Physical Rationality, and Visual Quality**, supported by an automated LMM-based assessment pipeline.
+
+> **Note:** RISE-Video is maintained in its [own repository](https://github.com/VisionXLab/Rise-Video), which contains the data preparation and evaluation instructions.
+
+<a id="updates"></a>
+## 🎉 Updates
+
+- **\[2026/10/09\]** We release **RISEBench++** and **RISE-Agent** together! The full **1,000-case dataset** is available on [Hugging Face](https://huggingface.co/datasets/VisionXLab/RISEBench-plusplus). See the [documentation](RISEBench++/README.md) to get started.
 - **\[2026/04/23\]** We discovered a minor issue in our previous evaluation script, which has now been fixed. All model results have been updated accordingly, including the latest results for **GPT-Image-2**.
 - **\[2026/04/08\]** We’re excited to see [Luma](https://lumalabs.ai/uni-1/tech-specs) evaluate their model **Uni-1** on our benchmark and achieve strong results, congratulations!
 - **\[2026/02/06\]** The video version of our work, **RISE-Video**, has been released —— Check it out [here]( https://github.com/VisionXLab/Rise-Video)!
@@ -59,7 +83,7 @@ If you find our work helpful, please consider giving us a ⭐ or citation :blush
 - **\[2025/08/07\]** We have updated the results of **FLUX.1-Kontext-dev**, thanks to @[ErfeiCui](https://github.com/ErfeiCui). 
 - **\[2025/07/08\]** We’ve launched a *HuggingFace Space* that hosts every image generated during our model evaluations. Dive into the gallery and explore the visual diversity of RISEBench, just click and enjoy! [Visit the gallery →](https://huggingface.co/spaces/opencompass/RISEBench_Gallery)
 - **\[2025/06/15\]** **RISEBench has been officially evaluated by BAGEL**, achieving third-highest overall performance(Thinking Mode) with results comparable to Gemini-2.0. Check [OfficialRepo](https://github.com/bytedance-seed/BAGEL) for details about evaluation. 
-- **\[2025/05/27\]** We have released two versions of our benchmark suite: the full version, named **RISEBench-360**, and a smaller version, named **RISEBench-64**. The RISEBench-64 version is also available in our [repository](data) as an initial offering. Feel free to choose the version that best suits your needs! :smiley:
+- **\[2025/05/27\]** We have released two versions of our benchmark suite: the full version, named **RISEBench-360**, and a smaller version, named **RISEBench-64**. The RISEBench-64 version is also available in our [repository](RISEBench/data) as an initial offering. Feel free to choose the version that best suits your needs! :smiley:
 - **\[2025/05/27\]** Our paper has been updated! Please refer to [Arxiv](https://arxiv.org/pdf/2504.02826) for comprehensive details.
 - **\[2025/05/19\]** **RISEBench Final Version(Scaled Up to 360 Samples) has been released!** Please refer to [HF-RISEBench](https://huggingface.co/datasets/PhoenixZ/RISEBench) for full data of RISEBench.
 - **\[2025/04/08\]** RISEBench is Scaling Up! The final complete benchmark will be released soon. Stay tuned for updates!
@@ -67,162 +91,72 @@ If you find our work helpful, please consider giving us a ⭐ or citation :blush
 - **\[2025/04/05\]** Our paper is released.
 - **\[2025/04/05\]** The benchmark and evaluation code will be released soon.
 
-## 📖 Introduction
+<a id="evaluation-results"></a>
+## 🔥 Evaluation Results
 
-<div align="center">
-  <img src="images/statis.png" width="50%">
-</div>
+| Benchmark | Results |
+| --- | --- |
+| RISEBench | [Official leaderboard](RISEBench/README.md#leaderboard) |
+| RISEBench++ | [Official leaderboard](RISEBench++/README.md#leaderboard) |
+| RISE-Video | [Official leaderboard](https://github.com/VisionXLab/Rise-Video#-scoreboard) |
 
-In this work, we introduce **RISEBench**, the first benchmark for evaluating **R**easoning-**I**nformed vi**S**ual **E**diting (RISE). RISEBench focuses on four key reasoning types: *Temporal, Causal, Spatial*, and *Logical Reasoning*.
+> **Data:** The bundled RISEBench and RISEBench++ data are demo subsets; please download the full datasets from Hugging Face for full-benchmark evaluation.
 
-To comprehensively assess model performance across diverse task types, we define three key evaluation dimensions: *Instruction Reasoning*, *Appearance Consistency*, and *Visual Plausibility*.
-
-Besides, we design a robust **LMM-as-a-Judge** evaluation pipeline and leverage state-of-the-art LMMs(GPT-4o) to generate automated assessments. Our approach offers a scalable and reproducible alternative to human evaluation, while maintaining a high degree of alignment with human judgment.
-
-**As an initial effort, RISEBench aims to provide foundational insights into reasoning-aware visual editing and to catalyze future research. Though still in its early stages, we are committed to continuously expanding and refining the benchmark to support more comprehensive, reliable, and scalable evaluations of next-generation multimodal systems.**
-
-<div align="center">
-  <img src="images/judge.png" width="100%">
-</div>
-
-## 🔥 Benchmark Performance
-To evaluate the performance of representative visual editing approaches, we selected a diverse set of models spanning multiple model architectures and generation paradigms. Specifically, Flux1.0-Canny serves as a representative diffusion-based editing model, while EMU2 exemplifies the auto-regressive generation paradigm. We also include 8 proprietary models, including **GPT-4o-Image**, **Gemini 2.0-Flash-Experimental**, and **Gemini 2.0-Flash-Preview**. The outputs of proprietary models are given by the official API.
-
-
-<div align="center">
-<a id="leaderboard"></a>
-<h3>📊 Overall performance on RISEBench</h3>
-
-<table>
-  <thead>
-    <tr>
-      <th>Model</th>
-      <th>Temporal (%)</th>
-      <th>Causal (%)</th>
-      <th>Spatial (%)</th>
-      <th>Logical (%)</th>
-      <th>Overall (%)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>🏅 <b>GPT-Image-1.5</b></td><td><b>57.6</b></td><td>62.2</td><td><b>62.0</b></td><td>21.2</td><td><b>51.4</b></td></tr>
-    <tr><td>🥈 GPT-Image-2</td><td>45.9</td><td><b>66.7</b></td><td>50.0</td><td>34.1</td><td>49.4</td></tr>
-    <tr><td>🥉 Gemini-3-pro-image-preview (Nano Banana-pro)</td><td>43.5</td><td>63.3</td><td>48.0</td><td><b>37.6</b></td><td>48.3</td></tr>
-    <tr><td>Gemini-2.5-Flash-Image (Nano Banana)</td><td>29.4</td><td>48.9</td><td>37.0</td><td>18.8</td><td>33.9</td></tr>
-    <tr><td>GPT-Image-1</td><td>36.5</td><td>34.4</td><td>37.0</td><td>10.6</td><td>30.0</td></tr>
-    <tr><td>GPT-Image-1-mini</td><td>25.9</td><td>31.1</td><td>33.0</td><td>9.4</td><td>25.3</td></tr>
-    <tr><td>Qwen-Image-Edit-2511</td><td>21.2</td><td>18.9</td><td>31.0</td><td>4.7</td><td>19.4</td></tr>
-    <tr><td>BAGEL (w/ CoT)</td><td>11.8</td><td>27.8</td><td>21.0</td><td>1.2</td><td>15.8</td></tr>
-    <tr><td>Gemini-2.0-Flash-exp</td><td>9.4</td><td>16.7</td><td>23.0</td><td>4.7</td><td>13.9</td></tr>
-    <tr><td>Seedream-4.0</td><td>17.6</td><td>13.3</td><td>11.0</td><td>7.1</td><td>12.2</td></tr>
-    <tr><td>Gemini-2.0-Flash-pre</td><td>11.8</td><td>14.4</td><td>11.0</td><td>2.4</td><td>10.0</td></tr>
-    <tr><td>Qwen-Image-Edit-2509</td><td>4.7</td><td>11.1</td><td>17.0</td><td>2.4</td><td>9.2</td></tr>
-    <tr><td>BAGEL</td><td>3.5</td><td>4.4</td><td>14.0</td><td>0.0</td><td>5.8</td></tr>
-    <tr><td>FLUX.1-Kontext-Dev</td><td>2.3</td><td>5.5</td><td>13.0</td><td>1.2</td><td>5.8</td></tr>
-    <tr><td>Ovis-U1</td><td>1.1</td><td>3.3</td><td>4.0</td><td>2.4</td><td>2.8</td></tr>
-    <tr><td>Step1X-Edit</td><td>0.0</td><td>2.2</td><td>2.0</td><td>3.5</td><td>1.9</td></tr>
-    <tr><td>OmniGen</td><td>1.2</td><td>1.1</td><td>0.0</td><td>1.2</td><td>0.8</td></tr>
-    <tr><td>EMU2</td><td>1.2</td><td>1.1</td><td>0.0</td><td>0.0</td><td>0.5</td></tr>
-    <tr><td>HiDream-Edit</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
-    <tr><td>FLUX.1-Canny</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
-  </tbody>
-</table>
-
-<br>
-
-<h3>🎨 Comparison across models on three evaluation sub-dimensions</h3>
-
-<table>
-  <thead>
-    <tr>
-      <th>Model</th>
-      <th>🧠 Instruction Reasoning</th>
-      <th>🪞 Appearance Consistency</th>
-      <th>👁️ Visual Plausibility</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>🏅 <b>GPT-Image-1.5</b></td><td>69.7</td><td><b>92.5</b></td><td><b>94.9</b></td></tr>
-    <tr><td>🥈 GPT-Image-2</td><td>73.8</td><td>89.3</td><td><b>94.9</b></td></tr>
-    <tr><td>🥉 Gemini-3-pro-image-preview (banana-pro)</td><td><b>77.0</b></td><td>85.5</td><td>94.4</td></tr>
-    <tr><td>Gemini-2.5-Flash-Image (banana)</td><td>61.2</td><td>86.0</td><td>91.3</td></tr>
-    <tr><td>GPT-Image-1</td><td>62.8</td><td>80.2</td><td><b>94.9</b></td></tr>
-    <tr><td>GPT-Image-1-mini</td><td>54.1</td><td>71.5</td><td>93.7</td></tr>
-    <tr><td>Qwen-Image-Edit-2511</td><td>49.9</td><td>71.0</td><td>91.5</td></tr>
-    <tr><td>BAGEL (w/ CoT)</td><td>47.6</td><td>75.6</td><td>81.7</td></tr>
-    <tr><td>Gemini-2.0-Flash-exp</td><td>48.9</td><td>68.2</td><td>82.7</td></tr>
-    <tr><td>Seedream-4.0</td><td>58.9</td><td>67.4</td><td>91.2</td></tr>
-    <tr><td>Gemini-2.0-Flash-pre</td><td>49.9</td><td>68.4</td><td>84.9</td></tr>
-    <tr><td>Qwen-Image-Edit-2509</td><td>37.2</td><td>66.4</td><td>86.9</td></tr>
-    <tr><td>BAGEL</td><td>36.4</td><td>58.7</td><td>72.0</td></tr>
-    <tr><td>FLUX.1-Kontext-Dev</td><td>26.0</td><td>71.6</td><td>85.2</td></tr>
-    <tr><td>Ovis-U1</td><td>33.9</td><td>52.7</td><td>72.9</td></tr>
-    <tr><td>HiDream-Edit</td><td>30.3</td><td>12.6</td><td>74.9</td></tr>
-    <tr><td>Step1X-Edit</td><td>25.1</td><td>41.5</td><td>73.5</td></tr>
-    <tr><td>EMU2</td><td>22.6</td><td>38.2</td><td>78.3</td></tr>
-    <tr><td>OmniGen</td><td>22.0</td><td>32.6</td><td>55.3</td></tr>
-    <tr><td>FLUX.1-Canny</td><td>20.2</td><td>13.1</td><td>77.5</td></tr>
-  </tbody>
-</table>
-
-</div>
-
-
-
+<a id="quick-start"></a>
 ## 🛠️ Quick Start
 
-### 1. Output Generation
-The input images for the four categories are located in the [`data`](data) directory. Each sample in the dataset contains an `instruction` and an associated `image`. You can use these inputs to generate the corresponding output image.
+- **RISEBench:** Follow the [original benchmark instructions](RISEBench/README.md#quick-start). Code and the 64-sample subset are included in `RISEBench/`.
+- **RISEBench++:** Start with the [60-case sample subset](RISEBench++/data/overall_data.json) and follow the [evaluation instructions](RISEBench++/README.md#quick-start).
+- **RISE-Video:** Follow the [video generation and evaluation instructions](https://github.com/VisionXLab/Rise-Video#-get-started).
 
-**Output File Structure:**
-Generated outputs should be saved in the following directory structure:
-
-**`outputs/{MODEL_NAME}/images/{CATEGORY}/{INDEX_NAME}.{FORMAT}`**
-
-- `{MODEL_NAME}`: The name of the model you are using (e.g., `gpt-4o`).
-- `{CATEGORY}`: The category of the sample (e.g., `temporal_reasoning`).
-- `{INDEX_NAME}`: The index of the sample in the dataset.
-- `{FORMAT}`: The file format of the output image (supported formats: `.png`, `.jpg`, or `.jpeg`).
-
-For example:
-`outputs/gpt-4o-native/images/temporal_reasoning/temporal_reasoning_1.png`
-
-
-### 2. Evaluation By GPT-4.1
-Once all outputs are generated and saved in the specified format, you can evaluate them using the `gpt_eval.py` script.
-
-#### Step 1: Configure API Settings
-Open the `gpt_eval.py` file and update the following parameters with your OpenAI credentials:
-- `api_key`: Your OpenAI API key.
-- `api_base`: Your OpenAI API base URL (if applicable).
-
-#### Step 2: Run the Evaluation Script
-Execute the script using the following command:
-```bash
-python gpt_eval.py --data data/data_total.json --output outputs/MODEL_NAME
+```text
+.
+├── README.md
+├── assets/
+├── RISEBench/
+│   ├── README.md
+│   ├── data/
+│   ├── images/
+│   ├── outputs/
+│   ├── gpt_eval.py
+│   └── utils.py
+└── RISEBench++/
+    ├── README.md
+    ├── data/
+    ├── images/
+    ├── outputs/
+    ├── rise-agent/
+    ├── gemini_eval.py
+    └── utils.py
 ```
 
-#### Step 3: Review the Results
-After running the script, three result files will be generated in the `outputs/{MODEL_NAME}` directory:
-
-1. **`{MODEL_NAME}_judge.csv`**: A CSV file containing the total evaluation scores.
-2. **`{MODEL_NAME}_judge.xlsx`**: An Excel file storing detailed responses from the GPT-4o judge model.
-3. **`{MODEL_NAME}.pkl`**: A serialized pickle file saving the raw responses from the judge model, which can be used to resume or extend evaluations later.
-
-## 🔥 Outputs of Current Models
-We exhibit some outputs of the five models in the appendix. For more details, please refer to our paper.
-
-<div align="center">
-  <img src="images/output.png" width="100%">
-</div>
-
+<a id="citation"></a>
 ## Citation
-If you find RISEBench useful, please cite using this BibTeX:
+
+If you find the RISE series useful, please cite the corresponding work.
+
+### RISEBench
+
 ```bibtex
 @article{zhao2025envisioning,
   title={Envisioning beyond the pixels: Benchmarking reasoning-informed visual editing},
   author={Zhao, Xiangyu and Zhang, Peiyuan and Tang, Kexian and Li, Hao and Zhang, Zicheng and Zhai, Guangtao and Yan, Junchi and Yang, Hua and Yang, Xue and Duan, Haodong},
   journal={Advances in neural information processing systems},
   year={2025}
+}
+```
+
+### RISEBench++
+
+The BibTeX entry for **Reasoning-Informed Visual Editing** will be added with the public manuscript release.
+
+### RISE-Video
+
+```bibtex
+@article{liu2026rise,
+  title={RISE-Video: Can Video Generators Decode Implicit World Rules?},
+  author={Liu, Mingxin and Ma, Shuran and Meng, Shibei and Zhao, Xiangyu and Zhang, Zicheng and Zhang, Shaofeng and Zhong, Zhihang and Chen, Peixian and Cao, Haoyu and Sun, Xing and others},
+  journal={arXiv preprint arXiv:2602.05986},
+  year={2026}
 }
 ```
