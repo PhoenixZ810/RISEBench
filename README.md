@@ -4,6 +4,10 @@
 
 [**RISEBench**](RISEBench/README.md) · [**RISEBench++**](RISEBench++/README.md) · [**RISE-Video**](https://github.com/VisionXLab/Rise-Video)
 
+<img src="assets/icon.png" alt="RISEBench Logo" width="500">
+
+<br>
+
 </div>
 
 This repository provides a unified implementation of the **RISEBench series**, enabling comprehensive evaluation of reasoning-informed visual editing and generation across diverse capabilities and settings.
