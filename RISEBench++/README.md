@@ -6,7 +6,7 @@
 
 **RISEBench++**
 
-[Xue Yang](https://yangxue.site/)<sup>†</sup>, Peiyuan Zhang<sup>&ast;</sup>, Yilun Zhu<sup>&ast;</sup>, Qihao Yang<sup>&ast;</sup>, Mingxin Liu, Xiangyu Zhao, Ziqian Fan, Zhaokai Wang, Yan Li, Yifan Yang, Xu Yang, Xiaosong Jia, Yue Zhou, Zhihang Zhong, Junchi Yan
+[Xue Yang](https://yangxue.site/)<sup>†</sup>, [Peiyuan Zhang](https://scholar.google.com.hk/citations?user=rQbW67AAAAAJ&hl=zh-CN)<sup>&ast;</sup>, [Yilun Zhu](https://scholar.google.com/citations?user=ptcnWOkAAAAJ&hl=en)<sup>&ast;</sup>, [Qihao Yang](https://scholar.google.com.hk/citations?user=rNsndk0AAAAJ&hl=en)<sup>&ast;</sup>, [Mingxin Liu](https://scholar.google.com/citations?user=nAOUeuYAAAAJ&hl=en&oi=ao), [Xiangyu Zhao](https://scholar.google.com/citations?user=eqFr7IgAAAAJ&hl=zh-TW&oi=ao), [Ziqian Fan](https://scholar.google.com/citations?user=-hjlTcAAAAAJ&hl=en&oi=ao), [Zhaokai Wang](https://scholar.google.com/citations?user=W0zVf-oAAAAJ&hl=en&oi=ao), [Yan Li](https://scholar.google.com/citations?user=QUc0FPkAAAAJ&hl=en), [Yifan Yang](https://scholar.google.com/citations?user=u6QK7AkAAAAJ&hl=en&oi=ao), [Xu Yang](https://scholar.google.com/citations?user=SqdxMH0AAAAJ&hl=en&oi=ao), [Xiaosong Jia](https://scholar.google.com/citations?user=JeFQwxUAAAAJ&hl=en), [Yue Zhou](https://scholar.google.com/citations?user=v-aQ8GsAAAAJ), [Zhihang Zhong](https://scholar.google.com/citations?user=_4d1GUcAAAAJ&hl=en&oi=ao), [Junchi Yan](https://thinklab.sjtu.edu.cn/)
 
 <sup>&ast;</sup> Core student contributors · <sup>†</sup> Corresponding author
 
