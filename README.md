@@ -2,13 +2,11 @@
 
 # Reasoning-Informed Visual Editing
 
-**RISEBench · RISEBench++ · RISE-Video**
-
-[RISEBench](RISEBench/README.md) · [RISEBench++](RISEBench++/README.md) · [RISE-Video](https://github.com/VisionXLab/Rise-Video)
+[**RISEBench**](RISEBench/README.md) · [**RISEBench++**](RISEBench++/README.md) · [**RISE-Video**](https://github.com/VisionXLab/Rise-Video)
 
 </div>
 
-This repository brings together the **RISE series** of benchmarks for reasoning-informed visual editing and generation. It includes the original RISEBench implementation and introduces the extended RISEBench++, with links to our related video benchmark, RISE-Video.
+This repository provides a unified implementation of the **RISEBench series**, enabling comprehensive evaluation of reasoning-informed visual editing and generation across diverse capabilities and settings.
 
 ## Table of Contents
 
@@ -39,6 +37,8 @@ RISEBench benchmarks reasoning-informed visual editing across **temporal, causal
 ### (2) RISEBench++
 
 **Reasoning-Informed Visual Editing**
+
+[Paper](https://arxiv.org/abs/2504.02826) · [Dataset](https://huggingface.co/datasets/VisionXLab/RISEBench-plusplus) · [Model Outputs](https://huggingface.co/datasets/VisionXLab/RISEBench-plusplus_Outputs)
 
 <div align="center">
   <img src="RISEBench++/images/main.png" width="100%" alt="RISEBench++ overview">
@@ -105,9 +105,9 @@ RISE-Video evaluates reasoning in **Text-Image-to-Video synthesis**. It contains
 <a id="quick-start"></a>
 ## 🛠️ Quick Start
 
-- **RISEBench:** Follow the [original benchmark instructions](RISEBench/README.md#quick-start). Code and the 64-sample subset are included in `RISEBench/`.
-- **RISEBench++:** Start with the [60-case sample subset](RISEBench++/data/overall_data.json) and follow the [evaluation instructions](RISEBench++/README.md#quick-start).
-- **RISE-Video:** Follow the [video generation and evaluation instructions](https://github.com/VisionXLab/Rise-Video#-get-started).
+- **RISEBench:** Follow the [README of RISEBench](RISEBench/README.md#quick-start).
+- **RISEBench++:** Follow the [README of RISEBench++](RISEBench++/README.md#quick-start).
+- **RISE-Video:** Follow the [official implementation](https://github.com/VisionXLab/Rise-Video#-get-started).
 
 ```text
 .
