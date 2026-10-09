@@ -152,7 +152,17 @@ If you find the RISE series useful, please cite the corresponding work.
 
 ### RISEBench++
 
-The BibTeX entry for **Reasoning-Informed Visual Editing** will be added with the public manuscript release.
+```bibtex
+@misc{yang2026reasoninginformedvisualediting,
+  title={Reasoning-Informed Visual Editing},
+  author={Xue Yang and Peiyuan Zhang and Yilun Zhu and Qihao Yang and Mingxin Liu and Xiangyu Zhao and Ziqian Fan and Zhaokai Wang and Yan Li and Yifan Yang and Xu Yang and Xiaosong Jia and Yue Zhou and Zhihang Zhong and Junchi Yan},
+  year={2026},
+  eprint={2610.12343},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV},
+  url={https://arxiv.org/abs/2610.12343}
+}
+```
 
 ### RISE-Video
 
