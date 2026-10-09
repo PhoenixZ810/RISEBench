@@ -16,6 +16,7 @@ Shanghai Jiao Tong University · Southeast University · South China University 
   <a href='https://arxiv.org/abs/2610.12343'><img src='https://img.shields.io/badge/Paper-2610.12343-brown?style=flat&logo=arXiv' alt='arXiv Paper'></a>
   <a href='https://huggingface.co/datasets/VisionXLab/RISEBench-plusplus'><img src='https://img.shields.io/badge/Huggingface-Data-blue?style=flat&logo=huggingface' alt='Hugging Face Data'></a>
   <a href='https://huggingface.co/datasets/VisionXLab/RISEBench-plusplus_Outputs'><img src='https://img.shields.io/badge/Huggingface-Outputs-blue?style=flat&logo=huggingface' alt='Hugging Face Model Outputs'></a>
+  <a href='https://huggingface.co/papers/2610.12343'><img src='https://img.shields.io/badge/Huggingface-Outputs-blue?style=flat&logo=huggingface' alt='Hugging Face Paper'></a> 
   <a href='#leaderboard'><img src='https://img.shields.io/badge/Rank-Leaderboard-blue?style=flat&logo=flipboard' alt='Leaderboard'></a>
 </p>
 
