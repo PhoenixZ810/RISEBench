@@ -13,7 +13,9 @@
 Shanghai Jiao Tong University · Southeast University · South China University of Technology · Fudan University · East China Normal University
 
 <p align="center">
+  <a href='https://arxiv.org/abs/2610.12343'><img src='https://img.shields.io/badge/Paper-2610.12343-brown?style=flat&logo=arXiv' alt='arXiv Paper'></a>
   <a href='https://huggingface.co/datasets/VisionXLab/RISEBench-plusplus'><img src='https://img.shields.io/badge/Huggingface-Data-blue?style=flat&logo=huggingface' alt='Hugging Face Data'></a>
+  <a href='https://huggingface.co/datasets/VisionXLab/RISEBench-plusplus_Outputs'><img src='https://img.shields.io/badge/Huggingface-Outputs-blue?style=flat&logo=huggingface' alt='Hugging Face Model Outputs'></a>
   <a href='#leaderboard'><img src='https://img.shields.io/badge/Rank-Leaderboard-blue?style=flat&logo=flipboard' alt='Leaderboard'></a>
 </p>
 
@@ -294,7 +296,7 @@ Rerunning the same command reuses cached sample IDs. Missing output images recei
 
 ## 🔥 Outputs of Current Models
 
-We exhibit representative model outputs below, including examples illustrating reasoning accuracy and consistency across editing turns.
+We exhibit representative model outputs below, including examples illustrating reasoning accuracy and consistency across editing turns. Download the model outputs from [Hugging Face](https://huggingface.co/datasets/VisionXLab/RISEBench-plusplus_Outputs).
 
 <div align="center">
   <img src="images/generation_cases.png" width="100%" alt="Representative visual editing outputs on RISEBench++">
@@ -302,4 +304,16 @@ We exhibit representative model outputs below, including examples illustrating r
 
 ## Citation
 
-Please see the unified [Citation](../README.md#citation) section. The RISEBench++ BibTeX entry will be added with its public manuscript release.
+If you find RISEBench++ or RISE-Agent useful, please cite our [paper](https://arxiv.org/abs/2610.12343):
+
+```bibtex
+@misc{yang2026reasoninginformedvisualediting,
+  title={Reasoning-Informed Visual Editing},
+  author={Xue Yang and Peiyuan Zhang and Yilun Zhu and Qihao Yang and Mingxin Liu and Xiangyu Zhao and Ziqian Fan and Zhaokai Wang and Yan Li and Yifan Yang and Xu Yang and Xiaosong Jia and Yue Zhou and Zhihang Zhong and Junchi Yan},
+  year={2026},
+  eprint={2610.12343},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV},
+  url={https://arxiv.org/abs/2610.12343}
+}
+```
