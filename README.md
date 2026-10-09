@@ -2,13 +2,15 @@
 
 # Reasoning-Informed Visual Editing
 
-**RISEBench · RISEBench++ · RISE-Video**
+[**RISEBench**](RISEBench/README.md) · [**RISEBench++**](RISEBench++/README.md) · [**RISE-Video**](https://github.com/VisionXLab/Rise-Video)
 
-[RISEBench](RISEBench/README.md) · [RISEBench++](RISEBench++/README.md) · [RISE-Video](https://github.com/VisionXLab/Rise-Video)
+<img src="assets/icon.png" alt="RISEBench Logo" width="500">
+
+<br>
 
 </div>
 
-This repository brings together the **RISE series** of benchmarks for reasoning-informed visual editing and generation. It includes the original RISEBench implementation and introduces the extended RISEBench++, with links to our related video benchmark, RISE-Video.
+This repository provides a unified implementation of the **RISEBench series**, enabling comprehensive evaluation of reasoning-informed visual editing and generation across diverse capabilities and settings.
 
 ## Table of Contents
 
@@ -40,7 +42,7 @@ RISEBench benchmarks reasoning-informed visual editing across **temporal, causal
 
 **Reasoning-Informed Visual Editing**
 
-[Paper](https://arxiv.org/abs/2610.12343) · [Dataset](https://huggingface.co/datasets/VisionXLab/RISEBench-plusplus) · [Model Outputs](https://huggingface.co/datasets/VisionXLab/RISEBench-plusplus_Outputs)
+[Paper](https://arxiv.org/abs/2504.02826) · [Dataset](https://huggingface.co/datasets/VisionXLab/RISEBench-plusplus) · [Model Outputs](https://huggingface.co/datasets/VisionXLab/RISEBench-plusplus_Outputs)
 
 <div align="center">
   <img src="RISEBench++/images/main.png" width="100%" alt="RISEBench++ overview">
@@ -69,7 +71,7 @@ RISE-Video evaluates reasoning in **Text-Image-to-Video synthesis**. It contains
 <a id="updates"></a>
 ## 🎉 Updates
 
-- **\[2026/10/09\]** We release **RISEBench++** and **RISE-Agent** together! The [paper](https://arxiv.org/abs/2610.12343) and [model outputs](https://huggingface.co/datasets/VisionXLab/RISEBench-plusplus_Outputs) are now available. The full **1,000-case dataset** is available on [Hugging Face](https://huggingface.co/datasets/VisionXLab/RISEBench-plusplus). See the [documentation](RISEBench++/README.md) to get started.
+- **\[2026/10/09\]** We release **RISEBench++** and **RISE-Agent** together! The full **1,000-case dataset** is available on [Hugging Face](https://huggingface.co/datasets/VisionXLab/RISEBench-plusplus). See the [documentation](RISEBench++/README.md) to get started.
 - **\[2026/04/23\]** We discovered a minor issue in our previous evaluation script, which has now been fixed. All model results have been updated accordingly, including the latest results for **GPT-Image-2**.
 - **\[2026/04/08\]** We’re excited to see [Luma](https://lumalabs.ai/uni-1/tech-specs) evaluate their model **Uni-1** on our benchmark and achieve strong results, congratulations!
 - **\[2026/02/06\]** The video version of our work, **RISE-Video**, has been released —— Check it out [here]( https://github.com/VisionXLab/Rise-Video)!
@@ -107,9 +109,9 @@ RISE-Video evaluates reasoning in **Text-Image-to-Video synthesis**. It contains
 <a id="quick-start"></a>
 ## 🛠️ Quick Start
 
-- **RISEBench:** Follow the [original benchmark instructions](RISEBench/README.md#quick-start). Code and the 64-sample subset are included in `RISEBench/`.
-- **RISEBench++:** Start with the [60-case sample subset](RISEBench++/data/overall_data.json) and follow the [evaluation instructions](RISEBench++/README.md#quick-start).
-- **RISE-Video:** Follow the [video generation and evaluation instructions](https://github.com/VisionXLab/Rise-Video#-get-started).
+- **RISEBench:** Follow the [README of RISEBench](RISEBench/README.md#quick-start).
+- **RISEBench++:** Follow the [README of RISEBench++](RISEBench++/README.md#quick-start).
+- **RISE-Video:** Follow the [official implementation](https://github.com/VisionXLab/Rise-Video#-get-started).
 
 ```text
 .
@@ -150,17 +152,7 @@ If you find the RISE series useful, please cite the corresponding work.
 
 ### RISEBench++
 
-```bibtex
-@misc{yang2026reasoninginformedvisualediting,
-  title={Reasoning-Informed Visual Editing},
-  author={Xue Yang and Peiyuan Zhang and Yilun Zhu and Qihao Yang and Mingxin Liu and Xiangyu Zhao and Ziqian Fan and Zhaokai Wang and Yan Li and Yifan Yang and Xu Yang and Xiaosong Jia and Yue Zhou and Zhihang Zhong and Junchi Yan},
-  year={2026},
-  eprint={2610.12343},
-  archivePrefix={arXiv},
-  primaryClass={cs.CV},
-  url={https://arxiv.org/abs/2610.12343}
-}
-```
+The BibTeX entry for **Reasoning-Informed Visual Editing** will be added with the public manuscript release.
 
 ### RISE-Video
 
